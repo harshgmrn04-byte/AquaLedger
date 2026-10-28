@@ -1,0 +1,51 @@
+{
+  "name": "smart-water-sub-meter-platform",
+  "private": true,
+  "packageManager": "npm@11.20.0",
+  "engines": {
+    "node": ">=24 <27"
+  },
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint apps packages tools/import-hsb tools/fault-fixtures/*.ts tools/bench/*.ts vitest.config.mts playwright.config.ts",
+    "test": "npm run build --workspace=@water/shared && vitest run",
+    "build": "npm run build --workspace=@water/shared && npm run build --workspace=@water/db && npm run build --workspace=@water/server && npm run build --workspace=@water/web && npm run build --workspace=@water/import-hsb",
+    "verify": "npm run lint && npm run typecheck && npm run db:check && POSTGRES_DB=water_metering_bench npm run billing:seed && npm test && npm run bench:check && npm run build && npm run test:e2e",
+    "test:e2e": "playwright test",
+    "db:setup": "node --import tsx packages/db/src/setup.ts",
+    "db:hosted-prepare": "node --import tsx packages/db/src/hosted-prepare.ts",
+    "db:migrate": "node --import tsx packages/db/src/migrate.ts",
+    "db:check": "node --import tsx packages/db/src/check.ts",
+    "billing:seed": "node --import tsx tools/fault-fixtures/seed-billing.ts",
+    "billing:seed-hosted": "node --import tsx tools/fault-fixtures/seed-hosted-profiles.ts",
+    "auth:create-hosted": "node --import tsx tools/fault-fixtures/create-hosted-auth-users.ts",
+    "smoke:hosted": "node --import tsx tools/fault-fixtures/hosted-smoke.ts",
+    "bench:billing": "node --import tsx tools/bench/billing-query.ts",
+    "hsb:import": "npm run build --workspace=@water/shared && node --import tsx tools/import-hsb/src/cli.ts",
+    "hsb:profile": "python3 tools/import-hsb/profile.py",
+    "bench:check": "npm run build --workspace=@water/shared && node --import tsx tools/bench/mode-check.ts",
+    "start:api": "npm run build --workspace=@water/shared && npm run build --workspace=@water/server && node apps/server/dist/index.js",
+    "dev:web": "npm run dev --workspace=@water/web"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.58.2",
+    "@types/node": "26.6.5",
+    "eslint": "10.13.0",
+    "fast-check": "4.3.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.0.5"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tools/import-hsb",
+    "tools/bench"
+  ],
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "fsevents": false
+  }
+}

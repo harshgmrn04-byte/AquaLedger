@@ -1,0 +1,354 @@
+{
+  "mode": "final",
+  "createdAt": "2026-10-27T22:00:51.370Z",
+  "execution": {
+    "modulePath": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/apps/server/src/ingest.ts",
+    "moduleSha256": "64707f3abc1b2ea1cebf3e07b131f511aa163fe521df380f037ba4c3b56505d2",
+    "persistence": "batched_insert"
+  },
+  "verifiedInputs": [
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/tools/bench/baseline-source/hsb.ts",
+      "sha256": "d24a21eac14e0dc5fd7a1b629de1850834d4cffbede50b69866432b609df4433"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/shared/src/hsb.ts",
+      "sha256": "d24a21eac14e0dc5fd7a1b629de1850834d4cffbede50b69866432b609df4433"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/shared/dist/hsb.js",
+      "sha256": "29229f8058cc216bed6f637e0179c60707d7393c3bd73bc303f18210680d9942"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/shared/src/index.ts",
+      "sha256": "bc9baf252a8f549a9bbf111ea56245b2301eafbc0c7591500172e89b3a450ee4"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/db/migrations/001_source_events.sql",
+      "sha256": "21059cebbe5e212e5ba45ca0e697d8c7cca2288df555910ed6df3361dcb8660c"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/db/migrations/002_limit_future_grants.sql",
+      "sha256": "9c65baa4523fccebca3c399362585404071912a5a2bed4f9749c67e349838b2f"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/packages/db/migrations/003_ingestion_batches.sql",
+      "sha256": "2d40846860c16d54d417fe5b761d285f7d35783508891fd7824378e1ca8712dc"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/tools/bench/baseline-source/003_ingestion_batches.sql",
+      "sha256": "2d40846860c16d54d417fe5b761d285f7d35783508891fd7824378e1ca8712dc"
+    },
+    {
+      "path": "/Users/harsh/Projects/Smart-Water-Sub-Meter-Platform/docs/data/hsb-profile.json",
+      "sha256": "eb5f00279db07f77a02500265f2768887e32280fa1eb25d1bf71c8afc789674f"
+    }
+  ],
+  "migrationVersions": [
+    "001_source_events.sql",
+    "002_limit_future_grants.sql",
+    "003_ingestion_batches.sql"
+  ],
+  "source": {
+    "doi": "10.5281/zenodo.22076411",
+    "version": "1.1.0",
+    "archiveSha256": "ff766b30d05e65c2477fc929d56a112d5b0775619075daa2bd6dd687c57c7c89",
+    "csvSha256": "e9b8f34245b5cfb2b43d8fe3274056bcc5f3dca0cbf8904a6c4227ddd42d0be8",
+    "adapterVersion": "hsb-event-1.0.0"
+  },
+  "scenario": {
+    "hash": "4a6d7a5897fbe685b31f613c56a8f3d17fb4d5e5ee34cd191c4d1e61d2d99930",
+    "rows": 10000,
+    "batchSize": 500,
+    "concurrency": 4,
+    "cleanDatabase": "TRUNCATE all Stage 2 source tables and seed one pinned manifest before every warm-up/measured run"
+  },
+  "revision": {
+    "git": null,
+    "reason": "repository has no commits",
+    "sourceSha256": "64707f3abc1b2ea1cebf3e07b131f511aa163fe521df380f037ba4c3b56505d2"
+  },
+  "machine": {
+    "cpu": "Apple M2",
+    "logicalCpus": 8,
+    "ramBytes": 8589934592,
+    "os": "darwin 27.0.0 arm64",
+    "node": "v26.12.1",
+    "postgresql": "18.1 (Debian 18.1-1.pgdg13+2)"
+  },
+  "commands": [
+    "POSTGRES_DB=water_metering_bench CI=true pnpm db:setup",
+    "POSTGRES_DB=water_metering_bench CI=true pnpm db:migrate",
+    "HSB_CSV_PATH=/private/tmp/hsb-stage2/HSB_Living_Lab_Water_Consumption_Anonymized.csv node --import tsx tools/bench/http.ts final tools/bench/results/stage2-http-final-repair-2026-10-28.json"
+  ],
+  "warmup": {
+    "durationMs": 216.0664999999999,
+    "throughputEventsPerSec": 46282.04742521401,
+    "p50RequestMs": 34.49449999999979,
+    "p95RequestMs": 70.61795799999982,
+    "requestLatenciesMs": [
+      69.2484170000007,
+      63.43950000000041,
+      70.61795799999982,
+      71.83991700000024,
+      41.36354100000062,
+      38.35820799999965,
+      47.49041599999964,
+      50.44541600000048,
+      29.97699999999986,
+      36.672334000000774,
+      31.731291999999485,
+      30.08312500000011,
+      34.49449999999979,
+      32.11645799999951,
+      28.103041999999732,
+      37.04650000000038,
+      25.1005839999998,
+      25.81329199999982,
+      21.58758400000079,
+      17.37487500000043
+    ],
+    "counts": {
+      "accepted": 10000,
+      "duplicate": 0,
+      "conflict": 0,
+      "rejected": 0
+    }
+  },
+  "runs": [
+    {
+      "durationMs": 156.9813750000003,
+      "throughputEventsPerSec": 63701.82449988083,
+      "p50RequestMs": 28.903041999999914,
+      "p95RequestMs": 41.07204199999978,
+      "requestLatenciesMs": [
+        28.53358399999979,
+        29.72674999999981,
+        41.07204199999978,
+        42.328167000000576,
+        28.59729100000004,
+        28.903041999999914,
+        27.766332999999577,
+        33.84195799999998,
+        26.50541599999997,
+        29.826333999999406,
+        33.908417000000554,
+        34.3290420000003,
+        28.966957999999977,
+        36.9286660000007,
+        23.72912499999984,
+        27.489833000000544,
+        31.785250000000815,
+        22.009166999999252,
+        22.594625000000633,
+        18.22162499999922
+      ],
+      "counts": {
+        "accepted": 10000,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      }
+    },
+    {
+      "durationMs": 148.79929099999936,
+      "throughputEventsPerSec": 67204.62129083695,
+      "p50RequestMs": 27.280792000000474,
+      "p95RequestMs": 40.26416699999936,
+      "requestLatenciesMs": [
+        29.503834000000097,
+        30.680333000000246,
+        40.26416699999936,
+        42.61004200000025,
+        27.160416000000623,
+        27.280792000000474,
+        27.494416999999885,
+        30.852750000000015,
+        25.170665999999983,
+        33.3975419999997,
+        24.638750000000073,
+        29.267667000000074,
+        27.61962500000027,
+        25.43329199999971,
+        29.405625000000327,
+        26.225541000000703,
+        26.903792000000067,
+        22.054167000000234,
+        18.28595899999982,
+        19.090250000000196
+      ],
+      "counts": {
+        "accepted": 10000,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      }
+    },
+    {
+      "durationMs": 143.13854100000026,
+      "throughputEventsPerSec": 69862.38598030688,
+      "p50RequestMs": 26.650958999999602,
+      "p95RequestMs": 37.327541000000565,
+      "requestLatenciesMs": [
+        26.92920800000047,
+        28.083208000000013,
+        37.327541000000565,
+        43.07633299999998,
+        24.344292000000678,
+        30.1546670000007,
+        25.811625000000276,
+        26.23933399999987,
+        26.810375000000022,
+        26.269624999999905,
+        26.947541999999885,
+        26.863792000000103,
+        26.099207999999635,
+        26.650958999999602,
+        25.944041999999172,
+        27.21649999999954,
+        28.510041999999885,
+        22.649916999999732,
+        22.828207999999904,
+        19.035415999999714
+      ],
+      "counts": {
+        "accepted": 10000,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      }
+    },
+    {
+      "durationMs": 144.28358300000036,
+      "throughputEventsPerSec": 69307.95446076478,
+      "p50RequestMs": 26.106582999999773,
+      "p95RequestMs": 41.6571670000003,
+      "requestLatenciesMs": [
+        26.945459000000483,
+        28.00120799999968,
+        41.6571670000003,
+        42.89783299999999,
+        28.02558399999998,
+        31.987167000000227,
+        24.24175000000014,
+        28.990208000000166,
+        25.238792000000103,
+        27.35845900000004,
+        26.29716599999938,
+        26.36779200000001,
+        26.106582999999773,
+        25.858250000000226,
+        25.81816600000002,
+        25.700584000000163,
+        25.583166999999776,
+        21.27466700000059,
+        18.751000000000204,
+        19.559291999999914
+      ],
+      "counts": {
+        "accepted": 10000,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      }
+    },
+    {
+      "durationMs": 144.79854199999954,
+      "throughputEventsPerSec": 69061.46886479031,
+      "p50RequestMs": 26.41070899999977,
+      "p95RequestMs": 37.6220000000003,
+      "requestLatenciesMs": [
+        26.369125000000167,
+        27.50066599999991,
+        37.6220000000003,
+        42.228125000000546,
+        26.261500000000524,
+        32.37591699999939,
+        26.68079200000011,
+        28.30554200000006,
+        26.4818750000004,
+        25.998790999999983,
+        22.57433300000048,
+        27.667750000000524,
+        21.121208999999908,
+        26.179583000000093,
+        26.41070899999977,
+        26.50929200000064,
+        31.5903330000001,
+        22.459499999999935,
+        21.815040999999837,
+        19.329083000000537
+      ],
+      "counts": {
+        "accepted": 10000,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      }
+    }
+  ],
+  "acrossRun": {
+    "throughputEventsPerSec": {
+      "median": 69061.46886479031,
+      "min": 63701.82449988083,
+      "max": 69862.38598030688
+    },
+    "p50RequestMs": {
+      "median": 26.650958999999602,
+      "min": 26.106582999999773,
+      "max": 28.903041999999914
+    },
+    "p95RequestMs": {
+      "median": 40.26416699999936,
+      "min": 37.327541000000565,
+      "max": 41.6571670000003
+    }
+  },
+  "replay": {
+    "durationMs": 144.58295799999996,
+    "throughputEventsPerSec": 69164.44467818955,
+    "p50RequestMs": 26.68975000000046,
+    "p95RequestMs": 32.78429099999994,
+    "requestLatenciesMs": [
+      23.89875000000029,
+      30.867333999999573,
+      32.667083999999704,
+      32.78429099999994,
+      27.47637500000019,
+      25.563083000000006,
+      30.738209000000097,
+      30.593582999999853,
+      26.79229200000009,
+      25.724333000000115,
+      26.5595000000003,
+      27.605916999999863,
+      22.298374999999396,
+      21.72520799999984,
+      26.68975000000046,
+      30.767958000000363,
+      24.97595799999999,
+      37.46254200000021,
+      25.10974999999962,
+      22.136708
+    ],
+    "counts": {
+      "accepted": 0,
+      "duplicate": 10000,
+      "conflict": 0,
+      "rejected": 0
+    },
+    "rowCountAfter": "10000"
+  },
+  "changedKey": {
+    "response": {
+      "latencyMs": 3.2613750000000437,
+      "counts": {
+        "accepted": 0,
+        "duplicate": 0,
+        "conflict": 1,
+        "rejected": 0
+      }
+    },
+    "durableConflictCount": "1"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "at": "2026-10-28T00:34:34.532Z",
+  "environment": "local_injected_fault_test",
+  "provenance": {
+    "sourceReplay": "published_hsb_historical_event_subset",
+    "billing": "fictional_billing_fixture"
+  },
+  "databaseUnavailable": {
+    "health": {
+      "status": 200,
+      "requestId": "fd68789b-3bf2-4dc4-9468-bd0d7684bc54",
+      "error": null,
+      "counts": null,
+      "source": null,
+      "fallbackReason": null
+    },
+    "readiness": {
+      "status": 503,
+      "requestId": "bb7fca36-876e-42e4-8b0e-98e7cedf4f76",
+      "error": "database_unavailable",
+      "counts": null,
+      "source": null,
+      "fallbackReason": null
+    }
+  },
+  "duplicateReplay": {
+    "first": {
+      "status": 200,
+      "requestId": "66a089d6-bde9-4b8a-a70e-18dc95d489e0",
+      "error": null,
+      "counts": {
+        "accepted": 1,
+        "duplicate": 0,
+        "conflict": 0,
+        "rejected": 0
+      },
+      "source": null,
+      "fallbackReason": null
+    },
+    "replay": {
+      "status": 200,
+      "requestId": "b364ce08-0fb0-4759-a008-68dbbc4aff05",
+      "error": null,
+      "counts": {
+        "accepted": 0,
+        "duplicate": 1,
+        "conflict": 0,
+        "rejected": 0
+      },
+      "source": null,
+      "fallbackReason": null
+    }
+  },
+  "stalePreview": {
+    "status": 409,
+    "requestId": "34a01186-e590-4047-93af-4e7bccf19703",
+    "error": "stale_preview",
+    "counts": null,
+    "source": null,
+    "fallbackReason": null
+  },
+  "groq": {
+    "rateLimited": {
+      "status": 200,
+      "requestId": "23cd86a1-adea-4886-a0d4-aae00ef8c8f8",
+      "error": null,
+      "counts": null,
+      "source": "fallback",
+      "fallbackReason": "rate_limited"
+    },
+    "timeout": {
+      "status": 200,
+      "requestId": "f0acfed5-d8ae-4d49-b1f8-1992367f7451",
+      "error": null,
+      "counts": null,
+      "source": "fallback",
+      "fallbackReason": "timeout"
+    },
+    "cacheProbe": {
+      "first": {
+        "status": 200,
+        "requestId": "51108279-6170-496b-aadb-33dc7c600000",
+        "error": null,
+        "counts": null,
+        "source": "groq",
+        "fallbackReason": null
+      },
+      "second": {
+        "status": 200,
+        "requestId": "1f47cc7a-59ec-4680-85c1-a54b5a5bd1ff",
+        "error": null,
+        "counts": null,
+        "source": "cache",
+        "fallbackReason": null
+      },
+      "transportCalls": 1,
+      "callsAvoided": 1,
+      "actualGroqCallsAvoided": 0
+    }
+  },
+  "logs": [
+    {
+      "requestId": "fd68789b-3bf2-4dc4-9468-bd0d7684bc54",
+      "route": "/healthz",
+      "status": 200,
+      "durationMs": 7.362916,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": null
+    },
+    {
+      "requestId": "bb7fca36-876e-42e4-8b0e-98e7cedf4f76",
+      "route": "/readyz",
+      "status": 503,
+      "durationMs": 0.777584,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": "database_unavailable"
+    },
+    {
+      "requestId": "66a089d6-bde9-4b8a-a70e-18dc95d489e0",
+      "route": "/api/v1/source-events/batches",
+      "status": 200,
+      "durationMs": 18.937459,
+      "batchId": "1",
+      "revisionId": null,
+      "failureCategory": null
+    },
+    {
+      "requestId": "b364ce08-0fb0-4759-a008-68dbbc4aff05",
+      "route": "/api/v1/source-events/batches",
+      "status": 200,
+      "durationMs": 4.063542,
+      "batchId": "2",
+      "revisionId": null,
+      "failureCategory": null
+    },
+    {
+      "requestId": "34a01186-e590-4047-93af-4e7bccf19703",
+      "route": "/api/v1/billing-periods/:id/publish",
+      "status": 409,
+      "durationMs": 3.242166,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": "stale_preview"
+    },
+    {
+      "requestId": "23cd86a1-adea-4886-a0d4-aae00ef8c8f8",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 3.428,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": "groq_rate_limited"
+    },
+    {
+      "requestId": "f0acfed5-d8ae-4d49-b1f8-1992367f7451",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 1.685125,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": "groq_timeout"
+    },
+    {
+      "requestId": "51108279-6170-496b-aadb-33dc7c600000",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 3.085958,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": null
+    },
+    {
+      "requestId": "1f47cc7a-59ec-4680-85c1-a54b5a5bd1ff",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 1.744916,
+      "batchId": null,
+      "revisionId": null,
+      "failureCategory": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "provenance": "injected_test_fixture",
+  "description": "Fictional, coverage-complete one-hour billing walkthrough input. No row comes from HSB.",
+  "societyTimezone": "Asia/Kolkata",
+  "periodStartLocal": "2026-01-01T00:00:00+05:30",
+  "periodEndLocal": "2026-01-01T01:00:00+05:30",
+  "intervalMinutes": 10,
+  "physicalMainMeter": null,
+  "flats": [
+    { "id": "DEMO_A", "volumeMlByInterval": ["0", "1000", "0", "2000", "0", "0"] },
+    { "id": "DEMO_B", "volumeMlByInterval": ["0", "0", "1000", "0", "1000", "0"] }
+  ]
+}

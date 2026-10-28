@@ -1,0 +1,52 @@
+$ pnpm lint && pnpm typecheck && pnpm db:check && pnpm test && pnpm bench:check && pnpm build
+$ eslint apps packages tools/import-hsb tools/bench/*.ts vitest.config.mts
+$ pnpm -r typecheck
+Scope: 6 of 7 workspace projects
+packages/db typecheck$ tsc -p tsconfig.json
+packages/shared typecheck$ tsc -p tsconfig.json
+packages/shared typecheck: Done
+apps/web typecheck$ tsc -p tsconfig.json
+tools/import-hsb typecheck$ tsc -p tsconfig.json
+apps/server typecheck$ tsc -p tsconfig.json
+packages/db typecheck: Done
+apps/web typecheck: Done
+tools/import-hsb typecheck: Done
+apps/server typecheck: Done
+tools/bench typecheck$ tsc -p tsconfig.json
+tools/bench typecheck: Done
+$ node --import tsx packages/db/src/check.ts
+Runtime role can read app data and cannot create tables or use public schema
+$ pnpm --filter @water/shared build && vitest run
+$ tsc -p tsconfig.build.json
+
+ RUN  v5.0.5 /Users/harsh/Projects/Smart-Water-Sub-Meter-Platform
+
+
+ Test Files  3 passed (3)
+      Tests  11 passed (11)
+   Start at  03:31:50
+   Duration  501ms (tests 48%, import 37%, transform 13%, worker 2%)
+
+$ pnpm --filter @water/shared build && node --import tsx tools/bench/mode-check.ts
+$ tsc -p tsconfig.build.json
+Benchmark mode selection and pinned inputs verified
+$ pnpm -r build
+Scope: 6 of 7 workspace projects
+packages/db build$ tsc -p tsconfig.build.json
+packages/shared build$ tsc -p tsconfig.build.json
+packages/shared build: Done
+apps/server build$ tsc -p tsconfig.build.json
+apps/web build$ vite build
+tools/import-hsb build$ tsc -p tsconfig.build.json
+packages/db build: Done
+apps/web build: vite v8.3.5 building client environment for production...
+apps/web build: transforming...
+tools/import-hsb build: Done
+apps/web build: ✓ 14 modules transformed.
+apps/web build: rendering chunks...
+apps/web build: computing gzip size...
+apps/web build: dist/index.html                  0.28 kB │ gzip:  0.22 kB
+apps/web build: dist/assets/index-DH64FC1z.js  220.16 kB │ gzip: 68.90 kB
+apps/web build: ✓ built in 95ms
+apps/web build: Done
+apps/server build: Done

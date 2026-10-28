@@ -1,0 +1,1001 @@
+timestamp;date;hour;day_of_week;day_name;month;year;sensor_id;apartment;cluster_name;room_number;room_type;type;attached_to;value;aggregated_value
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.01;84.024
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.006;6.589
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.003;6.483
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.004;3.784
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.001;9.148
+2019-12-31 00:00:00;2019-12-31;0;1;Tuesday;12;2019;S0164;APT_020;CL_G;R046;Living room;cold water consumption;Washbasin;0.001;9.573
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.005;25.262
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.005;6.594
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.002;6.485
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0009;APT_026;CL_H;R007;Living room;cold water consumption;Kitchen tap;0.001;7.0
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.004;3.788
+2019-12-31 00:10:00;2019-12-31;0;1;Tuesday;12;2019;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.001;8.129
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.264
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.002;6.596
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.002;6.487
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0009;APT_026;CL_H;R007;Living room;cold water consumption;Kitchen tap;0.002;7.002
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.789
+2019-12-31 00:20:00;2019-12-31;0;1;Tuesday;12;2019;S0190;APT_011;CL_G;R044;Living room;cold water consumption;Kitchen tap;0.001;1.578
+2019-12-31 00:30:00;2019-12-31;0;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.002;11.717
+2019-12-31 00:30:00;2019-12-31;0;1;Tuesday;12;2019;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.002;8.131
+2019-12-31 00:30:00;2019-12-31;0;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.007;9.155
+2019-12-31 00:30:00;2019-12-31;0;1;Tuesday;12;2019;S0164;APT_020;CL_G;R046;Living room;cold water consumption;Washbasin;0.003;9.576
+2019-12-31 00:40:00;2019-12-31;0;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.003;25.267
+2019-12-31 00:40:00;2019-12-31;0;1;Tuesday;12;2019;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.005;19.309
+2019-12-31 00:40:00;2019-12-31;0;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.005;3.794
+2019-12-31 00:40:00;2019-12-31;0;1;Tuesday;12;2019;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.001;8.132
+2019-12-31 00:50:00;2019-12-31;0;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.017;6.613
+2019-12-31 00:50:00;2019-12-31;0;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.01;6.497
+2019-12-31 01:10:00;2019-12-31;1;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.269
+2019-12-31 01:10:00;2019-12-31;1;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.795
+2019-12-31 01:40:00;2019-12-31;1;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.026
+2019-12-31 01:40:00;2019-12-31;1;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.918
+2019-12-31 03:50:00;2019-12-31;3;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.031
+2019-12-31 04:10:00;2019-12-31;4;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.499
+2019-12-31 06:20:00;2019-12-31;6;1;Tuesday;12;2019;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.002;17.44
+2019-12-31 06:50:00;2019-12-31;6;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.919
+2019-12-31 07:00:00;2019-12-31;7;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.018;84.049
+2019-12-31 07:00:00;2019-12-31;7;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.004;24.923
+2019-12-31 07:10:00;2019-12-31;7;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.508
+2019-12-31 07:10:00;2019-12-31;7;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.556
+2019-12-31 07:10:00;2019-12-31;7;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.924
+2019-12-31 07:20:00;2019-12-31;7;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.51
+2019-12-31 07:20:00;2019-12-31;7;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.051
+2019-12-31 07:20:00;2019-12-31;7;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.925
+2019-12-31 07:30:00;2019-12-31;7;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.007;43.517
+2019-12-31 07:30:00;2019-12-31;7;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.557
+2019-12-31 07:40:00;2019-12-31;7;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.014;43.531
+2019-12-31 07:40:00;2019-12-31;7;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.011;63.568
+2019-12-31 08:00:00;2019-12-31;8;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.004;6.351
+2019-12-31 08:00:00;2019-12-31;8;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.002;24.927
+2019-12-31 08:10:00;2019-12-31;8;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.569
+2019-12-31 08:10:00;2019-12-31;8;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.056
+2019-12-31 08:20:00;2019-12-31;8;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.57
+2019-12-31 08:20:00;2019-12-31;8;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.001;28.02
+2019-12-31 08:20:00;2019-12-31;8;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.039
+2019-12-31 08:30:00;2019-12-31;8;1;Tuesday;12;2019;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.01;17.45
+2019-12-31 08:30:00;2019-12-31;8;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.571
+2019-12-31 08:30:00;2019-12-31;8;1;Tuesday;12;2019;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.811
+2019-12-31 08:30:00;2019-12-31;8;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.04
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0066;APT_023;CL_B;R016;Living room;cold water consumption;Washbasin;0.001;5.121
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.003;23.918
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.006;63.577
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0103;APT_017;CL_E;R030;Bathroom;cold water consumption;Washbasin;0.001;23.17
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.504
+2019-12-31 08:40:00;2019-12-31;8;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.003;16.472
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.002;2.922
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.579
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.004;49.151
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.004;6.355
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.002;24.929
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.364
+2019-12-31 08:50:00;2019-12-31;8;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.002;52.05
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.009;19.995
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.004;10.54
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.005;32.838
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.534
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.581
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.061
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0005;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.001;4.917
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0016;;CL_H;R012;Shared bathroom;hot water consumption;Washbasin;0.001;0.943
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0017;;CL_H;R012;Shared bathroom;cold water consumption;Washbasin;0.002;0.779
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.003;26.043
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.004;27.152
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.557
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.003;61.291
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.001;33.665
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.006;59.51
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.007;9.162
+2019-12-31 09:00:00;2019-12-31;9;1;Tuesday;12;2019;S0164;APT_020;CL_G;R046;Living room;cold water consumption;Washbasin;0.001;9.577
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0028;;CL_H;R012;Shared bathroom;cold water consumption;Toilet;0.007;12.611
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.003;19.998
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.002;10.542
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.585
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.004;6.617
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.004;6.501
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0166;APT_020;CL_G;R046;Living room;cold water consumption;Toilet;0.01;36.015
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.001;6.469
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.002;28.022
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.044
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.156
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.015;61.306
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.008;33.673
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.008;59.518
+2019-12-31 09:10:00;2019-12-31;9;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.002;52.052
+2019-12-31 09:20:00;2019-12-31;9;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.002;6.619
+2019-12-31 09:20:00;2019-12-31;9;1;Tuesday;12;2019;S0162;APT_020;CL_G;R046;Living room;cold water consumption;Kitchen tap;0.002;6.503
+2019-12-31 09:20:00;2019-12-31;9;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.558
+2019-12-31 09:20:00;2019-12-31;9;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.003;52.055
+2019-12-31 09:30:00;2019-12-31;9;1;Tuesday;12;2019;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.636
+2019-12-31 09:30:00;2019-12-31;9;1;Tuesday;12;2019;S0066;APT_023;CL_B;R016;Living room;cold water consumption;Washbasin;0.001;5.122
+2019-12-31 09:30:00;2019-12-31;9;1;Tuesday;12;2019;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.004;23.922
+2019-12-31 09:30:00;2019-12-31;9;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.365
+2019-12-31 09:40:00;2019-12-31;9;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.012;59.53
+2019-12-31 09:40:00;2019-12-31;9;1;Tuesday;12;2019;S0174;;CL_G;R041;Shared space;hot water consumption;Kitchen tap;0.001;70.725
+2019-12-31 09:50:00;2019-12-31;9;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.007;63.592
+2019-12-31 09:50:00;2019-12-31;9;1;Tuesday;12;2019;S0174;;CL_G;R041;Shared space;hot water consumption;Kitchen tap;0.009;70.734
+2019-12-31 10:00:00;2019-12-31;10;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.595
+2019-12-31 10:00:00;2019-12-31;10;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.016;84.077
+2019-12-31 10:00:00;2019-12-31;10;1;Tuesday;12;2019;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.002;6.471
+2019-12-31 10:00:00;2019-12-31;10;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.93
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.839
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.536
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.596
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0161;APT_020;CL_G;R046;Living room;hot water consumption;Kitchen tap;0.004;6.623
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0188;APT_011;CL_G;R044;Living room;cold water consumption;Washbasin;0.001;1.867
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.005;19.314
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.002;9.164
+2019-12-31 10:10:00;2019-12-31;10;1;Tuesday;12;2019;S0164;APT_020;CL_G;R046;Living room;cold water consumption;Washbasin;0.001;9.578
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.537
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.007;63.603
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.082
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0180;;CL_G;R049;Shared bathroom;hot water consumption;Shower;0.012;70.364
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0181;;CL_G;R049;Shared bathroom;cold water consumption;Shower;0.005;34.945
+2019-12-31 10:20:00;2019-12-31;10;1;Tuesday;12;2019;S0213;;;R002;Bathroom;hot water consumption;Washbasin;0.001;2.054
+2019-12-31 10:30:00;2019-12-31;10;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.007;43.544
+2019-12-31 10:30:00;2019-12-31;10;1;Tuesday;12;2019;S0132;APT_024;CL_D;R033;Living room;cold water consumption;Toilet;0.004;13.021
+2019-12-31 10:30:00;2019-12-31;10;1;Tuesday;12;2019;S0180;;CL_G;R049;Shared bathroom;hot water consumption;Shower;0.066;70.43
+2019-12-31 10:30:00;2019-12-31;10;1;Tuesday;12;2019;S0181;;CL_G;R049;Shared bathroom;cold water consumption;Shower;0.024;34.969
+2019-12-31 10:30:00;2019-12-31;10;1;Tuesday;12;2019;S0200;;;R002;Bathroom;cold water consumption;Washbasin;0.001;4.27
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.84
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.545
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0132;APT_024;CL_D;R033;Living room;cold water consumption;Toilet;0.005;13.026
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0180;;CL_G;R049;Shared bathroom;hot water consumption;Shower;0.004;70.434
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0181;;CL_G;R049;Shared bathroom;cold water consumption;Shower;0.002;34.971
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.004;49.16
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.003;9.167
+2019-12-31 10:40:00;2019-12-31;10;1;Tuesday;12;2019;S0164;APT_020;CL_G;R046;Living room;cold water consumption;Washbasin;0.002;9.58
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.003;20.001
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.003;10.545
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.006;43.551
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.605
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0033;APT_022;CL_H;R009;Living room;hot water consumption;Washbasin;0.003;1.768
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0034;APT_022;CL_H;R009;Living room;cold water consumption;Washbasin;0.004;7.226
+2019-12-31 10:50:00;2019-12-31;10;1;Tuesday;12;2019;S0163;APT_020;CL_G;R046;Living room;hot water consumption;Washbasin;0.001;9.168
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.004;11.721
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.005;27.157
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.606
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.087
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0129;APT_004;CL_D;R034;Living room;cold water consumption;Kitchen tap;0.001;1.842
+2019-12-31 11:00:00;2019-12-31;11;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.004;16.476
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.003;20.722
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.008;32.848
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.552
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.61
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.559
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.011;35.586
+2019-12-31 11:10:00;2019-12-31;11;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.008;59.373
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.271
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.001;20.723
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.849
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.005;63.615
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.56
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.587
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.375
+2019-12-31 11:20:00;2019-12-31;11;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.009;59.539
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.004;25.275
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.001;10.546
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.85
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.005;43.557
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.617
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.001;6.472
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.005;8.137
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.001;49.161
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0174;;CL_G;R041;Shared space;hot water consumption;Kitchen tap;0.007;70.741
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.003;16.479
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0202;;;R001;Laundry studio;cold water consumption;Washing machine;0.032;45.868
+2019-12-31 11:30:00;2019-12-31;11;1;Tuesday;12;2019;S0204;;;R001;Laundry studio;cold water consumption;Washing machine;0.031;35.572
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.001;20.002
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.004;10.55
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.002;35.041
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.002;22.501
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.559
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.015;49.176
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.007;22.821
+2019-12-31 11:40:00;2019-12-31;11;1;Tuesday;12;2019;S0174;;CL_G;R041;Shared space;hot water consumption;Kitchen tap;0.004;70.745
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.003;11.724
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.007;35.048
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.004;22.505
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.561
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.618
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.812
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.002;28.024
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0025;;CL_H;R011;Shared bathroom;cold water consumption;Shower;0.007;23.855
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.003;49.179
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.008;22.829
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.005;24.935
+2019-12-31 11:50:00;2019-12-31;11;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.376
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.006;17.456
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.001;20.003
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.014;35.062
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.009;22.514
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.851
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.008;43.569
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.621
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.01;84.097
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.002;5.292
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.003;4.815
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0009;APT_026;CL_H;R007;Living room;cold water consumption;Kitchen tap;0.002;7.004
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0025;;CL_H;R011;Shared bathroom;cold water consumption;Shower;0.006;23.861
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.002;6.357
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.005;24.94
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.377
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0202;;;R001;Laundry studio;cold water consumption;Washing machine;0.058;45.926
+2019-12-31 12:00:00;2019-12-31;12;1;Tuesday;12;2019;S0204;;;R001;Laundry studio;cold water consumption;Washing machine;0.077;35.649
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.019;35.081
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.013;22.527
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.008;43.577
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.625
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.102
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.184
+2019-12-31 12:10:00;2019-12-31;12;1;Tuesday;12;2019;S0204;;;R001;Laundry studio;cold water consumption;Washing machine;0.005;35.654
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.001;10.551
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.578
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.009;63.634
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.017;84.119
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.008;42.848
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.003;5.295
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.045
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.005;22.834
+2019-12-31 12:20:00;2019-12-31;12;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.941
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.002;20.005
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.002;10.553
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.001;35.082
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.637
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.004;6.476
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.189
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.018;22.852
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.543
+2019-12-31 12:30:00;2019-12-31;12;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.003;16.482
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.296
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.046
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.015;22.867
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.002;35.589
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.379
+2019-12-31 12:40:00;2019-12-31;12;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.001;59.544
+2019-12-31 12:50:00;2019-12-31;12;1;Tuesday;12;2019;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.004;19.318
+2019-12-31 12:50:00;2019-12-31;12;1;Tuesday;12;2019;S0087;APT_002;CL_F;R022;Bathroom;cold water consumption;Washing machine;0.007;22.874
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.641
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.01;28.034
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.005;26.051
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.006;35.595
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.38
+2019-12-31 13:00:00;2019-12-31;13;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.549
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.003;32.854
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.796
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.002;28.036
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0032;APT_022;CL_H;R009;Living room;cold water consumption;Kitchen tap;0.002;5.348
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.006;35.601
+2019-12-31 13:10:00;2019-12-31;13;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.382
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0020;;CL_H;R011;Shared bathroom;cold water consumption;Washbasin;0.001;2.609
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0188;APT_011;CL_G;R044;Living room;cold water consumption;Washbasin;0.001;1.868
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.005;19.323
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.561
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.009;59.558
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0178;;CL_G;R048;Shared bathroom;hot water consumption;Shower;0.04;75.818
+2019-12-31 13:20:00;2019-12-31;13;1;Tuesday;12;2019;S0179;;CL_G;R048;Shared bathroom;cold water consumption;Shower;0.021;51.587
+2019-12-31 13:30:00;2019-12-31;13;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.01;11.734
+2019-12-31 13:30:00;2019-12-31;13;1;Tuesday;12;2019;S0059;;CL_B;R020;Shared bathroom;hot water consumption;Shower;0.011;28.462
+2019-12-31 13:30:00;2019-12-31;13;1;Tuesday;12;2019;S0060;;CL_B;R020;Shared bathroom;cold water consumption;Shower;0.005;17.023
+2019-12-31 13:30:00;2019-12-31;13;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.004;28.04
+2019-12-31 13:30:00;2019-12-31;13;1;Tuesday;12;2019;S0064;;CL_B;R020;Shared bathroom;cold water consumption;Toilet;0.003;11.948
+2019-12-31 13:40:00;2019-12-31;13;1;Tuesday;12;2019;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.002;3.638
+2019-12-31 13:40:00;2019-12-31;13;1;Tuesday;12;2019;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.003;23.925
+2019-12-31 13:40:00;2019-12-31;13;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.797
+2019-12-31 13:40:00;2019-12-31;13;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.383
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.035;1.191
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0020;;CL_H;R011;Shared bathroom;cold water consumption;Washbasin;0.001;2.61
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.007;11.741
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.297
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.003;3.8
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0025;;CL_H;R011;Shared bathroom;cold water consumption;Shower;0.001;23.862
+2019-12-31 13:50:00;2019-12-31;13;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.563
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.005;1.196
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0020;;CL_H;R011;Shared bathroom;cold water consumption;Washbasin;0.006;2.616
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0025;;CL_H;R011;Shared bathroom;cold water consumption;Shower;0.027;23.889
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.002;5.299
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.017;35.618
+2019-12-31 14:00:00;2019-12-31;14;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.003;59.386
+2019-12-31 14:10:00;2019-12-31;14;1;Tuesday;12;2019;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.639
+2019-12-31 14:10:00;2019-12-31;14;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.003;5.302
+2019-12-31 14:10:00;2019-12-31;14;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.801
+2019-12-31 14:20:00;2019-12-31;14;1;Tuesday;12;2019;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.64
+2019-12-31 14:20:00;2019-12-31;14;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.303
+2019-12-31 14:20:00;2019-12-31;14;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.002;3.803
+2019-12-31 14:20:00;2019-12-31;14;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.576
+2019-12-31 14:30:00;2019-12-31;14;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.004;88.351
+2019-12-31 14:40:00;2019-12-31;14;1;Tuesday;12;2019;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.005;27.162
+2019-12-31 14:40:00;2019-12-31;14;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.005;28.045
+2019-12-31 14:50:00;2019-12-31;14;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.849
+2019-12-31 14:50:00;2019-12-31;14;1;Tuesday;12;2019;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.002;28.047
+2019-12-31 14:50:00;2019-12-31;14;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.003;59.566
+2019-12-31 15:00:00;2019-12-31;15;1;Tuesday;12;2019;S0132;APT_024;CL_D;R033;Living room;cold water consumption;Toilet;0.005;13.031
+2019-12-31 15:00:00;2019-12-31;15;1;Tuesday;12;2019;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.002;5.305
+2019-12-31 15:00:00;2019-12-31;15;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.387
+2019-12-31 15:00:00;2019-12-31;15;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.001;59.567
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.008;11.749
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.388
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.572
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0112;APT_003;CL_C;R028;Bathroom;hot water consumption;Shower;0.011;68.807
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0113;APT_003;CL_C;R028;Bathroom;cold water consumption;Shower;0.003;34.142
+2019-12-31 15:10:00;2019-12-31;15;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.005;16.487
+2019-12-31 15:20:00;2019-12-31;15;1;Tuesday;12;2019;S0112;APT_003;CL_C;R028;Bathroom;hot water consumption;Shower;0.07;68.877
+2019-12-31 15:20:00;2019-12-31;15;1;Tuesday;12;2019;S0113;APT_003;CL_C;R028;Bathroom;cold water consumption;Shower;0.031;34.173
+2019-12-31 15:30:00;2019-12-31;15;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.001;6.358
+2019-12-31 15:30:00;2019-12-31;15;1;Tuesday;12;2019;S0112;APT_003;CL_C;R028;Bathroom;hot water consumption;Shower;0.06;68.937
+2019-12-31 15:30:00;2019-12-31;15;1;Tuesday;12;2019;S0113;APT_003;CL_C;R028;Bathroom;cold water consumption;Shower;0.029;34.202
+2019-12-31 15:30:00;2019-12-31;15;1;Tuesday;12;2019;S0211;;;R004;Cleaning;cold water consumption;Washbasin;0.001;9.292
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.008;43.586
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.644
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.006;84.125
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0205;;;R001;Laundry studio;hot water consumption;Washing machine;0.003;7.646
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0207;;;R001;Laundry studio;cold water consumption;Washing machine;0.007;55.743
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.001;3.804
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0112;APT_003;CL_C;R028;Bathroom;hot water consumption;Shower;0.064;69.001
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0113;APT_003;CL_C;R028;Bathroom;cold water consumption;Shower;0.03;34.232
+2019-12-31 15:40:00;2019-12-31;15;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.001;52.056
+2019-12-31 15:50:00;2019-12-31;15;1;Tuesday;12;2019;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.277
+2019-12-31 15:50:00;2019-12-31;15;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.012;43.598
+2019-12-31 15:50:00;2019-12-31;15;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.646
+2019-12-31 15:50:00;2019-12-31;15;1;Tuesday;12;2019;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.002;8.139
+2019-12-31 15:50:00;2019-12-31;15;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.39
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.648
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0207;;;R001;Laundry studio;cold water consumption;Washing machine;0.009;55.752
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.002;6.36
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.942
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0112;APT_003;CL_C;R028;Bathroom;hot water consumption;Shower;0.018;69.019
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0113;APT_003;CL_C;R028;Bathroom;cold water consumption;Shower;0.008;34.24
+2019-12-31 16:00:00;2019-12-31;16;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.003;52.059
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.649
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.01;33.751
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.85
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0143;;CL_D;R040;Shared bathroom;cold water consumption;Shower;0.007;42.262
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0144;;CL_D;R040;Shared bathroom;hot water consumption;Shower;0.005;64.1
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0207;;;R001;Laundry studio;cold water consumption;Washing machine;0.01;55.762
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.005;3.809
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.002;6.362
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0147;;CL_D;R039;Shared bathroom;cold water consumption;Toilet;0.004;7.712
+2019-12-31 16:10:00;2019-12-31;16;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.003;52.062
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.019;43.617
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.013;63.662
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.008;84.133
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0143;;CL_D;R040;Shared bathroom;cold water consumption;Shower;0.016;42.278
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0144;;CL_D;R040;Shared bathroom;hot water consumption;Shower;0.031;64.131
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.002;3.811
+2019-12-31 16:20:00;2019-12-31;16;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.002;52.064
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0026;;CL_H;R012;Shared bathroom;cold water consumption;Shower;0.004;38.915
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0028;;CL_H;R012;Shared bathroom;cold water consumption;Toilet;0.005;12.616
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.019;43.636
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.019;63.681
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0144;;CL_D;R040;Shared bathroom;hot water consumption;Shower;0.007;64.138
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0016;;CL_H;R012;Shared bathroom;hot water consumption;Washbasin;0.001;0.944
+2019-12-31 16:30:00;2019-12-31;16;1;Tuesday;12;2019;S0017;;CL_H;R012;Shared bathroom;cold water consumption;Washbasin;0.001;0.78
+2019-12-31 16:40:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.01;63.691
+2019-12-31 16:40:00;2019-12-31;16;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.753
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.337
+2019-12-31 16:40:00;2019-12-31;16;1;Tuesday;12;2019;S0182;;CL_G;R048;Shared bathroom;cold water consumption;Toilet;0.002;13.364
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.639
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.006;63.697
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.852
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.016;35.634
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.004;59.394
+2019-12-31 16:50:00;2019-12-31;16;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.356
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.005;43.644
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.7
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.002;26.053
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.562
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.012;35.646
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.006;59.4
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.015;59.587
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0139;;CL_D;R032;Shared space;cold water consumption;Kitchen tap;0.003;52.132
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0178;;CL_G;R048;Shared bathroom;hot water consumption;Shower;0.01;75.828
+2019-12-31 17:00:00;2019-12-31;17;1;Tuesday;12;2019;S0179;;CL_G;R048;Shared bathroom;cold water consumption;Shower;0.005;51.592
+2019-12-31 17:10:00;2019-12-31;17;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.853
+2019-12-31 17:10:00;2019-12-31;17;1;Tuesday;12;2019;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.054
+2019-12-31 17:10:00;2019-12-31;17;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.591
+2019-12-31 17:10:00;2019-12-31;17;1;Tuesday;12;2019;S0178;;CL_G;R048;Shared bathroom;hot water consumption;Shower;0.001;75.829
+2019-12-31 17:20:00;2019-12-31;17;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.647
+2019-12-31 17:20:00;2019-12-31;17;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.701
+2019-12-31 17:20:00;2019-12-31;17;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.854
+2019-12-31 17:20:00;2019-12-31;17;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.595
+2019-12-31 17:20:00;2019-12-31;17;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.003;52.067
+2019-12-31 17:30:00;2019-12-31;17;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.855
+2019-12-31 17:30:00;2019-12-31;17;1;Tuesday;12;2019;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.001;6.477
+2019-12-31 17:30:00;2019-12-31;17;1;Tuesday;12;2019;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.02;61.326
+2019-12-31 17:30:00;2019-12-31;17;1;Tuesday;12;2019;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.007;33.68
+2019-12-31 17:40:00;2019-12-31;17;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.648
+2019-12-31 17:40:00;2019-12-31;17;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.702
+2019-12-31 17:40:00;2019-12-31;17;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.005;42.86
+2019-12-31 17:40:00;2019-12-31;17;1;Tuesday;12;2019;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.002;52.069
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.649
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.703
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.002;29.578
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.754
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.863
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.014;43.663
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.012;63.715
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.401
+2019-12-31 17:50:00;2019-12-31;17;1;Tuesday;12;2019;S0139;;CL_D;R032;Shared space;cold water consumption;Kitchen tap;0.005;52.137
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.756
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.864
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.563
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.003;35.649
+2019-12-31 18:00:00;2019-12-31;18;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.001;59.596
+2019-12-31 18:10:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.011;63.726
+2019-12-31 18:10:00;2019-12-31;18;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.6
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.727
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.036;84.169
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.758
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.65
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.402
+2019-12-31 18:20:00;2019-12-31;18;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.604
+2019-12-31 18:30:00;2019-12-31;18;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.005;43.668
+2019-12-31 18:30:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.729
+2019-12-31 18:30:00;2019-12-31;18;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.067;84.236
+2019-12-31 18:30:00;2019-12-31;18;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.865
+2019-12-31 18:40:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.73
+2019-12-31 18:40:00;2019-12-31;18;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.065;84.301
+2019-12-31 18:40:00;2019-12-31;18;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.004;49.193
+2019-12-31 18:40:00;2019-12-31;18;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.579
+2019-12-31 18:40:00;2019-12-31;18;1;Tuesday;12;2019;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.002;16.489
+2019-12-31 18:50:00;2019-12-31;18;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.733
+2019-12-31 18:50:00;2019-12-31;18;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.05;84.351
+2019-12-31 18:50:00;2019-12-31;18;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.008;33.766
+2019-12-31 18:50:00;2019-12-31;18;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.866
+2019-12-31 19:00:00;2019-12-31;19;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.855
+2019-12-31 19:00:00;2019-12-31;19;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.734
+2019-12-31 19:00:00;2019-12-31;19;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.009;42.875
+2019-12-31 19:00:00;2019-12-31;19;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.361
+2019-12-31 19:10:00;2019-12-31;19;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.877
+2019-12-31 19:20:00;2019-12-31;19;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.856
+2019-12-31 19:20:00;2019-12-31;19;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.735
+2019-12-31 19:30:00;2019-12-31;19;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.857
+2019-12-31 19:30:00;2019-12-31;19;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.354
+2019-12-31 19:30:00;2019-12-31;19;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.943
+2019-12-31 19:30:00;2019-12-31;19;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.404
+2019-12-31 19:30:00;2019-12-31;19;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.609
+2019-12-31 19:40:00;2019-12-31;19;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.356
+2019-12-31 19:40:00;2019-12-31;19;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.768
+2019-12-31 19:40:00;2019-12-31;19;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.879
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.011;43.679
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.738
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0096;APT_005;CL_A;R025;Bathroom;hot water consumption;Shower;0.017;34.401
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0097;APT_005;CL_A;R025;Bathroom;cold water consumption;Shower;0.006;17.118
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.01;84.366
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.77
+2019-12-31 19:50:00;2019-12-31;19;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.88
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.002;32.859
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.739
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0096;APT_005;CL_A;R025;Bathroom;hot water consumption;Shower;0.006;34.407
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0097;APT_005;CL_A;R025;Bathroom;cold water consumption;Shower;0.004;17.122
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.006;6.368
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.003;24.946
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.651
+2019-12-31 20:00:00;2019-12-31;20;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.614
+2019-12-31 20:10:00;2019-12-31;20;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.68
+2019-12-31 20:10:00;2019-12-31;20;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.008;63.747
+2019-12-31 20:10:00;2019-12-31;20;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.198
+2019-12-31 20:10:00;2019-12-31;20;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.338
+2019-12-31 20:20:00;2019-12-31;20;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.86
+2019-12-31 20:20:00;2019-12-31;20;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.748
+2019-12-31 20:20:00;2019-12-31;20;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.58
+2019-12-31 20:20:00;2019-12-31;20;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.339
+2019-12-31 20:20:00;2019-12-31;20;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.004;88.365
+2019-12-31 20:30:00;2019-12-31;20;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.682
+2019-12-31 20:30:00;2019-12-31;20;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.75
+2019-12-31 20:30:00;2019-12-31;20;1;Tuesday;12;2019;S0192;APT_008;CL_G;R043;Living room;cold water consumption;Kitchen tap;0.007;1.502
+2019-12-31 20:30:00;2019-12-31;20;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.619
+2019-12-31 20:40:00;2019-12-31;20;1;Tuesday;12;2019;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.001;27.163
+2019-12-31 20:40:00;2019-12-31;20;1;Tuesday;12;2019;S0186;APT_008;CL_G;R043;Living room;cold water consumption;Washbasin;0.001;3.786
+2019-12-31 20:40:00;2019-12-31;20;1;Tuesday;12;2019;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.517
+2019-12-31 20:50:00;2019-12-31;20;1;Tuesday;12;2019;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.001;27.164
+2019-12-31 20:50:00;2019-12-31;20;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.009;88.374
+2019-12-31 20:50:00;2019-12-31;20;1;Tuesday;12;2019;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.947
+2019-12-31 20:50:00;2019-12-31;20;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.581
+2019-12-31 21:00:00;2019-12-31;21;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.683
+2019-12-31 21:00:00;2019-12-31;21;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.751
+2019-12-31 21:00:00;2019-12-31;21;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.881
+2019-12-31 21:00:00;2019-12-31;21;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.623
+2019-12-31 21:10:00;2019-12-31;21;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.752
+2019-12-31 21:10:00;2019-12-31;21;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.002;35.653
+2019-12-31 21:10:00;2019-12-31;21;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.003;59.407
+2019-12-31 21:10:00;2019-12-31;21;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.628
+2019-12-31 21:20:00;2019-12-31;21;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.564
+2019-12-31 21:20:00;2019-12-31;21;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.632
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.861
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.007;43.69
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.754
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.005;61.331
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.002;33.682
+2019-12-31 21:30:00;2019-12-31;21;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.001;59.633
+2019-12-31 21:40:00;2019-12-31;21;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.003;33.773
+2019-12-31 21:40:00;2019-12-31;21;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.884
+2019-12-31 21:40:00;2019-12-31;21;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.379
+2019-12-31 21:50:00;2019-12-31;21;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.862
+2019-12-31 21:50:00;2019-12-31;21;1;Tuesday;12;2019;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.006;33.779
+2019-12-31 21:50:00;2019-12-31;21;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.009;42.893
+2019-12-31 21:50:00;2019-12-31;21;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.34
+2019-12-31 21:50:00;2019-12-31;21;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.009;88.388
+2019-12-31 22:00:00;2019-12-31;22;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.368
+2019-12-31 22:00:00;2019-12-31;22;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.896
+2019-12-31 22:10:00;2019-12-31;22;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.755
+2019-12-31 22:10:00;2019-12-31;22;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.373
+2019-12-31 22:10:00;2019-12-31;22;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.897
+2019-12-31 22:30:00;2019-12-31;22;1;Tuesday;12;2019;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.565
+2019-12-31 22:30:00;2019-12-31;22;1;Tuesday;12;2019;S0103;APT_017;CL_E;R030;Bathroom;cold water consumption;Washbasin;0.003;23.173
+2019-12-31 22:30:00;2019-12-31;22;1;Tuesday;12;2019;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.002;35.655
+2019-12-31 22:30:00;2019-12-31;22;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.009;59.642
+2019-12-31 22:40:00;2019-12-31;22;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.863
+2019-12-31 22:40:00;2019-12-31;22;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.376
+2019-12-31 22:40:00;2019-12-31;22;1;Tuesday;12;2019;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.409
+2019-12-31 22:50:00;2019-12-31;22;1;Tuesday;12;2019;S0103;APT_017;CL_E;R030;Bathroom;cold water consumption;Washbasin;0.001;23.174
+2019-12-31 22:50:00;2019-12-31;22;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.003;59.645
+2019-12-31 22:50:00;2019-12-31;22;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.003;88.391
+2019-12-31 23:00:00;2019-12-31;23;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.001;20.006
+2019-12-31 23:00:00;2019-12-31;23;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.001;10.554
+2019-12-31 23:00:00;2019-12-31;23;1;Tuesday;12;2019;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.004;32.867
+2019-12-31 23:00:00;2019-12-31;23;1;Tuesday;12;2019;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.002;59.647
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.005;20.011
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.756
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.004;42.901
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.582
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.002;42.342
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.009;88.4
+2019-12-31 23:10:00;2019-12-31;23;1;Tuesday;12;2019;S0212;;;R003;Bathroom;cold water consumption;Toilet;0.008;16.74
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.001;10.555
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.904
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0208;;;R003;Bathroom;cold water consumption;Washbasin;0.001;5.154
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.004;49.202
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.583
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.343
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.007;88.407
+2019-12-31 23:20:00;2019-12-31;23;1;Tuesday;12;2019;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.522
+2019-12-31 23:30:00;2019-12-31;23;1;Tuesday;12;2019;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.758
+2019-12-31 23:30:00;2019-12-31;23;1;Tuesday;12;2019;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.009;88.416
+2019-12-31 23:40:00;2019-12-31;23;1;Tuesday;12;2019;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.004;84.38
+2020-01-01 00:00:00;2020-01-01;0;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.868
+2020-01-01 00:00:00;2020-01-01;0;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.382
+2020-01-01 00:00:00;2020-01-01;0;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.651
+2020-01-01 00:00:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.007;88.423
+2020-01-01 00:10:00;2020-01-01;0;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.002;32.87
+2020-01-01 00:10:00;2020-01-01;0;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.006;84.388
+2020-01-01 00:10:00;2020-01-01;0;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.207
+2020-01-01 00:10:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.428
+2020-01-01 00:20:00;2020-01-01;0;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.759
+2020-01-01 00:20:00;2020-01-01;0;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.584
+2020-01-01 00:20:00;2020-01-01;0;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.344
+2020-01-01 00:20:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.433
+2020-01-01 00:30:00;2020-01-01;0;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.39
+2020-01-01 00:30:00;2020-01-01;0;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.906
+2020-01-01 00:30:00;2020-01-01;0;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.948
+2020-01-01 00:30:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.014;88.447
+2020-01-01 00:30:00;2020-01-01;0;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.002;13.524
+2020-01-01 00:40:00;2020-01-01;0;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.392
+2020-01-01 00:40:00;2020-01-01;0;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.908
+2020-01-01 00:40:00;2020-01-01;0;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.693
+2020-01-01 00:50:00;2020-01-01;0;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.345
+2020-01-01 00:40:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.004;88.451
+2020-01-01 00:50:00;2020-01-01;0;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.694
+2020-01-01 00:50:00;2020-01-01;0;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.003;88.454
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.01;84.402
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.585
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.346
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.78
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.909
+2020-01-01 01:00:00;2020-01-01;1;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.007;88.461
+2020-01-01 01:10:00;2020-01-01;1;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.404
+2020-01-01 01:10:00;2020-01-01;1;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.781
+2020-01-01 01:10:00;2020-01-01;1;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.008;42.917
+2020-01-01 01:10:00;2020-01-01;1;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.01;88.471
+2020-01-01 01:30:00;2020-01-01;1;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.006;84.41
+2020-01-01 01:30:00;2020-01-01;1;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.347
+2020-01-01 01:30:00;2020-01-01;1;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.007;88.478
+2020-01-01 02:10:00;2020-01-01;2;2;Wednesday;1;2020;S0016;;CL_H;R012;Shared bathroom;hot water consumption;Washbasin;0.001;0.945
+2020-01-01 02:10:00;2020-01-01;2;2;Wednesday;1;2020;S0017;;CL_H;R012;Shared bathroom;cold water consumption;Washbasin;0.001;0.781
+2020-01-01 02:20:00;2020-01-01;2;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.002;17.458
+2020-01-01 02:20:00;2020-01-01;2;2;Wednesday;1;2020;S0028;;CL_H;R012;Shared bathroom;cold water consumption;Toilet;0.004;12.62
+2020-01-01 02:20:00;2020-01-01;2;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.002;5.307
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0003;APT_010;CL_H;R006;Living room;hot water consumption;Kitchen tap;0.002;3.65
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.003;17.461
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.782
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0192;APT_008;CL_G;R043;Living room;cold water consumption;Kitchen tap;0.001;1.503
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0195;APT_008;CL_G;R043;Living room;cold water consumption;Toilet;0.005;9.084
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.055
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.483
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.529
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0200;;;R002;Bathroom;cold water consumption;Washbasin;0.004;4.274
+2020-01-01 02:30:00;2020-01-01;2;2;Wednesday;1;2020;S0212;;;R003;Bathroom;cold water consumption;Toilet;0.003;16.743
+2020-01-01 02:40:00;2020-01-01;2;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.413
+2020-01-01 02:40:00;2020-01-01;2;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.783
+2020-01-01 02:40:00;2020-01-01;2;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.003;4.818
+2020-01-01 02:40:00;2020-01-01;2;2;Wednesday;1;2020;S0005;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.001;4.918
+2020-01-01 02:50:00;2020-01-01;2;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.586
+2020-01-01 02:50:00;2020-01-01;2;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.348
+2020-01-01 02:40:00;2020-01-01;2;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.009;88.492
+2020-01-01 02:50:00;2020-01-01;2;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.002;17.463
+2020-01-01 02:50:00;2020-01-01;2;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.008;88.5
+2020-01-01 03:00:00;2020-01-01;3;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.505
+2020-01-01 03:20:00;2020-01-01;3;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.349
+2020-01-01 03:20:00;2020-01-01;3;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.002;88.507
+2020-01-01 03:30:00;2020-01-01;3;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.587
+2020-01-01 03:30:00;2020-01-01;3;2;Wednesday;1;2020;S0195;APT_008;CL_G;R043;Living room;cold water consumption;Toilet;0.005;9.089
+2020-01-01 03:30:00;2020-01-01;3;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.003;88.51
+2020-01-01 03:40:00;2020-01-01;3;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.001;2.923
+2020-01-01 03:40:00;2020-01-01;3;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.784
+2020-01-01 03:40:00;2020-01-01;3;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.918
+2020-01-01 03:50:00;2020-01-01;3;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.35
+2020-01-01 03:40:00;2020-01-01;3;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.002;88.512
+2020-01-01 03:50:00;2020-01-01;3;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.001;2.924
+2020-01-01 03:50:00;2020-01-01;3;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.919
+2020-01-01 03:50:00;2020-01-01;3;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.351
+2020-01-01 03:50:00;2020-01-01;3;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.517
+2020-01-01 04:00:00;2020-01-01;4;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.415
+2020-01-01 04:00:00;2020-01-01;4;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.352
+2020-01-01 04:00:00;2020-01-01;4;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.522
+2020-01-01 04:10:00;2020-01-01;4;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.92
+2020-01-01 04:10:00;2020-01-01;4;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.002;88.524
+2020-01-01 04:20:00;2020-01-01;4;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.005;27.169
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.003;25.28
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.002;11.751
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.353
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.002;3.813
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.005;8.144
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.002;88.526
+2020-01-01 04:30:00;2020-01-01;4;2;Wednesday;1;2020;S0190;APT_011;CL_G;R044;Living room;cold water consumption;Kitchen tap;0.003;1.581
+2020-01-01 04:40:00;2020-01-01;4;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.785
+2020-01-01 04:40:00;2020-01-01;4;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.923
+2020-01-01 04:40:00;2020-01-01;4;2;Wednesday;1;2020;S0187;APT_011;CL_G;R044;Living room;hot water consumption;Washbasin;0.002;0.501
+2020-01-01 04:40:00;2020-01-01;4;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.003;88.529
+2020-01-01 04:50:00;2020-01-01;4;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.004;42.927
+2020-01-01 04:50:00;2020-01-01;4;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.695
+2020-01-01 05:00:00;2020-01-01;5;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.42
+2020-01-01 05:00:00;2020-01-01;5;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.929
+2020-01-01 05:30:00;2020-01-01;5;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.003;29.59
+2020-01-01 05:30:00;2020-01-01;5;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.354
+2020-01-01 05:40:00;2020-01-01;5;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.002;29.592
+2020-01-01 06:00:00;2020-01-01;6;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.786
+2020-01-01 06:00:00;2020-01-01;6;2;Wednesday;1;2020;S0111;APT_003;CL_C;R028;Bathroom;cold water consumption;Washbasin;0.001;42.355
+2020-01-01 06:10:00;2020-01-01;6;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.932
+2020-01-01 06:10:00;2020-01-01;6;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.534
+2020-01-01 06:10:00;2020-01-01;6;2;Wednesday;1;2020;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.003;16.492
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.002;42.934
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0186;APT_008;CL_G;R043;Living room;cold water consumption;Washbasin;0.001;3.787
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0192;APT_008;CL_G;R043;Living room;cold water consumption;Kitchen tap;0.008;1.511
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.001;6.478
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.698
+2020-01-01 06:20:00;2020-01-01;6;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.76
+2020-01-01 06:30:00;2020-01-01;6;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.021;84.441
+2020-01-01 06:30:00;2020-01-01;6;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.935
+2020-01-01 06:30:00;2020-01-01;6;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.949
+2020-01-01 06:40:00;2020-01-01;6;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.001;84.442
+2020-01-01 06:40:00;2020-01-01;6;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.004;24.953
+2020-01-01 06:40:00;2020-01-01;6;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.011;43.709
+2020-01-01 06:40:00;2020-01-01;6;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.016;63.776
+2020-01-01 06:50:00;2020-01-01;6;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.01;43.719
+2020-01-01 06:50:00;2020-01-01;6;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.005;63.781
+2020-01-01 07:00:00;2020-01-01;7;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.954
+2020-01-01 07:10:00;2020-01-01;7;2;Wednesday;1;2020;S0096;APT_005;CL_A;R025;Bathroom;hot water consumption;Shower;0.004;34.411
+2020-01-01 07:10:00;2020-01-01;7;2;Wednesday;1;2020;S0097;APT_005;CL_A;R025;Bathroom;cold water consumption;Shower;0.001;17.123
+2020-01-01 07:10:00;2020-01-01;7;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.028;84.47
+2020-01-01 07:20:00;2020-01-01;7;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.002;4.82
+2020-01-01 07:20:00;2020-01-01;7;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.008;63.789
+2020-01-01 07:30:00;2020-01-01;7;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.011;17.474
+2020-01-01 07:30:00;2020-01-01;7;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.308
+2020-01-01 07:30:00;2020-01-01;7;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.002;4.822
+2020-01-01 07:40:00;2020-01-01;7;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.721
+2020-01-01 07:40:00;2020-01-01;7;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.792
+2020-01-01 07:50:00;2020-01-01;7;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.011;84.481
+2020-01-01 07:50:00;2020-01-01;7;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.955
+2020-01-01 07:50:00;2020-01-01;7;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.794
+2020-01-01 08:00:00;2020-01-01;8;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.938
+2020-01-01 08:10:00;2020-01-01;8;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.939
+2020-01-01 08:20:00;2020-01-01;8;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.486
+2020-01-01 08:30:00;2020-01-01;8;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.956
+2020-01-01 08:30:00;2020-01-01;8;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.724
+2020-01-01 08:30:00;2020-01-01;8;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.795
+2020-01-01 08:40:00;2020-01-01;8;2;Wednesday;1;2020;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.282
+2020-01-01 08:40:00;2020-01-01;8;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.015;84.501
+2020-01-01 09:20:00;2020-01-01;9;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.656
+2020-01-01 09:30:00;2020-01-01;9;2;Wednesday;1;2020;S0034;APT_022;CL_H;R009;Living room;cold water consumption;Washbasin;0.001;7.227
+2020-01-01 09:30:00;2020-01-01;9;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.003;27.172
+2020-01-01 09:30:00;2020-01-01;9;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.212
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.006;20.017
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.002;10.557
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.003;20.726
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.871
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.004;49.216
+2020-01-01 09:40:00;2020-01-01;9;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.727
+2020-01-01 09:50:00;2020-01-01;9;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.007;20.733
+2020-01-01 09:50:00;2020-01-01;9;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.011;32.882
+2020-01-01 09:50:00;2020-01-01;9;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.008;84.509
+2020-01-01 09:50:00;2020-01-01;9;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.41
+2020-01-01 09:50:00;2020-01-01;9;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.01;59.666
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.01;20.743
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.009;32.891
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.007;84.516
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.014;61.345
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.006;33.688
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0033;APT_022;CL_H;R009;Living room;hot water consumption;Washbasin;0.002;1.77
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0034;APT_022;CL_H;R009;Living room;cold water consumption;Washbasin;0.003;7.23
+2020-01-01 10:00:00;2020-01-01;10;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.004;27.176
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.003;20.746
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.004;32.895
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.017;61.362
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.009;33.697
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.566
+2020-01-01 10:10:00;2020-01-01;10;2;Wednesday;1;2020;S0103;APT_017;CL_E;R030;Bathroom;cold water consumption;Washbasin;0.001;23.175
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.009;11.76
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.005;32.9
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.006;49.222
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.796
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.567
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.411
+2020-01-01 10:20:00;2020-01-01;10;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.007;59.673
+2020-01-01 10:30:00;2020-01-01;10;2;Wednesday;1;2020;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.001;1.197
+2020-01-01 10:30:00;2020-01-01;10;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.518
+2020-01-01 10:30:00;2020-01-01;10;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.056
+2020-01-01 10:30:00;2020-01-01;10;2;Wednesday;1;2020;S0108;APT_017;CL_E;R030;Bathroom;cold water consumption;Washing machine;0.013;19.271
+2020-01-01 10:30:00;2020-01-01;10;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.677
+2020-01-01 10:40:00;2020-01-01;10;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.003;17.477
+2020-01-01 10:40:00;2020-01-01;10;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.901
+2020-01-01 10:40:00;2020-01-01;10;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.309
+2020-01-01 10:40:00;2020-01-01;10;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.823
+2020-01-01 10:40:00;2020-01-01;10;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.797
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.641
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.003;23.928
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.001;20.018
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.001;10.558
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.015;84.533
+2020-01-01 10:50:00;2020-01-01;10;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.801
+2020-01-01 11:00:00;2020-01-01;11;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.001;84.534
+2020-01-01 11:00:00;2020-01-01;11;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.004;43.731
+2020-01-01 11:00:00;2020-01-01;11;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.803
+2020-01-01 11:00:00;2020-01-01;11;2;Wednesday;1;2020;S0108;APT_017;CL_E;R030;Bathroom;cold water consumption;Washing machine;0.012;19.283
+2020-01-01 11:10:00;2020-01-01;11;2;Wednesday;1;2020;S0108;APT_017;CL_E;R030;Bathroom;cold water consumption;Washing machine;0.013;19.296
+2020-01-01 11:10:00;2020-01-01;11;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.682
+2020-01-01 11:10:00;2020-01-01;11;2;Wednesday;1;2020;S0147;;CL_D;R039;Shared bathroom;cold water consumption;Toilet;0.005;7.717
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.537
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.057
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.656
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.003;59.414
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.593
+2020-01-01 11:20:00;2020-01-01;11;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.539
+2020-01-01 11:30:00;2020-01-01;11;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.415
+2020-01-01 11:40:00;2020-01-01;11;2;Wednesday;1;2020;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.002;1.199
+2020-01-01 11:40:00;2020-01-01;11;2;Wednesday;1;2020;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.007;11.767
+2020-01-01 11:40:00;2020-01-01;11;2;Wednesday;1;2020;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.005;23.933
+2020-01-01 11:50:00;2020-01-01;11;2;Wednesday;1;2020;S0053;;CL_B;R013;Shared space;hot water consumption;Kitchen tap;0.005;53.83
+2020-01-01 11:50:00;2020-01-01;11;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.005;27.181
+2020-01-01 11:50:00;2020-01-01;11;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.568
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.002;5.311
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.824
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0033;APT_022;CL_H;R009;Living room;hot water consumption;Washbasin;0.002;1.772
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0034;APT_022;CL_H;R009;Living room;cold water consumption;Washbasin;0.002;7.232
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.001;35.083
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.001;20.747
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.004;32.905
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.416
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.009;59.691
+2020-01-01 12:00:00;2020-01-01;12;2;Wednesday;1;2020;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.001;52.07
+2020-01-01 12:10:00;2020-01-01;12;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.008;17.485
+2020-01-01 12:10:00;2020-01-01;12;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.544
+2020-01-01 12:20:00;2020-01-01;12;2;Wednesday;1;2020;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.002;25.284
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.001;1.2
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0020;;CL_H;R011;Shared bathroom;cold water consumption;Washbasin;0.001;2.617
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.004;11.771
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.542
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.006;26.063
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.906
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.005;49.227
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.805
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.569
+2020-01-01 12:30:00;2020-01-01;12;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.696
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.003;25.287
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.003;61.365
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.001;33.698
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.003;8.147
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.064
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0092;APT_005;CL_A;R025;Bathroom;hot water consumption;Washbasin;0.008;6.376
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.003;24.959
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.57
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.417
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.701
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0175;;CL_G;R041;Shared space;cold water consumption;Kitchen tap;0.001;52.071
+2020-01-01 12:40:00;2020-01-01;12;2;Wednesday;1;2020;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.009;19.332
+2020-01-01 12:50:00;2020-01-01;12;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.545
+2020-01-01 12:50:00;2020-01-01;12;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.065
+2020-01-01 12:50:00;2020-01-01;12;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.96
+2020-01-01 12:50:00;2020-01-01;12;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.418
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.019;35.102
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.014;22.541
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.007;84.552
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.002;6.48
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.312
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.001;28.048
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.006;26.071
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.806
+2020-01-01 13:00:00;2020-01-01;13;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.42
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.009;17.494
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.002;35.104
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.001;22.542
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.001;28.049
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.004;26.075
+2020-01-01 13:10:00;2020-01-01;13;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.734
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.554
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0009;APT_026;CL_H;R007;Living room;cold water consumption;Kitchen tap;0.001;7.005
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.006;28.055
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.005;26.08
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.001;24.961
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.736
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.81
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.421
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.705
+2020-01-01 13:20:00;2020-01-01;13;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.004;88.548
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0016;;CL_H;R012;Shared bathroom;hot water consumption;Washbasin;0.001;0.946
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0017;;CL_H;R012;Shared bathroom;cold water consumption;Washbasin;0.006;0.787
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0028;;CL_H;R012;Shared bathroom;cold water consumption;Toilet;0.006;12.626
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.559
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.081
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0032;APT_022;CL_H;R009;Living room;cold water consumption;Kitchen tap;0.004;5.352
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.737
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.657
+2020-01-01 13:30:00;2020-01-01;13;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.71
+2020-01-01 13:40:00;2020-01-01;13;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.001;2.925
+2020-01-01 13:40:00;2020-01-01;13;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.562
+2020-01-01 13:40:00;2020-01-01;13;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.739
+2020-01-01 13:50:00;2020-01-01;13;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.001;43.74
+2020-01-01 13:50:00;2020-01-01;13;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.811
+2020-01-01 13:50:00;2020-01-01;13;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.422
+2020-01-01 13:50:00;2020-01-01;13;2;Wednesday;1;2020;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.003;16.495
+2020-01-01 14:00:00;2020-01-01;14;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.003;27.184
+2020-01-01 14:00:00;2020-01-01;14;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.658
+2020-01-01 14:00:00;2020-01-01;14;2;Wednesday;1;2020;S0196;APT_011;CL_G;R044;Living room;cold water consumption;Toilet;0.005;19.337
+2020-01-01 14:00:00;2020-01-01;14;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.534
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.001;20.019
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.004;26.085
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.742
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.812
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.001;35.659
+2020-01-01 14:10:00;2020-01-01;14;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.423
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0015;APT_009;CL_H;R008;Living room;cold water consumption;Kitchen tap;0.005;25.292
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0027;;CL_H;R011;Shared bathroom;cold water consumption;Toilet;0.007;11.778
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.014;35.118
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.009;22.551
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.006;84.568
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.002;8.149
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.007;20.754
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.003;32.909
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.008;43.75
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.012;63.824
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.005;35.664
+2020-01-01 14:20:00;2020-01-01;14;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.425
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0019;;CL_H;R011;Shared bathroom;hot water consumption;Washbasin;0.001;1.201
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.019;35.137
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.013;22.564
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.004;35.668
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.427
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.539
+2020-01-01 14:30:00;2020-01-01;14;2;Wednesday;1;2020;S0200;;;R002;Bathroom;cold water consumption;Washbasin;0.004;4.278
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.019;35.156
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.013;22.577
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.573
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0213;;;R002;Bathroom;hot water consumption;Washbasin;0.002;2.056
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.826
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.429
+2020-01-01 14:40:00;2020-01-01;14;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.715
+2020-01-01 14:50:00;2020-01-01;14;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.019;35.175
+2020-01-01 14:50:00;2020-01-01;14;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.013;22.59
+2020-01-01 14:50:00;2020-01-01;14;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.005;63.831
+2020-01-01 15:00:00;2020-01-01;15;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.825
+2020-01-01 15:00:00;2020-01-01;15;2;Wednesday;1;2020;S0009;APT_026;CL_H;R007;Living room;cold water consumption;Kitchen tap;0.001;7.006
+2020-01-01 15:00:00;2020-01-01;15;2;Wednesday;1;2020;S0012;APT_009;CL_H;R008;Living room;hot water consumption;Washbasin;0.01;3.823
+2020-01-01 15:00:00;2020-01-01;15;2;Wednesday;1;2020;S0013;APT_009;CL_H;R008;Living room;cold water consumption;Washbasin;0.001;8.15
+2020-01-01 15:00:00;2020-01-01;15;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.835
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.002;84.575
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.313
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.003;4.828
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.001;32.91
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0093;APT_005;CL_A;R025;Bathroom;cold water consumption;Washbasin;0.006;24.967
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.003;63.838
+2020-01-01 15:10:00;2020-01-01;15;2;Wednesday;1;2020;S0195;APT_008;CL_G;R043;Living room;cold water consumption;Toilet;0.005;9.094
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.006;17.5
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0053;;CL_B;R013;Shared space;hot water consumption;Kitchen tap;0.006;53.836
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0132;APT_024;CL_D;R033;Living room;cold water consumption;Toilet;0.005;13.036
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0186;APT_008;CL_G;R043;Living room;cold water consumption;Washbasin;0.002;3.789
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0192;APT_008;CL_G;R043;Living room;cold water consumption;Kitchen tap;0.002;1.513
+2020-01-01 15:20:00;2020-01-01;15;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.004;63.842
+2020-01-01 15:30:00;2020-01-01;15;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.001;2.926
+2020-01-01 15:30:00;2020-01-01;15;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.002;26.087
+2020-01-01 15:30:00;2020-01-01;15;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.001;20.755
+2020-01-01 15:30:00;2020-01-01;15;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.002;32.912
+2020-01-01 15:40:00;2020-01-01;15;2;Wednesday;1;2020;S0053;;CL_B;R013;Shared space;hot water consumption;Kitchen tap;0.005;53.841
+2020-01-01 15:40:00;2020-01-01;15;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.002;20.757
+2020-01-01 15:40:00;2020-01-01;15;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.002;32.914
+2020-01-01 15:40:00;2020-01-01;15;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.753
+2020-01-01 15:40:00;2020-01-01;15;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.005;63.847
+2020-01-01 15:50:00;2020-01-01;15;2;Wednesday;1;2020;S0036;APT_001;CL_H;R010;Living room;cold water consumption;Washbasin;0.001;4.04
+2020-01-01 15:50:00;2020-01-01;15;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.003;84.578
+2020-01-01 15:50:00;2020-01-01;15;2;Wednesday;1;2020;S0037;APT_001;CL_H;R010;Living room;cold water consumption;Toilet;0.009;25.273
+2020-01-01 15:50:00;2020-01-01;15;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.003;32.917
+2020-01-01 15:50:00;2020-01-01;15;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.755
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.01;84.588
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.012;26.099
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0086;APT_002;CL_F;R022;Bathroom;cold water consumption;Toilet;0.003;49.23
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.002;43.757
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.849
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.571
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.43
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.72
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0110;APT_003;CL_C;R028;Bathroom;hot water consumption;Washbasin;0.001;29.594
+2020-01-01 16:00:00;2020-01-01;16;2;Wednesday;1;2020;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.005;16.5
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.642
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.01;35.185
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.006;22.596
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.001;6.481
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0001;APT_010;CL_H;R006;Living room;hot water consumption;Washbasin;0.001;5.314
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0002;APT_010;CL_H;R006;Living room;cold water consumption;Washbasin;0.001;4.829
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.01;28.065
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0022;;CL_H;R005;Shared space;cold water consumption;Kitchen tap;0.001;26.1
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.002;63.851
+2020-01-01 16:10:00;2020-01-01;16;2;Wednesday;1;2020;S0116;APT_003;CL_C;R028;Bathroom;cold water consumption;Toilet;0.005;88.553
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0007;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.002;17.502
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0078;APT_023;CL_B;R016;Living room;cold water consumption;Toilet;0.003;23.936
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0080;APT_002;CL_F;R022;Bathroom;hot water consumption;Washbasin;0.006;20.025
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0081;APT_002;CL_F;R022;Bathroom;cold water consumption;Washbasin;0.004;10.562
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0037;APT_001;CL_H;R010;Living room;cold water consumption;Toilet;0.005;25.278
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0084;APT_002;CL_F;R023;Shared space;hot water consumption;Kitchen tap;0.001;20.758
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0085;APT_002;CL_F;R023;Shared space;cold water consumption;Kitchen tap;0.004;32.921
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.007;35.675
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.432
+2020-01-01 16:20:00;2020-01-01;16;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.724
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.001;35.186
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.001;22.597
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0194;APT_021;CL_G;R042;Living room;cold water consumption;Kitchen tap;0.003;6.484
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0021;;CL_H;R005;Shared space;hot water consumption;Kitchen tap;0.002;28.067
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0038;APT_022;CL_H;R009;Living room;cold water consumption;Toilet;0.004;27.188
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.572
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0106;APT_017;CL_E;R031;Shared space;hot water consumption;Kitchen tap;0.002;35.677
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.002;59.434
+2020-01-01 16:30:00;2020-01-01;16;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.729
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0054;;CL_B;R013;Shared space;cold water consumption;Kitchen tap;0.004;48.519
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0065;APT_023;CL_B;R016;Living room;hot water consumption;Washbasin;0.001;3.643
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0082;APT_002;CL_F;R022;Bathroom;hot water consumption;Shower;0.006;35.192
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0083;APT_002;CL_F;R022;Bathroom;cold water consumption;Shower;0.004;22.601
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0049;;CL_B;R020;Shared bathroom;hot water consumption;Washbasin;0.001;0.77
+2020-01-01 16:40:00;2020-01-01;16;2;Wednesday;1;2020;S0050;;CL_B;R020;Shared bathroom;cold water consumption;Washbasin;0.001;1.901
+2020-01-01 16:50:00;2020-01-01;16;2;Wednesday;1;2020;S0054;;CL_B;R013;Shared space;cold water consumption;Kitchen tap;0.002;48.521
+2020-01-01 16:50:00;2020-01-01;16;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.002;33.788
+2020-01-01 16:50:00;2020-01-01;16;2;Wednesday;1;2020;S0197;APT_021;CL_G;R042;Living room;cold water consumption;Toilet;0.002;16.502
+2020-01-01 17:00:00;2020-01-01;17;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.005;33.793
+2020-01-01 17:00:00;2020-01-01;17;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.005;59.439
+2020-01-01 17:00:00;2020-01-01;17;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.005;59.734
+2020-01-01 17:10:00;2020-01-01;17;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.005;84.593
+2020-01-01 17:10:00;2020-01-01;17;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.003;42.942
+2020-01-01 17:10:00;2020-01-01;17;2;Wednesday;1;2020;S0107;APT_017;CL_E;R031;Shared space;cold water consumption;Kitchen tap;0.001;59.44
+2020-01-01 17:20:00;2020-01-01;17;2;Wednesday;1;2020;S0005;APT_010;CL_H;R006;Living room;cold water consumption;Toilet;0.001;4.919
+2020-01-01 17:20:00;2020-01-01;17;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.009;13.548
+2020-01-01 17:30:00;2020-01-01;17;2;Wednesday;1;2020;S0114;APT_003;CL_C;R029;Shared space;hot water consumption;Kitchen tap;0.001;33.794
+2020-01-01 17:30:00;2020-01-01;17;2;Wednesday;1;2020;S0115;APT_003;CL_C;R029;Shared space;cold water consumption;Kitchen tap;0.001;42.943
+2020-01-01 17:40:00;2020-01-01;17;2;Wednesday;1;2020;S0026;;CL_H;R012;Shared bathroom;cold water consumption;Shower;0.008;38.923
+2020-01-01 17:40:00;2020-01-01;17;2;Wednesday;1;2020;S0095;APT_005;CL_A;R024;Kitchen;cold water consumption;Kitchen tap;0.001;63.852
+2020-01-01 17:40:00;2020-01-01;17;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.005;13.553
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0016;;CL_H;R012;Shared bathroom;hot water consumption;Washbasin;0.001;0.947
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0017;;CL_H;R012;Shared bathroom;cold water consumption;Washbasin;0.001;0.788
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0028;;CL_H;R012;Shared bathroom;cold water consumption;Toilet;0.003;12.629
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0067;APT_023;CL_B;R016;Living room;hot water consumption;Kitchen tap;0.016;1.945
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.005;2.931
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0094;APT_005;CL_A;R024;Kitchen;hot water consumption;Kitchen tap;0.003;43.76
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0102;APT_017;CL_E;R030;Bathroom;hot water consumption;Washbasin;0.001;20.573
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0109;APT_017;CL_E;R030;Bathroom;cold water consumption;Toilet;0.004;59.738
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0199;;;R002;Bathroom;cold water consumption;Toilet;0.007;13.56
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0200;;;R002;Bathroom;cold water consumption;Washbasin;0.001;4.279
+2020-01-01 17:50:00;2020-01-01;17;2;Wednesday;1;2020;S0212;;;R003;Bathroom;cold water consumption;Toilet;0.018;16.761
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0054;;CL_B;R013;Shared space;cold water consumption;Kitchen tap;0.003;48.524
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0067;APT_023;CL_B;R016;Living room;hot water consumption;Kitchen tap;0.002;1.947
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0068;APT_023;CL_B;R016;Living room;cold water consumption;Kitchen tap;0.001;2.932
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0101;APT_005;CL_A;R025;Bathroom;cold water consumption;Toilet;0.006;84.599
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0104;APT_017;CL_E;R030;Bathroom;hot water consumption;Shower;0.021;61.386
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0105;APT_017;CL_E;R030;Bathroom;cold water consumption;Shower;0.008;33.706
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0192;APT_008;CL_G;R043;Living room;cold water consumption;Kitchen tap;0.001;1.514
+2020-01-01 18:00:00;2020-01-01;18;2;Wednesday;1;2020;S0208;;;R003;Bathroom;cold water consumption;Washbasin;0.002;5.156

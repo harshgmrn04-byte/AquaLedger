@@ -1,0 +1,16 @@
+{
+  "doi": "10.5281/zenodo.22076411",
+  "datasetVersion": "1.1.0",
+  "archiveSha256": "ff766b30d05e65c2477fc929d56a112d5b0775619075daa2bd6dd687c57c7c89",
+  "archiveMd5": "1db6a143f39da53710e63c6bb353d5b1",
+  "licence": "CC BY 4.0",
+  "adapterVersion": "hsb-event-1.0.0",
+  "importRunId": "1",
+  "subsetLimit": 1000,
+  "accepted": 1000,
+  "duplicate": 0,
+  "rejected": 0,
+  "reasons": {},
+  "sourceUnitAssumption": "m3 inferred from published 3271 m3 total; dictionary disagrees",
+  "billingCoverageEligible": false
+}

@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+data/raw/
+/HSB_Living_Lab_Data_Package.zip
+*.log
+test-results/
+playwright-report/

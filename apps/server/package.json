@@ -1,0 +1,23 @@
+{
+  "name": "@water/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@water/shared": "0.0.0",
+    "csv-parse": "7.0.3",
+    "express": "5.3.0",
+    "jose": "6.1.0",
+    "pg": "8.23.1",
+    "pino": "10.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/pg": "8.23.1"
+  },
+  "version": "0.0.0"
+}

@@ -1,0 +1,10 @@
+.git
+node_modules
+.env
+data/raw
+HSB_Living_Lab_Data_Package.zip
+docs/archive
+apps/web/dist
+apps/server/dist
+packages/*/dist
+tools/*/dist

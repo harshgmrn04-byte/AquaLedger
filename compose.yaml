@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18.1
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-water_metering}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ${POSTGRES_DB:-water_metering}"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+volumes:
+  pgdata:

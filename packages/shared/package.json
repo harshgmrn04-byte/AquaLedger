@@ -1,0 +1,23 @@
+{
+  "name": "@water/shared",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./hsb": {
+      "types": "./src/hsb.ts",
+      "default": "./dist/hsb.js"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "version": "0.0.0"
+}

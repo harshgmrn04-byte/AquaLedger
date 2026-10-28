@@ -1,0 +1,125 @@
+
+> verify
+> npm run lint && npm run typecheck && npm run db:check && POSTGRES_DB=water_metering_bench npm run billing:seed && npm test && npm run bench:check && npm run build && npm run test:e2e
+
+
+> lint
+> eslint apps packages tools/import-hsb tools/fault-fixtures/*.ts tools/bench/*.ts vitest.config.mts playwright.config.ts
+
+
+> typecheck
+> npm run typecheck --workspaces --if-present
+
+
+> @water/server@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/web@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/db@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/shared@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/import-hsb@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/bench@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> db:check
+> node --import tsx packages/db/src/check.ts
+
+Runtime role can read app data and cannot create tables or use public schema
+
+> billing:seed
+> node --import tsx tools/fault-fixtures/seed-billing.ts
+
+Seeded fictional-only societies, flats, and profile IDs. No Auth users or HSB rows were created.
+
+> test
+> npm run build --workspace=@water/shared && vitest run
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+ RUN  v5.0.5 /Users/harsh/Projects/Smart-Water-Sub-Meter-Platform
+
+
+ Test Files  5 passed (5)
+      Tests  20 passed (20)
+   Start at  05:17:36
+   Duration  558ms (import 42%, tests 42%, transform 16%, worker 1%)
+
+
+> bench:check
+> npm run build --workspace=@water/shared && node --import tsx tools/bench/mode-check.ts
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+Benchmark mode selection and pinned inputs verified
+
+> build
+> npm run build --workspace=@water/shared && npm run build --workspace=@water/db && npm run build --workspace=@water/server && npm run build --workspace=@water/web && npm run build --workspace=@water/import-hsb
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/db@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/server@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/web@0.0.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 90 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.35 kB │ gzip:  0.26 kB
+dist/assets/index-Cma7YfLB.css    0.71 kB │ gzip:  0.38 kB
+dist/assets/index-lHaLcH05.js   226.65 kB │ gzip: 71.22 kB
+
+✓ built in 221ms
+
+> @water/import-hsb@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> test:e2e
+> playwright test
+
+(node:21620) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[WebServer] (node:21621) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:21652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+(node:21669) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21669) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(node:21669) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+··
+  2 passed (4.9s)

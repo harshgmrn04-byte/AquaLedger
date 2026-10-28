@@ -1,0 +1,176 @@
+{
+  "kind": "hosted Supabase plus local API smoke",
+  "observedAt": "2026-10-28T02:01:09.109Z",
+  "api": "http://127.0.0.1:3001",
+  "periodId": "56417cd7-a9a6-4bd1-af76-3443d488f693",
+  "checks": [
+    {
+      "check": "health",
+      "status": 200,
+      "ms": 22,
+      "requestId": "703f8944-398d-4a62-9af3-8565ed895484"
+    },
+    {
+      "check": "readiness",
+      "status": 200,
+      "ms": 292,
+      "requestId": "e76543fb-482f-45b3-b001-3d10c3f48642"
+    },
+    {
+      "check": "anonymous profile denied",
+      "status": 401,
+      "ms": 6,
+      "requestId": "9e2633b0-9c7b-43bb-be1d-d93339fb6686",
+      "result": "missing_token"
+    },
+    {
+      "check": "manager profile",
+      "status": 200,
+      "ms": 120,
+      "requestId": "225b82da-57df-433f-95c3-53363200385a"
+    },
+    {
+      "check": "resident A profile",
+      "status": 200,
+      "ms": 30,
+      "requestId": "1b3405f6-e320-4dee-97f2-ab59d0b10369"
+    },
+    {
+      "check": "resident B profile",
+      "status": 200,
+      "ms": 30,
+      "requestId": "6d3255ac-9b1a-4874-a3a1-e651b7fb5f57"
+    },
+    {
+      "check": "resident manager route denied",
+      "status": 403,
+      "ms": 30,
+      "requestId": "843c71ab-dda8-4e2f-8c05-53ac8f8afca5",
+      "result": "manager_required"
+    },
+    {
+      "check": "manager resident route denied",
+      "status": 403,
+      "ms": 31,
+      "requestId": "e732f08b-e341-4728-b2f3-1c85bf3b68b9",
+      "result": "resident_required"
+    },
+    {
+      "check": "create fictional period",
+      "status": 201,
+      "ms": 116,
+      "requestId": "805311c9-228a-4d54-bf7f-fd8eec26c406"
+    },
+    {
+      "check": "preview fictional period",
+      "status": 200,
+      "ms": 84,
+      "requestId": "7887d923-9523-47ec-a886-19171a8ef86d"
+    },
+    {
+      "check": "publish fictional revision 1",
+      "status": 200,
+      "ms": 563,
+      "requestId": "61031d30-9013-4c1a-a62e-a92e8277d842",
+      "revisionNumber": 1
+    },
+    {
+      "check": "resident A statement",
+      "status": 200,
+      "ms": 64,
+      "requestId": "210ee861-928a-42a0-a336-d862aba23a17",
+      "revisionNumber": 1
+    },
+    {
+      "check": "resident B statement",
+      "status": 200,
+      "ms": 59,
+      "requestId": "6601c171-f5b9-4dd4-80cd-5ed6cfca8aa0",
+      "revisionNumber": 1
+    },
+    {
+      "check": "resident A explanation revision 1",
+      "status": 200,
+      "ms": 762,
+      "requestId": "21f67b7d-3d56-482e-8070-1f3b5ffe65ab",
+      "source": "groq",
+      "callsAvoided": 0
+    },
+    {
+      "check": "resident A explanation cache",
+      "status": 200,
+      "ms": 84,
+      "requestId": "6b743194-6e5e-4725-b4d1-28c4830f074f",
+      "source": "cache",
+      "callsAvoided": 1
+    },
+    {
+      "check": "open fictional revision 2",
+      "status": 200,
+      "ms": 274,
+      "requestId": "6ed3c4fb-983a-4b21-813c-1323e6cd261a"
+    },
+    {
+      "check": "change fictional invoice",
+      "status": 200,
+      "ms": 64,
+      "requestId": "b3f6d2f8-3ac6-453b-9420-384fdf59680f"
+    },
+    {
+      "check": "preview fictional revision 2",
+      "status": 200,
+      "ms": 87,
+      "requestId": "add31be9-64d4-4f86-8599-d80bfb4950d9"
+    },
+    {
+      "check": "publish fictional revision 2",
+      "status": 200,
+      "ms": 535,
+      "requestId": "375cde07-df95-42f9-9068-1a602fd03db0",
+      "revisionNumber": 2
+    },
+    {
+      "check": "resident A latest revision",
+      "status": 200,
+      "ms": 55,
+      "requestId": "7205d7c5-86de-437f-9cc3-5d608fefff06",
+      "revisionNumber": 2
+    },
+    {
+      "check": "resident A prior revision remains",
+      "status": 200,
+      "ms": 57,
+      "requestId": "d15cc77e-0bb0-4d58-912b-c7238049cce5",
+      "revisionNumber": 1
+    },
+    {
+      "check": "resident A revision 2 explanation",
+      "status": 200,
+      "ms": 790,
+      "requestId": "39e42f15-8bd9-41ad-9254-c0dea1e3369d",
+      "source": "groq",
+      "callsAvoided": 0
+    },
+    {
+      "check": "resident A revision 2 cache",
+      "status": 200,
+      "ms": 110,
+      "requestId": "f19425a0-5ed6-4342-b6bd-69ea63d0cf1c",
+      "source": "cache",
+      "callsAvoided": 1
+    }
+  ],
+  "dataApiBoundary": [
+    {
+      "actor": "unauthenticated",
+      "status": 406,
+      "ms": 155
+    },
+    {
+      "actor": "authenticated resident",
+      "status": 406,
+      "ms": 165
+    }
+  ],
+  "groqHttpCallsAvoided": 2
+}

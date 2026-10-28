@@ -1,0 +1,2259 @@
+{
+  "columns": [
+    "timestamp",
+    "date",
+    "hour",
+    "day_of_week",
+    "day_name",
+    "month",
+    "year",
+    "sensor_id",
+    "apartment",
+    "cluster_name",
+    "room_number",
+    "room_type",
+    "type",
+    "attached_to",
+    "value",
+    "aggregated_value"
+  ],
+  "counts": {
+    "apartment_missing": 154269,
+    "apartment_present": 498046,
+    "positive_value": 652315,
+    "rows": 652315,
+    "timestamp_on_ten_minute_grid": 652315,
+    "year_2019": 555,
+    "year_2020": 244719,
+    "year_2021": 206536,
+    "year_2022": 179962,
+    "year_2023": 20543
+  },
+  "distinct_counts": {
+    "apartment": 29,
+    "attached_to": 5,
+    "cluster_name": 10,
+    "room_number": 49,
+    "room_type": 7,
+    "sensor_id": 214,
+    "type": 2
+  },
+  "distinct_values": {
+    "apartment": [
+      "",
+      "APT_001",
+      "APT_002",
+      "APT_003",
+      "APT_004",
+      "APT_005",
+      "APT_006",
+      "APT_007",
+      "APT_008",
+      "APT_009",
+      "APT_010",
+      "APT_011",
+      "APT_012",
+      "APT_013",
+      "APT_014",
+      "APT_015",
+      "APT_016",
+      "APT_017",
+      "APT_018",
+      "APT_019",
+      "APT_020",
+      "APT_021",
+      "APT_022",
+      "APT_023",
+      "APT_024",
+      "APT_025",
+      "APT_026",
+      "APT_027",
+      "APT_028"
+    ],
+    "attached_to": [
+      "Kitchen tap",
+      "Shower",
+      "Toilet",
+      "Washbasin",
+      "Washing machine"
+    ],
+    "cluster_name": [
+      "",
+      "CL_A",
+      "CL_B",
+      "CL_C",
+      "CL_D",
+      "CL_E",
+      "CL_F",
+      "CL_G",
+      "CL_H",
+      "CL_I"
+    ],
+    "room_type": [
+      "Bathroom",
+      "Cleaning",
+      "Kitchen",
+      "Laundry studio",
+      "Living room",
+      "Shared bathroom",
+      "Shared space"
+    ],
+    "type": [
+      "cold water consumption",
+      "hot water consumption"
+    ]
+  },
+  "exact_full_row_excess_rows": 140,
+  "exact_full_rows_repeated": 140,
+  "first_timestamp_naive_utc_per_dictionary": "2019-12-31 00:00:00",
+  "last_timestamp_naive_utc_per_dictionary": "2023-01-31 14:10:00",
+  "natural_sensor_timestamp_excess_rows": 705,
+  "natural_sensor_timestamp_keys_repeated": 701,
+  "nulls": {
+    "apartment": 154269,
+    "cluster_name": 41798
+  },
+  "sensor_mapping": {
+    "S0001": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0002": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0003": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0004": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0005": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0006": [
+      [
+        "APT_026",
+        "CL_H",
+        "R007",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0007": [
+      [
+        "APT_010",
+        "CL_H",
+        "R006",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0008": [
+      [
+        "APT_026",
+        "CL_H",
+        "R007",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0009": [
+      [
+        "APT_026",
+        "CL_H",
+        "R007",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0010": [
+      [
+        "APT_026",
+        "CL_H",
+        "R007",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0011": [
+      [
+        "APT_026",
+        "CL_H",
+        "R007",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0012": [
+      [
+        "APT_009",
+        "CL_H",
+        "R008",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0013": [
+      [
+        "APT_009",
+        "CL_H",
+        "R008",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0014": [
+      [
+        "APT_009",
+        "CL_H",
+        "R008",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0015": [
+      [
+        "APT_009",
+        "CL_H",
+        "R008",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0016": [
+      [
+        "",
+        "CL_H",
+        "R012",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0017": [
+      [
+        "",
+        "CL_H",
+        "R012",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0018": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0019": [
+      [
+        "",
+        "CL_H",
+        "R011",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0020": [
+      [
+        "",
+        "CL_H",
+        "R011",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0021": [
+      [
+        "",
+        "CL_H",
+        "R005",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0022": [
+      [
+        "",
+        "CL_H",
+        "R005",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0023": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0024": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0025": [
+      [
+        "",
+        "CL_H",
+        "R011",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0026": [
+      [
+        "",
+        "CL_H",
+        "R012",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0027": [
+      [
+        "",
+        "CL_H",
+        "R011",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0028": [
+      [
+        "",
+        "CL_H",
+        "R012",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0029": [
+      [
+        "APT_001",
+        "CL_H",
+        "R010",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0030": [
+      [
+        "APT_001",
+        "CL_H",
+        "R010",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0031": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0032": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0033": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0034": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0035": [
+      [
+        "APT_001",
+        "CL_H",
+        "R010",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0036": [
+      [
+        "APT_001",
+        "CL_H",
+        "R010",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0037": [
+      [
+        "APT_001",
+        "CL_H",
+        "R010",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0038": [
+      [
+        "APT_022",
+        "CL_H",
+        "R009",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0039": [
+      [
+        "APT_016",
+        "CL_B",
+        "R019",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0040": [
+      [
+        "APT_016",
+        "CL_B",
+        "R019",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0041": [
+      [
+        "APT_014",
+        "CL_B",
+        "R018",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0042": [
+      [
+        "APT_014",
+        "CL_B",
+        "R018",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0043": [
+      [
+        "APT_014",
+        "CL_B",
+        "R018",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0044": [
+      [
+        "APT_014",
+        "CL_B",
+        "R018",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0045": [
+      [
+        "APT_016",
+        "CL_B",
+        "R019",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0046": [
+      [
+        "APT_016",
+        "CL_B",
+        "R019",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0047": [
+      [
+        "APT_016",
+        "CL_B",
+        "R019",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0048": [
+      [
+        "APT_014",
+        "CL_B",
+        "R018",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0049": [
+      [
+        "",
+        "CL_B",
+        "R020",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0050": [
+      [
+        "",
+        "CL_B",
+        "R020",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0051": [
+      [
+        "",
+        "CL_B",
+        "R021",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0052": [
+      [
+        "",
+        "CL_B",
+        "R021",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0053": [
+      [
+        "",
+        "CL_B",
+        "R013",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0054": [
+      [
+        "",
+        "CL_B",
+        "R013",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0055": [
+      [
+        "APT_012",
+        "CL_B",
+        "R017",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0056": [
+      [
+        "APT_012",
+        "CL_B",
+        "R017",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0057": [
+      [
+        "APT_012",
+        "CL_B",
+        "R017",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0058": [
+      [
+        "APT_012",
+        "CL_B",
+        "R017",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0059": [
+      [
+        "",
+        "CL_B",
+        "R020",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0060": [
+      [
+        "",
+        "CL_B",
+        "R020",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0061": [
+      [
+        "",
+        "CL_B",
+        "R021",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0062": [
+      [
+        "",
+        "CL_B",
+        "R021",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0063": [
+      [
+        "",
+        "CL_B",
+        "R021",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0064": [
+      [
+        "",
+        "CL_B",
+        "R020",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0065": [
+      [
+        "APT_023",
+        "CL_B",
+        "R016",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0066": [
+      [
+        "APT_023",
+        "CL_B",
+        "R016",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0067": [
+      [
+        "APT_023",
+        "CL_B",
+        "R016",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0068": [
+      [
+        "APT_023",
+        "CL_B",
+        "R016",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0069": [
+      [
+        "APT_018",
+        "CL_B",
+        "R015",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0070": [
+      [
+        "APT_018",
+        "CL_B",
+        "R015",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0071": [
+      [
+        "APT_018",
+        "CL_B",
+        "R015",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0072": [
+      [
+        "APT_018",
+        "CL_B",
+        "R015",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0073": [
+      [
+        "APT_013",
+        "CL_B",
+        "R014",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0074": [
+      [
+        "APT_013",
+        "CL_B",
+        "R014",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0075": [
+      [
+        "APT_013",
+        "CL_B",
+        "R014",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0076": [
+      [
+        "APT_013",
+        "CL_B",
+        "R014",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0077": [
+      [
+        "APT_018",
+        "CL_B",
+        "R015",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0078": [
+      [
+        "APT_023",
+        "CL_B",
+        "R016",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0079": [
+      [
+        "APT_013",
+        "CL_B",
+        "R014",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0080": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0081": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0082": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0083": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0084": [
+      [
+        "APT_002",
+        "CL_F",
+        "R023",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0085": [
+      [
+        "APT_002",
+        "CL_F",
+        "R023",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0086": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0087": [
+      [
+        "APT_002",
+        "CL_F",
+        "R022",
+        "Bathroom",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0088": [
+      [
+        "APT_006",
+        "CL_I",
+        "R027",
+        "Kitchen",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0089": [
+      [
+        "APT_006",
+        "CL_I",
+        "R027",
+        "Kitchen",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0090": [
+      [
+        "APT_006",
+        "CL_I",
+        "R026",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0091": [
+      [
+        "APT_006",
+        "CL_I",
+        "R026",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0092": [
+      [
+        "APT_005",
+        "CL_A",
+        "R025",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0093": [
+      [
+        "APT_005",
+        "CL_A",
+        "R025",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0094": [
+      [
+        "APT_005",
+        "CL_A",
+        "R024",
+        "Kitchen",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0095": [
+      [
+        "APT_005",
+        "CL_A",
+        "R024",
+        "Kitchen",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0096": [
+      [
+        "APT_005",
+        "CL_A",
+        "R025",
+        "Bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0097": [
+      [
+        "APT_005",
+        "CL_A",
+        "R025",
+        "Bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0098": [
+      [
+        "APT_006",
+        "CL_I",
+        "R026",
+        "Bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0099": [
+      [
+        "APT_006",
+        "CL_I",
+        "R026",
+        "Bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0100": [
+      [
+        "APT_006",
+        "CL_I",
+        "R026",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0101": [
+      [
+        "APT_005",
+        "CL_A",
+        "R025",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0102": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0103": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0104": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0105": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0106": [
+      [
+        "APT_017",
+        "CL_E",
+        "R031",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0107": [
+      [
+        "APT_017",
+        "CL_E",
+        "R031",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0108": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0109": [
+      [
+        "APT_017",
+        "CL_E",
+        "R030",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0110": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0111": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0112": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0113": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0114": [
+      [
+        "APT_003",
+        "CL_C",
+        "R029",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0115": [
+      [
+        "APT_003",
+        "CL_C",
+        "R029",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0116": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0117": [
+      [
+        "APT_003",
+        "CL_C",
+        "R028",
+        "Bathroom",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0118": [
+      [
+        "APT_024",
+        "CL_D",
+        "R033",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0119": [
+      [
+        "APT_024",
+        "CL_D",
+        "R033",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0120": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0121": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0122": [
+      [
+        "APT_027",
+        "CL_D",
+        "R035",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0123": [
+      [
+        "APT_027",
+        "CL_D",
+        "R035",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0124": [
+      [
+        "APT_027",
+        "CL_D",
+        "R035",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0125": [
+      [
+        "APT_027",
+        "CL_D",
+        "R035",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0126": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0127": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0128": [
+      [
+        "APT_024",
+        "CL_D",
+        "R033",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0129": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0130": [
+      [
+        "APT_027",
+        "CL_D",
+        "R035",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0131": [
+      [
+        "APT_004",
+        "CL_D",
+        "R034",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0132": [
+      [
+        "APT_024",
+        "CL_D",
+        "R033",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0133": [
+      [
+        "APT_025",
+        "CL_D",
+        "R036",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0134": [
+      [
+        "APT_025",
+        "CL_D",
+        "R036",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0135": [
+      [
+        "",
+        "CL_D",
+        "R040",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0136": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0137": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0138": [
+      [
+        "",
+        "CL_D",
+        "R032",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0139": [
+      [
+        "",
+        "CL_D",
+        "R032",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0140": [
+      [
+        "APT_025",
+        "CL_D",
+        "R036",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0141": [
+      [
+        "APT_025",
+        "CL_D",
+        "R036",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0142": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0143": [
+      [
+        "",
+        "CL_D",
+        "R040",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0144": [
+      [
+        "",
+        "CL_D",
+        "R040",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0145": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0146": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0147": [
+      [
+        "",
+        "CL_D",
+        "R039",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0148": [
+      [
+        "APT_025",
+        "CL_D",
+        "R036",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0149": [
+      [
+        "APT_028",
+        "CL_D",
+        "R038",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0150": [
+      [
+        "APT_028",
+        "CL_D",
+        "R038",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0151": [
+      [
+        "APT_019",
+        "CL_D",
+        "R037",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0152": [
+      [
+        "APT_019",
+        "CL_D",
+        "R037",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0153": [
+      [
+        "APT_019",
+        "CL_D",
+        "R037",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0154": [
+      [
+        "APT_019",
+        "CL_D",
+        "R037",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0155": [
+      [
+        "APT_028",
+        "CL_D",
+        "R038",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0156": [
+      [
+        "APT_028",
+        "CL_D",
+        "R038",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0157": [
+      [
+        "APT_019",
+        "CL_D",
+        "R037",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0158": [
+      [
+        "APT_028",
+        "CL_D",
+        "R038",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0159": [
+      [
+        "APT_007",
+        "CL_G",
+        "R047",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0160": [
+      [
+        "APT_007",
+        "CL_G",
+        "R047",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0161": [
+      [
+        "APT_020",
+        "CL_G",
+        "R046",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0162": [
+      [
+        "APT_020",
+        "CL_G",
+        "R046",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0163": [
+      [
+        "APT_020",
+        "CL_G",
+        "R046",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0164": [
+      [
+        "APT_020",
+        "CL_G",
+        "R046",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0165": [
+      [
+        "APT_007",
+        "CL_G",
+        "R047",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0166": [
+      [
+        "APT_020",
+        "CL_G",
+        "R046",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0167": [
+      [
+        "APT_007",
+        "CL_G",
+        "R047",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0168": [
+      [
+        "",
+        "CL_G",
+        "R049",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0169": [
+      [
+        "",
+        "CL_G",
+        "R049",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0170": [
+      [
+        "",
+        "CL_G",
+        "R048",
+        "Shared bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0171": [
+      [
+        "",
+        "CL_G",
+        "R048",
+        "Shared bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0172": [
+      [
+        "APT_015",
+        "CL_G",
+        "R045",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0173": [
+      [
+        "APT_015",
+        "CL_G",
+        "R045",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0174": [
+      [
+        "",
+        "CL_G",
+        "R041",
+        "Shared space",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0175": [
+      [
+        "",
+        "CL_G",
+        "R041",
+        "Shared space",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0176": [
+      [
+        "APT_015",
+        "CL_G",
+        "R045",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0177": [
+      [
+        "APT_015",
+        "CL_G",
+        "R045",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0178": [
+      [
+        "",
+        "CL_G",
+        "R048",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0179": [
+      [
+        "",
+        "CL_G",
+        "R048",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0180": [
+      [
+        "",
+        "CL_G",
+        "R049",
+        "Shared bathroom",
+        "hot water consumption",
+        "Shower"
+      ]
+    ],
+    "S0181": [
+      [
+        "",
+        "CL_G",
+        "R049",
+        "Shared bathroom",
+        "cold water consumption",
+        "Shower"
+      ]
+    ],
+    "S0182": [
+      [
+        "",
+        "CL_G",
+        "R048",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0183": [
+      [
+        "",
+        "CL_G",
+        "R049",
+        "Shared bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0184": [
+      [
+        "APT_015",
+        "CL_G",
+        "R045",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0185": [
+      [
+        "APT_008",
+        "CL_G",
+        "R043",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0186": [
+      [
+        "APT_008",
+        "CL_G",
+        "R043",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0187": [
+      [
+        "APT_011",
+        "CL_G",
+        "R044",
+        "Living room",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0188": [
+      [
+        "APT_011",
+        "CL_G",
+        "R044",
+        "Living room",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0189": [
+      [
+        "APT_011",
+        "CL_G",
+        "R044",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0190": [
+      [
+        "APT_011",
+        "CL_G",
+        "R044",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0191": [
+      [
+        "APT_008",
+        "CL_G",
+        "R043",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0192": [
+      [
+        "APT_008",
+        "CL_G",
+        "R043",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0193": [
+      [
+        "APT_021",
+        "CL_G",
+        "R042",
+        "Living room",
+        "hot water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0194": [
+      [
+        "APT_021",
+        "CL_G",
+        "R042",
+        "Living room",
+        "cold water consumption",
+        "Kitchen tap"
+      ]
+    ],
+    "S0195": [
+      [
+        "APT_008",
+        "CL_G",
+        "R043",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0196": [
+      [
+        "APT_011",
+        "CL_G",
+        "R044",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0197": [
+      [
+        "APT_021",
+        "CL_G",
+        "R042",
+        "Living room",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0198": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0199": [
+      [
+        "",
+        "",
+        "R002",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0200": [
+      [
+        "",
+        "",
+        "R002",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0201": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "hot water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0202": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0203": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "hot water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0204": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0205": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "hot water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0206": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0207": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washing machine"
+      ]
+    ],
+    "S0208": [
+      [
+        "",
+        "",
+        "R003",
+        "Bathroom",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0209": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0210": [
+      [
+        "",
+        "",
+        "R001",
+        "Laundry studio",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0211": [
+      [
+        "",
+        "",
+        "R004",
+        "Cleaning",
+        "cold water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0212": [
+      [
+        "",
+        "",
+        "R003",
+        "Bathroom",
+        "cold water consumption",
+        "Toilet"
+      ]
+    ],
+    "S0213": [
+      [
+        "",
+        "",
+        "R002",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ],
+    "S0214": [
+      [
+        "",
+        "",
+        "R003",
+        "Bathroom",
+        "hot water consumption",
+        "Washbasin"
+      ]
+    ]
+  },
+  "sensors_with_multiple_location_or_fixture_tuples": 0
+}

@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import { readFileSync, realpathSync } from 'node:fs';
+import { persistBatch } from '../../apps/server/src/services/persist-batch.js';
+import { assertModeSelection, loadBenchmarkModule, verifyBenchmarkInputs } from './mode.js';
+
+const baseline = await loadBenchmarkModule('baseline');
+const final = await loadBenchmarkModule('final');
+assert.notEqual(baseline.path, final.path);
+assert.notEqual(baseline.sha256, final.sha256);
+assert.notEqual(baseline.createIngestApp, final.createIngestApp);
+assert.equal(baseline.path, realpathSync('tools/bench/baseline-source/ingest.ts'));
+assert.equal(final.path, realpathSync('apps/server/src/ingest.ts'));
+assert.ok(/for\(const\{index,event\}of valid\)/.test(baseline.createIngestApp.toString()), 'baseline executes the per-event loop');
+assert.ok(/sourceEventRoutes/.test(final.createIngestApp.toString()), 'final mounts the source-event router');
+assert.ok(/candidates=new Map/.test(persistBatch.toString()), 'final persistence builds one batched candidate insert');
+assert.throws(() => assertModeSelection('baseline', final.path, readFileSync(final.path, 'utf8')), /wrong ingestion module/);
+assert.throws(() => assertModeSelection('final', baseline.path, readFileSync(baseline.path, 'utf8')), /wrong ingestion module/);
+const inputs = verifyBenchmarkInputs();
+assert.equal(inputs.find(x => x.path.endsWith('/baseline-source/hsb.ts'))?.sha256, inputs.find(x => x.path.endsWith('/shared/src/hsb.ts'))?.sha256);
+assert.equal(inputs.find(x => x.path.endsWith('/baseline-source/003_ingestion_batches.sql'))?.sha256, inputs.find(x => x.path.endsWith('/db/migrations/003_ingestion_batches.sql'))?.sha256);
+console.log('Benchmark mode selection and pinned inputs verified');

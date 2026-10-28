@@ -1,0 +1,628 @@
+{
+  "frozenAt": "2026-10-28",
+  "provenance": "fictional_billing_explanation_cases",
+  "currency": "INR",
+  "minorUnit": "paise",
+  "cases": [
+    {
+      "id": "fictional-01",
+      "label": "first_statement",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000001",
+        "revisionId": "10000000-0000-4000-8000-000000000001",
+        "current": {
+          "variableMinor": "300",
+          "fixedMinor": "100",
+          "sharedMinor": "20",
+          "totalMinor": "420"
+        },
+        "previous": null
+      }
+    },
+    {
+      "id": "fictional-02",
+      "label": "higher_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000002",
+        "revisionId": "10000000-0000-4000-8000-000000000002",
+        "current": {
+          "variableMinor": "352",
+          "fixedMinor": "101",
+          "sharedMinor": "21",
+          "totalMinor": "474"
+        },
+        "previous": {
+          "variableMinor": "301",
+          "fixedMinor": "101",
+          "sharedMinor": "21",
+          "totalMinor": "423"
+        }
+      }
+    },
+    {
+      "id": "fictional-03",
+      "label": "lower_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000003",
+        "revisionId": "10000000-0000-4000-8000-000000000003",
+        "current": {
+          "variableMinor": "252",
+          "fixedMinor": "102",
+          "sharedMinor": "22",
+          "totalMinor": "376"
+        },
+        "previous": {
+          "variableMinor": "302",
+          "fixedMinor": "102",
+          "sharedMinor": "22",
+          "totalMinor": "426"
+        }
+      }
+    },
+    {
+      "id": "fictional-04",
+      "label": "higher_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000004",
+        "revisionId": "10000000-0000-4000-8000-000000000004",
+        "current": {
+          "variableMinor": "303",
+          "fixedMinor": "156",
+          "sharedMinor": "23",
+          "totalMinor": "482"
+        },
+        "previous": {
+          "variableMinor": "303",
+          "fixedMinor": "103",
+          "sharedMinor": "23",
+          "totalMinor": "429"
+        }
+      }
+    },
+    {
+      "id": "fictional-05",
+      "label": "lower_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000005",
+        "revisionId": "10000000-0000-4000-8000-000000000005",
+        "current": {
+          "variableMinor": "304",
+          "fixedMinor": "54",
+          "sharedMinor": "24",
+          "totalMinor": "382"
+        },
+        "previous": {
+          "variableMinor": "304",
+          "fixedMinor": "104",
+          "sharedMinor": "24",
+          "totalMinor": "432"
+        }
+      }
+    },
+    {
+      "id": "fictional-06",
+      "label": "higher_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000006",
+        "revisionId": "10000000-0000-4000-8000-000000000006",
+        "current": {
+          "variableMinor": "305",
+          "fixedMinor": "105",
+          "sharedMinor": "80",
+          "totalMinor": "490"
+        },
+        "previous": {
+          "variableMinor": "305",
+          "fixedMinor": "105",
+          "sharedMinor": "25",
+          "totalMinor": "435"
+        }
+      }
+    },
+    {
+      "id": "fictional-07",
+      "label": "lower_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000007",
+        "revisionId": "10000000-0000-4000-8000-000000000007",
+        "current": {
+          "variableMinor": "306",
+          "fixedMinor": "106",
+          "sharedMinor": "0",
+          "totalMinor": "412"
+        },
+        "previous": {
+          "variableMinor": "306",
+          "fixedMinor": "106",
+          "sharedMinor": "26",
+          "totalMinor": "438"
+        }
+      }
+    },
+    {
+      "id": "fictional-08",
+      "label": "unchanged",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000008",
+        "revisionId": "10000000-0000-4000-8000-000000000008",
+        "current": {
+          "variableMinor": "307",
+          "fixedMinor": "107",
+          "sharedMinor": "27",
+          "totalMinor": "441"
+        },
+        "previous": {
+          "variableMinor": "307",
+          "fixedMinor": "107",
+          "sharedMinor": "27",
+          "totalMinor": "441"
+        }
+      }
+    },
+    {
+      "id": "fictional-09",
+      "label": "first_statement",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000009",
+        "revisionId": "10000000-0000-4000-8000-000000000009",
+        "current": {
+          "variableMinor": "308",
+          "fixedMinor": "108",
+          "sharedMinor": "28",
+          "totalMinor": "444"
+        },
+        "previous": null
+      }
+    },
+    {
+      "id": "fictional-10",
+      "label": "higher_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000010",
+        "revisionId": "10000000-0000-4000-8000-000000000010",
+        "current": {
+          "variableMinor": "368",
+          "fixedMinor": "109",
+          "sharedMinor": "29",
+          "totalMinor": "506"
+        },
+        "previous": {
+          "variableMinor": "309",
+          "fixedMinor": "109",
+          "sharedMinor": "29",
+          "totalMinor": "447"
+        }
+      }
+    },
+    {
+      "id": "fictional-11",
+      "label": "lower_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000011",
+        "revisionId": "10000000-0000-4000-8000-000000000011",
+        "current": {
+          "variableMinor": "260",
+          "fixedMinor": "110",
+          "sharedMinor": "30",
+          "totalMinor": "400"
+        },
+        "previous": {
+          "variableMinor": "310",
+          "fixedMinor": "110",
+          "sharedMinor": "30",
+          "totalMinor": "450"
+        }
+      }
+    },
+    {
+      "id": "fictional-12",
+      "label": "higher_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000012",
+        "revisionId": "10000000-0000-4000-8000-000000000012",
+        "current": {
+          "variableMinor": "311",
+          "fixedMinor": "172",
+          "sharedMinor": "31",
+          "totalMinor": "514"
+        },
+        "previous": {
+          "variableMinor": "311",
+          "fixedMinor": "111",
+          "sharedMinor": "31",
+          "totalMinor": "453"
+        }
+      }
+    },
+    {
+      "id": "fictional-13",
+      "label": "lower_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000013",
+        "revisionId": "10000000-0000-4000-8000-000000000013",
+        "current": {
+          "variableMinor": "312",
+          "fixedMinor": "62",
+          "sharedMinor": "32",
+          "totalMinor": "406"
+        },
+        "previous": {
+          "variableMinor": "312",
+          "fixedMinor": "112",
+          "sharedMinor": "32",
+          "totalMinor": "456"
+        }
+      }
+    },
+    {
+      "id": "fictional-14",
+      "label": "higher_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000014",
+        "revisionId": "10000000-0000-4000-8000-000000000014",
+        "current": {
+          "variableMinor": "313",
+          "fixedMinor": "113",
+          "sharedMinor": "96",
+          "totalMinor": "522"
+        },
+        "previous": {
+          "variableMinor": "313",
+          "fixedMinor": "113",
+          "sharedMinor": "33",
+          "totalMinor": "459"
+        }
+      }
+    },
+    {
+      "id": "fictional-15",
+      "label": "lower_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000015",
+        "revisionId": "10000000-0000-4000-8000-000000000015",
+        "current": {
+          "variableMinor": "314",
+          "fixedMinor": "114",
+          "sharedMinor": "0",
+          "totalMinor": "428"
+        },
+        "previous": {
+          "variableMinor": "314",
+          "fixedMinor": "114",
+          "sharedMinor": "34",
+          "totalMinor": "462"
+        }
+      }
+    },
+    {
+      "id": "fictional-16",
+      "label": "unchanged",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000016",
+        "revisionId": "10000000-0000-4000-8000-000000000016",
+        "current": {
+          "variableMinor": "315",
+          "fixedMinor": "115",
+          "sharedMinor": "35",
+          "totalMinor": "465"
+        },
+        "previous": {
+          "variableMinor": "315",
+          "fixedMinor": "115",
+          "sharedMinor": "35",
+          "totalMinor": "465"
+        }
+      }
+    },
+    {
+      "id": "fictional-17",
+      "label": "first_statement",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000017",
+        "revisionId": "10000000-0000-4000-8000-000000000017",
+        "current": {
+          "variableMinor": "316",
+          "fixedMinor": "116",
+          "sharedMinor": "36",
+          "totalMinor": "468"
+        },
+        "previous": null
+      }
+    },
+    {
+      "id": "fictional-18",
+      "label": "higher_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000018",
+        "revisionId": "10000000-0000-4000-8000-000000000018",
+        "current": {
+          "variableMinor": "384",
+          "fixedMinor": "117",
+          "sharedMinor": "37",
+          "totalMinor": "538"
+        },
+        "previous": {
+          "variableMinor": "317",
+          "fixedMinor": "117",
+          "sharedMinor": "37",
+          "totalMinor": "471"
+        }
+      }
+    },
+    {
+      "id": "fictional-19",
+      "label": "lower_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000019",
+        "revisionId": "10000000-0000-4000-8000-000000000019",
+        "current": {
+          "variableMinor": "268",
+          "fixedMinor": "118",
+          "sharedMinor": "38",
+          "totalMinor": "424"
+        },
+        "previous": {
+          "variableMinor": "318",
+          "fixedMinor": "118",
+          "sharedMinor": "38",
+          "totalMinor": "474"
+        }
+      }
+    },
+    {
+      "id": "fictional-20",
+      "label": "higher_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000020",
+        "revisionId": "10000000-0000-4000-8000-000000000020",
+        "current": {
+          "variableMinor": "319",
+          "fixedMinor": "188",
+          "sharedMinor": "39",
+          "totalMinor": "546"
+        },
+        "previous": {
+          "variableMinor": "319",
+          "fixedMinor": "119",
+          "sharedMinor": "39",
+          "totalMinor": "477"
+        }
+      }
+    },
+    {
+      "id": "fictional-21",
+      "label": "lower_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000021",
+        "revisionId": "10000000-0000-4000-8000-000000000021",
+        "current": {
+          "variableMinor": "320",
+          "fixedMinor": "70",
+          "sharedMinor": "40",
+          "totalMinor": "430"
+        },
+        "previous": {
+          "variableMinor": "320",
+          "fixedMinor": "120",
+          "sharedMinor": "40",
+          "totalMinor": "480"
+        }
+      }
+    },
+    {
+      "id": "fictional-22",
+      "label": "higher_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000022",
+        "revisionId": "10000000-0000-4000-8000-000000000022",
+        "current": {
+          "variableMinor": "321",
+          "fixedMinor": "121",
+          "sharedMinor": "112",
+          "totalMinor": "554"
+        },
+        "previous": {
+          "variableMinor": "321",
+          "fixedMinor": "121",
+          "sharedMinor": "41",
+          "totalMinor": "483"
+        }
+      }
+    },
+    {
+      "id": "fictional-23",
+      "label": "lower_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000023",
+        "revisionId": "10000000-0000-4000-8000-000000000023",
+        "current": {
+          "variableMinor": "322",
+          "fixedMinor": "122",
+          "sharedMinor": "0",
+          "totalMinor": "444"
+        },
+        "previous": {
+          "variableMinor": "322",
+          "fixedMinor": "122",
+          "sharedMinor": "42",
+          "totalMinor": "486"
+        }
+      }
+    },
+    {
+      "id": "fictional-24",
+      "label": "unchanged",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000024",
+        "revisionId": "10000000-0000-4000-8000-000000000024",
+        "current": {
+          "variableMinor": "323",
+          "fixedMinor": "123",
+          "sharedMinor": "43",
+          "totalMinor": "489"
+        },
+        "previous": {
+          "variableMinor": "323",
+          "fixedMinor": "123",
+          "sharedMinor": "43",
+          "totalMinor": "489"
+        }
+      }
+    },
+    {
+      "id": "fictional-25",
+      "label": "first_statement",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000025",
+        "revisionId": "10000000-0000-4000-8000-000000000025",
+        "current": {
+          "variableMinor": "324",
+          "fixedMinor": "124",
+          "sharedMinor": "44",
+          "totalMinor": "492"
+        },
+        "previous": null
+      }
+    },
+    {
+      "id": "fictional-26",
+      "label": "higher_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000026",
+        "revisionId": "10000000-0000-4000-8000-000000000026",
+        "current": {
+          "variableMinor": "400",
+          "fixedMinor": "125",
+          "sharedMinor": "45",
+          "totalMinor": "570"
+        },
+        "previous": {
+          "variableMinor": "325",
+          "fixedMinor": "125",
+          "sharedMinor": "45",
+          "totalMinor": "495"
+        }
+      }
+    },
+    {
+      "id": "fictional-27",
+      "label": "lower_variable_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000027",
+        "revisionId": "10000000-0000-4000-8000-000000000027",
+        "current": {
+          "variableMinor": "276",
+          "fixedMinor": "126",
+          "sharedMinor": "46",
+          "totalMinor": "448"
+        },
+        "previous": {
+          "variableMinor": "326",
+          "fixedMinor": "126",
+          "sharedMinor": "46",
+          "totalMinor": "498"
+        }
+      }
+    },
+    {
+      "id": "fictional-28",
+      "label": "higher_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000028",
+        "revisionId": "10000000-0000-4000-8000-000000000028",
+        "current": {
+          "variableMinor": "327",
+          "fixedMinor": "204",
+          "sharedMinor": "47",
+          "totalMinor": "578"
+        },
+        "previous": {
+          "variableMinor": "327",
+          "fixedMinor": "127",
+          "sharedMinor": "47",
+          "totalMinor": "501"
+        }
+      }
+    },
+    {
+      "id": "fictional-29",
+      "label": "lower_fixed_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000029",
+        "revisionId": "10000000-0000-4000-8000-000000000029",
+        "current": {
+          "variableMinor": "328",
+          "fixedMinor": "78",
+          "sharedMinor": "48",
+          "totalMinor": "454"
+        },
+        "previous": {
+          "variableMinor": "328",
+          "fixedMinor": "128",
+          "sharedMinor": "48",
+          "totalMinor": "504"
+        }
+      }
+    },
+    {
+      "id": "fictional-30",
+      "label": "higher_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000030",
+        "revisionId": "10000000-0000-4000-8000-000000000030",
+        "current": {
+          "variableMinor": "329",
+          "fixedMinor": "129",
+          "sharedMinor": "128",
+          "totalMinor": "586"
+        },
+        "previous": {
+          "variableMinor": "329",
+          "fixedMinor": "129",
+          "sharedMinor": "49",
+          "totalMinor": "507"
+        }
+      }
+    },
+    {
+      "id": "fictional-31",
+      "label": "lower_shared_charge",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000031",
+        "revisionId": "10000000-0000-4000-8000-000000000031",
+        "current": {
+          "variableMinor": "330",
+          "fixedMinor": "130",
+          "sharedMinor": "0",
+          "totalMinor": "460"
+        },
+        "previous": {
+          "variableMinor": "330",
+          "fixedMinor": "130",
+          "sharedMinor": "50",
+          "totalMinor": "510"
+        }
+      }
+    },
+    {
+      "id": "fictional-32",
+      "label": "unchanged",
+      "facts": {
+        "statementId": "00000000-0000-4000-8000-000000000032",
+        "revisionId": "10000000-0000-4000-8000-000000000032",
+        "current": {
+          "variableMinor": "331",
+          "fixedMinor": "131",
+          "sharedMinor": "51",
+          "totalMinor": "513"
+        },
+        "previous": {
+          "variableMinor": "331",
+          "fixedMinor": "131",
+          "sharedMinor": "51",
+          "totalMinor": "513"
+        }
+      }
+    }
+  ]
+}

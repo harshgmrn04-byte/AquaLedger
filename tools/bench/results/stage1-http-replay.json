@@ -1,0 +1,13 @@
+{
+  "before": 1000,
+  "after": 1000,
+  "newRows": 0,
+  "counts": {
+    "accepted": 0,
+    "duplicate": 1000,
+    "conflict": 0,
+    "rejected": 0
+  },
+  "manifestId": "1",
+  "adapterVersion": "hsb-event-1.0.0"
+}

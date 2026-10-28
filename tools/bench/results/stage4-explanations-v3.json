@@ -1,0 +1,1261 @@
+{
+  "evaluatedAt": "2026-10-28T01:52:47.289Z",
+  "provenance": "fictional_billing_explanation_cases",
+  "frozenCaseSha256": "c14b04b404c2b7cf1d98d02be8fe512012edddd7a4b1b53ec4b5f7b3324c8554",
+  "model": "openai/gpt-oss-20b",
+  "promptVersion": "fictional-statement-reasons-v3",
+  "caseCount": 32,
+  "template": {
+    "correct": 32,
+    "total": 32
+  },
+  "groq": {
+    "attempted": 32,
+    "accepted": 28,
+    "correct": 28,
+    "rawPrimaryReasonAgreement": 32,
+    "total": 32,
+    "fallbacks": 4,
+    "rejectedOutputs": 4,
+    "actualHttpCalls": 32
+  },
+  "cache": {
+    "callsAvoided": 0,
+    "tokensAvoided": 0,
+    "note": "This case-level comparison does not repeat statements; endpoint cache is tested separately."
+  },
+  "cases": [
+    {
+      "id": "fictional-01",
+      "expectedPrimaryReason": "first_statement",
+      "template": {
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first published statement for this period."
+        },
+        "latencyMs": 0.043,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first billing statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"first_statement\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"This is the first billing statement.\"}",
+            "promptTokens": 392,
+            "completionTokens": 73,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 707.809,
+        "attempts": 1,
+        "promptTokens": 392,
+        "completionTokens": 73
+      }
+    },
+    {
+      "id": "fictional-02",
+      "expectedPrimaryReason": "higher_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.271,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 84,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 387.115,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 84
+      }
+    },
+    {
+      "id": "fictional-03",
+      "expectedPrimaryReason": "lower_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.101,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 95,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 670.464,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 95
+      }
+    },
+    {
+      "id": "fictional-04",
+      "expectedPrimaryReason": "higher_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.046,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 89,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 567.552,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 89
+      }
+    },
+    {
+      "id": "fictional-05",
+      "expectedPrimaryReason": "lower_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.171,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge has decreased compared to the previous statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge has decreased compared to the previous statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 96,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 547.377,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 96
+      }
+    },
+    {
+      "id": "fictional-06",
+      "expectedPrimaryReason": "higher_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.067,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 96,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 410.492,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 96
+      }
+    },
+    {
+      "id": "fictional-07",
+      "expectedPrimaryReason": "lower_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.075,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 113,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 581.09,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 113
+      }
+    },
+    {
+      "id": "fictional-08",
+      "expectedPrimaryReason": "unchanged",
+      "template": {
+        "output": {
+          "primaryReason": "unchanged",
+          "factRefs": [
+            "current_total_minor",
+            "previous_total_minor"
+          ],
+          "summary": "The charge components match the earlier published statement."
+        },
+        "latencyMs": 0.023,
+        "correct": true
+      },
+      "groq": {
+        "status": "fallback",
+        "category": "unsupported_fact_reference",
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"unchanged\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"The current and previous charges are identical, so no change has occurred.\"}",
+            "promptTokens": 443,
+            "completionTokens": 63,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 571.325
+      }
+    },
+    {
+      "id": "fictional-09",
+      "expectedPrimaryReason": "first_statement",
+      "template": {
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first published statement for this period."
+        },
+        "latencyMs": 0.041,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first billing statement for the account."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"first_statement\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"This is the first billing statement for the account.\"}",
+            "promptTokens": 392,
+            "completionTokens": 76,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 636.196,
+        "attempts": 1,
+        "promptTokens": 392,
+        "completionTokens": 76
+      }
+    },
+    {
+      "id": "fictional-10",
+      "expectedPrimaryReason": "higher_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.039,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 93,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 779.078,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 93
+      }
+    },
+    {
+      "id": "fictional-11",
+      "expectedPrimaryReason": "lower_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.025,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 92,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 530.257,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 92
+      }
+    },
+    {
+      "id": "fictional-12",
+      "expectedPrimaryReason": "higher_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.221,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 92,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 222.957,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 92
+      }
+    },
+    {
+      "id": "fictional-13",
+      "expectedPrimaryReason": "lower_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.142,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge has decreased compared to the previous statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge has decreased compared to the previous statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 96,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 626.177,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 96
+      }
+    },
+    {
+      "id": "fictional-14",
+      "expectedPrimaryReason": "higher_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.015,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared portion of the bill increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared portion of the bill increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 90,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 515.658,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 90
+      }
+    },
+    {
+      "id": "fictional-15",
+      "expectedPrimaryReason": "lower_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 2.059,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 90,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 586.504,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 90
+      }
+    },
+    {
+      "id": "fictional-16",
+      "expectedPrimaryReason": "unchanged",
+      "template": {
+        "output": {
+          "primaryReason": "unchanged",
+          "factRefs": [
+            "current_total_minor",
+            "previous_total_minor"
+          ],
+          "summary": "The charge components match the earlier published statement."
+        },
+        "latencyMs": 0.032,
+        "correct": true
+      },
+      "groq": {
+        "status": "fallback",
+        "category": "unsupported_fact_reference",
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"unchanged\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"The current and previous charges are identical, so no change has occurred.\"}",
+            "promptTokens": 443,
+            "completionTokens": 61,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 482.073
+      }
+    },
+    {
+      "id": "fictional-17",
+      "expectedPrimaryReason": "first_statement",
+      "template": {
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first published statement for this period."
+        },
+        "latencyMs": 0.026,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first billing statement for the account."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"first_statement\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"This is the first billing statement for the account.\"}",
+            "promptTokens": 392,
+            "completionTokens": 74,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 537.585,
+        "attempts": 1,
+        "promptTokens": 392,
+        "completionTokens": 74
+      }
+    },
+    {
+      "id": "fictional-18",
+      "expectedPrimaryReason": "higher_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.037,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 84,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 645.083,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 84
+      }
+    },
+    {
+      "id": "fictional-19",
+      "expectedPrimaryReason": "lower_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.053,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 82,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 589.569,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 82
+      }
+    },
+    {
+      "id": "fictional-20",
+      "expectedPrimaryReason": "higher_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.047,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 93,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 659.369,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 93
+      }
+    },
+    {
+      "id": "fictional-21",
+      "expectedPrimaryReason": "lower_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.061,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge has decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge has decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 96,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 620.08,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 96
+      }
+    },
+    {
+      "id": "fictional-22",
+      "expectedPrimaryReason": "higher_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.051,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 87,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 205.044,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 87
+      }
+    },
+    {
+      "id": "fictional-23",
+      "expectedPrimaryReason": "lower_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.043,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge decreased, making it the largest change."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge decreased, making it the largest change.\"}",
+            "promptTokens": 443,
+            "completionTokens": 115,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 421.567,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 115
+      }
+    },
+    {
+      "id": "fictional-24",
+      "expectedPrimaryReason": "unchanged",
+      "template": {
+        "output": {
+          "primaryReason": "unchanged",
+          "factRefs": [
+            "current_total_minor",
+            "previous_total_minor"
+          ],
+          "summary": "The charge components match the earlier published statement."
+        },
+        "latencyMs": 0.16,
+        "correct": true
+      },
+      "groq": {
+        "status": "fallback",
+        "category": "unsupported_fact_reference",
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"unchanged\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"The current and previous charges are identical, so no change has occurred.\"}",
+            "promptTokens": 443,
+            "completionTokens": 61,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 186.32
+      }
+    },
+    {
+      "id": "fictional-25",
+      "expectedPrimaryReason": "first_statement",
+      "template": {
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first published statement for this period."
+        },
+        "latencyMs": 0.031,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "first_statement",
+          "factRefs": [
+            "current_total_minor"
+          ],
+          "summary": "This is the first billing statement for the account."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"first_statement\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"This is the first billing statement for the account.\"}",
+            "promptTokens": 392,
+            "completionTokens": 75,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 541.264,
+        "attempts": 1,
+        "promptTokens": 392,
+        "completionTokens": 75
+      }
+    },
+    {
+      "id": "fictional-26",
+      "expectedPrimaryReason": "higher_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.101,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 84,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 480.255,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 84
+      }
+    },
+    {
+      "id": "fictional-27",
+      "expectedPrimaryReason": "lower_variable_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.076,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_variable_charge",
+          "factRefs": [
+            "current_variable_minor",
+            "previous_variable_minor"
+          ],
+          "summary": "The variable charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_variable_charge\",\"factRefs\":[\"current_variable_minor\",\"previous_variable_minor\"],\"summary\":\"The variable charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 102,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 611.844,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 102
+      }
+    },
+    {
+      "id": "fictional-28",
+      "expectedPrimaryReason": "higher_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.084,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 92,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 618.366,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 92
+      }
+    },
+    {
+      "id": "fictional-29",
+      "expectedPrimaryReason": "lower_fixed_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 0.179,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_fixed_charge",
+          "factRefs": [
+            "current_fixed_minor",
+            "previous_fixed_minor"
+          ],
+          "summary": "The fixed charge has decreased compared to the previous statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_fixed_charge\",\"factRefs\":[\"current_fixed_minor\",\"previous_fixed_minor\"],\"summary\":\"The fixed charge has decreased compared to the previous statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 97,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 339.698,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 97
+      }
+    },
+    {
+      "id": "fictional-30",
+      "expectedPrimaryReason": "higher_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 44.561,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "higher_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge increased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"higher_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge increased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 96,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 558.531,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 96
+      }
+    },
+    {
+      "id": "fictional-31",
+      "expectedPrimaryReason": "lower_shared_charge",
+      "template": {
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge is the largest change from the earlier published statement."
+        },
+        "latencyMs": 1.636,
+        "correct": true
+      },
+      "groq": {
+        "status": "accepted",
+        "output": {
+          "primaryReason": "lower_shared_charge",
+          "factRefs": [
+            "current_shared_minor",
+            "previous_shared_minor"
+          ],
+          "summary": "The shared charge decreased compared to the prior statement."
+        },
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"lower_shared_charge\",\"factRefs\":[\"current_shared_minor\",\"previous_shared_minor\"],\"summary\":\"The shared charge decreased compared to the prior statement.\"}",
+            "promptTokens": 443,
+            "completionTokens": 90,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 807.59,
+        "attempts": 1,
+        "promptTokens": 443,
+        "completionTokens": 90
+      }
+    },
+    {
+      "id": "fictional-32",
+      "expectedPrimaryReason": "unchanged",
+      "template": {
+        "output": {
+          "primaryReason": "unchanged",
+          "factRefs": [
+            "current_total_minor",
+            "previous_total_minor"
+          ],
+          "summary": "The charge components match the earlier published statement."
+        },
+        "latencyMs": 0.038,
+        "correct": true
+      },
+      "groq": {
+        "status": "fallback",
+        "category": "unsupported_fact_reference",
+        "rawResponses": [
+          {
+            "status": 200,
+            "content": "{\"primaryReason\":\"unchanged\",\"factRefs\":[\"current_total_minor\"],\"summary\":\"The current and previous charges are identical, so no change has occurred.\"}",
+            "promptTokens": 443,
+            "completionTokens": 63,
+            "errorCode": null
+          }
+        ],
+        "latencyMs": 331.346
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+
+> verify
+> npm run lint && npm run typecheck && npm run db:check && npm test && npm run bench:check && npm run build
+
+
+> lint
+> eslint apps packages tools/import-hsb tools/bench/*.ts vitest.config.mts
+
+
+> typecheck
+> npm run typecheck --workspaces --if-present
+
+
+> @water/server@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/web@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/db@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/shared@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/import-hsb@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> @water/bench@0.0.0 typecheck
+> tsc -p tsconfig.json
+
+
+> db:check
+> node --import tsx packages/db/src/check.ts
+
+Runtime role can read app data and cannot create tables or use public schema
+
+> test
+> npm run build --workspace=@water/shared && vitest run
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+ RUN  v5.0.5 /Users/harsh/Projects/Smart-Water-Sub-Meter-Platform
+
+
+ Test Files  3 passed (3)
+      Tests  11 passed (11)
+   Start at  04:00:43
+   Duration  485ms (tests 50%, import 34%, transform 14%, worker 1%)
+
+
+> bench:check
+> npm run build --workspace=@water/shared && node --import tsx tools/bench/mode-check.ts
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+Benchmark mode selection and pinned inputs verified
+
+> build
+> npm run build --workspace=@water/shared && npm run build --workspace=@water/db && npm run build --workspace=@water/server && npm run build --workspace=@water/web && npm run build --workspace=@water/import-hsb
+
+
+> @water/shared@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/db@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/server@0.0.0 build
+> tsc -p tsconfig.build.json
+
+
+> @water/web@0.0.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 14 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  0.28 kB │ gzip:  0.22 kB
+dist/assets/index-DH64FC1z.js  220.16 kB │ gzip: 68.90 kB
+
+✓ built in 61ms
+
+> @water/import-hsb@0.0.0 build
+> tsc -p tsconfig.build.json
+

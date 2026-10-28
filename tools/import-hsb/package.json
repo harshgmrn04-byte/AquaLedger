@@ -1,0 +1,19 @@
+{
+  "name": "@water/import-hsb",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@water/shared": "0.0.0",
+    "csv-parse": "7.0.3",
+    "pg": "8.23.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/pg": "8.23.1"
+  },
+  "version": "0.0.0"
+}

@@ -1,0 +1,31 @@
+                  id                  |  status   |       superseded_by_period_id        
+--------------------------------------+-----------+--------------------------------------
+ 3f70123c-b763-4803-86b8-69b0607c2bc3 | published | 
+ 6a0078c4-dc7c-4b3d-847e-877232c8f6c1 | published | 3f70123c-b763-4803-86b8-69b0607c2bc3
+(2 rows)
+
+ revisions 
+-----------
+         3
+(1 row)
+
+ statements 
+------------
+          6
+(1 row)
+
+ statement_lines 
+-----------------
+              18
+(1 row)
+
+ audit_events 
+--------------
+            4
+(1 row)
+
+ active_duplicate_windows 
+--------------------------
+                        0
+(1 row)
+
