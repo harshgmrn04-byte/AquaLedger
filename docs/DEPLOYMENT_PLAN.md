@@ -1,7 +1,7 @@
 # Deployment plan — portfolio release
 
 **Prepared:** 2026-10-28  
-**Status:** Supabase/Groq account checks and local API smoke passed; Render deployment and GitHub Actions remain pending.  
+**Status:** Supabase/Groq account checks, Render Free deployment, green GitHub Actions, and deployed smoke passed; idle cold-start timing/final gate review pending.
 **Target:** A public, read-only portfolio demo at ₹0 using Render Free for Express and React, Supabase Free for PostgreSQL and Auth, and Groq Free for explanations. A manager login may exercise the fictional billing walkthrough, but public visitors cannot mutate data.
 
 This is the executable Stage 4 handoff for [v4](../WATER_METERING_BUILD_PLAN_v4.md). Recheck provider capabilities and account-specific limits at deployment; resolve Q-04 in [QUESTIONS.md](QUESTIONS.md) with actual test results. Do not interpret a local test or a published free-tier page as proof that this account's cloud setup works.

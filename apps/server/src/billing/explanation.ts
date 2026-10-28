@@ -30,7 +30,7 @@ export function deterministicSelection(facts: Facts): Selection {
 
 export function validateSelection(raw: unknown, facts: Facts): Selection {
   const value = selectionSchema.parse(raw);
-  if (/[0-9₹$€£]|\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|hundred|thousand|million|percent|percentage)\b/i.test(value.summary)) throw new Error('numeric_model_text');
+  if (/[0-9₹$€£]|\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|billion|lakh|crore|rupee|rupees|paisa|paise|percent|percentage|second|third|fourth|fifth)\b/i.test(value.summary)) throw new Error('numeric_model_text');
   if (value.primaryReason !== primaryReason(facts)) throw new Error('unsupported_reason');
   for (const ref of value.factRefs) if (ref.startsWith('previous_') && !facts.previous) throw new Error('unsupported_fact_reference');
   const required = deterministicSelection(facts).factRefs;

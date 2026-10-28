@@ -1,0 +1,145 @@
+{
+  "kind": "hosted Supabase plus local API smoke",
+  "observedAt": "2026-10-28T02:17:27.101Z",
+  "api": "https://aqualedger-api.onrender.com",
+  "periodId": "56417cd7-a9a6-4bd1-af76-3443d488f693",
+  "checks": [
+    {
+      "check": "health",
+      "status": 200,
+      "ms": 303,
+      "requestId": "e64774da-ce79-464a-81e1-6b8895b252cd"
+    },
+    {
+      "check": "readiness",
+      "status": 200,
+      "ms": 814,
+      "requestId": "643eeab7-3ab8-4891-ab6f-d954abcc05cf"
+    },
+    {
+      "check": "anonymous profile denied",
+      "status": 401,
+      "ms": 66,
+      "requestId": "cff760fc-f6cf-4dc4-85bd-379729f5dd45",
+      "result": "missing_token"
+    },
+    {
+      "check": "manager profile",
+      "status": 200,
+      "ms": 778,
+      "requestId": "21033eaa-72d0-49f0-8fb7-ec1d530af5e8"
+    },
+    {
+      "check": "resident A profile",
+      "status": 200,
+      "ms": 261,
+      "requestId": "5aaf11e3-c231-4f13-be5e-831a11b48175"
+    },
+    {
+      "check": "resident B profile",
+      "status": 200,
+      "ms": 200,
+      "requestId": "20dc8580-e0fb-453e-b030-5b4e823d2fb5"
+    },
+    {
+      "check": "resident manager route denied",
+      "status": 403,
+      "ms": 141,
+      "requestId": "843a5f8b-4a61-4ae0-ab5c-b1eb69cf2991",
+      "result": "manager_required"
+    },
+    {
+      "check": "manager resident route denied",
+      "status": 403,
+      "ms": 129,
+      "requestId": "7e32e512-4f58-43a0-b945-71354aa131d2",
+      "result": "resident_required"
+    },
+    {
+      "check": "create fictional period",
+      "status": 409,
+      "ms": 372,
+      "requestId": "4845572a-df40-46e5-92d3-d82ce021fa44",
+      "result": "billing_period_exists"
+    },
+    {
+      "check": "list existing fictional periods",
+      "status": 200,
+      "ms": 212,
+      "requestId": "912e79bd-c8c0-4ea2-842a-9d4fbae3d13d"
+    },
+    {
+      "check": "resident A statement",
+      "status": 200,
+      "ms": 205,
+      "requestId": "167d79f3-a680-477e-98f9-c620cfd02f4c",
+      "revisionNumber": 2
+    },
+    {
+      "check": "resident B statement",
+      "status": 200,
+      "ms": 194,
+      "requestId": "108fa00a-45f8-4eca-90eb-a62533aa9dd0",
+      "revisionNumber": 2
+    },
+    {
+      "check": "resident A explanation revision 1",
+      "status": 200,
+      "ms": 259,
+      "requestId": "c4de1afc-6209-4aed-b982-8e2f1510b0f5",
+      "source": "cache",
+      "callsAvoided": 1
+    },
+    {
+      "check": "resident A explanation cache",
+      "status": 200,
+      "ms": 255,
+      "requestId": "aa2d8bf5-ab21-4dc9-a93f-b78bb7d69b38",
+      "source": "cache",
+      "callsAvoided": 1
+    },
+    {
+      "check": "resident A latest revision",
+      "status": 200,
+      "ms": 192,
+      "requestId": "c9e19799-36e1-4747-ad53-3887653bf776",
+      "revisionNumber": 2
+    },
+    {
+      "check": "resident A prior revision remains",
+      "status": 200,
+      "ms": 203,
+      "requestId": "95ac270d-4daf-440f-973a-b32307150cfc",
+      "revisionNumber": 1
+    },
+    {
+      "check": "resident A revision 2 explanation",
+      "status": 200,
+      "ms": 321,
+      "requestId": "661c740a-ea32-4323-b923-c647aba75e37",
+      "source": "cache",
+      "callsAvoided": 1
+    },
+    {
+      "check": "resident A revision 2 cache",
+      "status": 200,
+      "ms": 325,
+      "requestId": "157d4be5-a9ee-4d73-bbf3-1047872505fd",
+      "source": "cache",
+      "callsAvoided": 1
+    }
+  ],
+  "dataApiBoundary": [
+    {
+      "actor": "unauthenticated",
+      "status": 406,
+      "ms": 160
+    },
+    {
+      "actor": "authenticated resident",
+      "status": 406,
+      "ms": 143
+    }
+  ],
+  "groqHttpCallsAvoided": 4
+}

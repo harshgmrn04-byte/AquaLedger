@@ -58,8 +58,8 @@ Seeded fictional-only societies, flats, and profile IDs. No Auth users or HSB ro
 
  Test Files  6 passed (6)
       Tests  29 passed (29)
-   Start at  07:32:50
-   Duration  1.07s (import 48%, tests 48%, transform 4%, worker 1%)
+   Start at  07:59:53
+   Duration  751ms (tests 50%, import 42%, transform 8%, worker 1%)
 
 
 > bench:check
@@ -99,7 +99,7 @@ dist/index.html                   0.35 kB │ gzip:   0.26 kB
 dist/assets/index-Cma7YfLB.css    0.71 kB │ gzip:   0.38 kB
 dist/assets/index-BuQ-v6_M.js   390.42 kB │ gzip: 113.16 kB
 
-✓ built in 152ms
+✓ built in 116ms
 
 > @water/import-hsb@0.0.0 build
 > tsc -p tsconfig.build.json
@@ -108,18 +108,18 @@ dist/assets/index-BuQ-v6_M.js   390.42 kB │ gzip: 113.16 kB
 > test:e2e
 > playwright test
 
-(node:37994) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(node:41724) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[WebServer] (node:37997) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (node:41726) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 [WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
-[WebServer] (node:38035) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (node:41757) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 [WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
 
 Running 2 tests using 1 worker
-(node:38036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:41769) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:38036) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
-(node:38036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:41769) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(node:41769) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
 ··
-  2 passed (7.0s)
+  2 passed (5.6s)

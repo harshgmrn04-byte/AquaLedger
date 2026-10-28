@@ -1,0 +1,86 @@
+{
+  "observedAt": "2026-10-28T02:25:33.924Z",
+  "status": 200,
+  "requestedIds": 11,
+  "matchedIds": 11,
+  "entries": [
+    {
+      "requestId": "8285b9d9-37db-4e9c-989f-3d292efc1250",
+      "route": "/api/v1/me/statements/:id",
+      "status": 200,
+      "durationMs": 502.722824,
+      "failureCategory": null
+    },
+    {
+      "requestId": "46501500-1e7f-4d9d-9fe2-3403f61dee1a",
+      "route": "/api/v1/billing-periods/:id/revisions",
+      "status": 200,
+      "durationMs": 639.464427,
+      "failureCategory": null
+    },
+    {
+      "requestId": "4de93325-55b4-4533-bc4c-e1d3e8d19c3c",
+      "route": "/api/v1/billing-periods/:id",
+      "status": 200,
+      "durationMs": 131.737406,
+      "failureCategory": null
+    },
+    {
+      "requestId": "2a1c2864-05b3-4594-8e7a-7875a5afef7e",
+      "route": "/api/v1/billing-periods/:id/preview",
+      "status": 200,
+      "durationMs": 187.394909,
+      "failureCategory": null
+    },
+    {
+      "requestId": "4d5c5d2a-4407-43cc-b669-ffb697378925",
+      "route": "/api/v1/billing-periods/:id/publish",
+      "status": 200,
+      "durationMs": 1237.764416,
+      "failureCategory": null
+    },
+    {
+      "requestId": "b4c7cca8-b695-4232-b6fb-32ec60747db9",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 927.894797,
+      "failureCategory": null
+    },
+    {
+      "requestId": "a88fcd9a-ba91-4fee-a676-a9fcfa084ddd",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 187.949891,
+      "failureCategory": null
+    },
+    {
+      "requestId": "360981cf-8591-4c2d-9b60-241173aa7751",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 1305.452039,
+      "failureCategory": null
+    },
+    {
+      "requestId": "4a163815-6549-469e-a45c-6625e0a4d8b9",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 255.248302,
+      "failureCategory": null
+    },
+    {
+      "requestId": "9e082c7b-216f-4b6a-a56e-b21e5d12782b",
+      "route": "/api/v1/me/statements/:id/explanation",
+      "status": 200,
+      "durationMs": 274.146373,
+      "failureCategory": "groq_request_limit"
+    },
+    {
+      "requestId": "fc463e04-3de2-4e2b-bdd6-ce40e2d91437",
+      "route": "/api/v1/me/statements/:id",
+      "status": 200,
+      "durationMs": 140.104765,
+      "failureCategory": null
+    }
+  ],
+  "savedFields": "requestId, route, status, durationMs, failureCategory only"
+}

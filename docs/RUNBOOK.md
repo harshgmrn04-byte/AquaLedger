@@ -1,12 +1,13 @@
 # Stage 4 operational runbook
 
-**State on 2026-10-28:** local fault drill passed; hosted Supabase and Groq were account-tested; Render deployment remains pending. Evidence: [`stage4-fault-drill.json`](data/stage4-fault-drill.json), [hosted Supabase/local API smoke](data/stage4-hosted-local-api-smoke.json), [hosted HSB import](data/stage4-hosted-hsb-import.json), and [replay](data/stage4-hosted-hsb-replay.json). The database outage and Groq errors in the drill were injected locally. Its duplicate replay used a published HSB historical event from the verified 1,000-row subset; its billing preview used only the fictional fixture.
+**State on 2026-10-28:** the local fault drill and deployed API/React smoke passed on [Free API](https://aqualedger-api.onrender.com) and [static site](https://aqualedger-demo.onrender.com). Evidence: [`stage4-fault-drill.json`](data/stage4-fault-drill.json), [deployed API smoke](data/stage4-deployed-api-smoke.json), [browser smoke](data/stage4-deployed-web-smoke.json), [model/cache/fallback smoke](data/stage4-deployed-model-smoke.json), [bounded Render logs](data/stage4-render-log-evidence.json), [hosted HSB import](data/stage4-hosted-hsb-import.json), and [replay](data/stage4-hosted-hsb-replay.json). The database outage and Groq 429/timeout in the drill were injected locally. Its duplicate replay used a published HSB historical event from the verified 1,000-row subset; its billing preview used only the fictional fixture.
 
 ## First checks
 
 1. Copy the `X-Request-Id` response header and search the API's JSON logs for that exact request ID. The log contains route, status, duration, source batch ID, billing revision ID, and failure category. It must not contain tokens, database credentials, resident volume, or model prompts.
 2. Check `/healthz` for process availability and `/readyz` for PostgreSQL. A 200 health response with 503 readiness narrows the fault to the database path; both unavailable can mean Render is waking or the service failed to start.
 3. Check the Render service deployment and logs, Supabase project status and connection limits, and Groq usage/rate limits. Keep cold wake-up timing separate from warm requests.
+4. If the React site reports `Failed to fetch` after an origin change, check `WEB_ORIGIN` on the API against the site's exact HTTPS origin and verify a live response contains `Access-Control-Allow-Origin`. Render saved the correct value during this release but required a deploy-only restart of the existing build before the process used it. Do not add a wildcard CORS origin.
 
 ## Database unavailable
 

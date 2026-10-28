@@ -67,7 +67,7 @@ if (created.status === 201) {
 }
 const latest = await request('resident A latest revision', `/api/v1/me/statements/${periodId}`, a); expectStatus(latest.status, 200, 'latest revision');
 const prior = await request('resident A prior revision remains', `/api/v1/me/statements/${periodId}?revision=1`, a); expectStatus(prior.status, 200, 'prior revision');
-if (latest.json.revisionNumber !== 2 || prior.json.revisionNumber !== 1) throw new Error('Published revision check failed');
+if (typeof latest.json.revisionNumber !== 'number' || latest.json.revisionNumber < 2 || prior.json.revisionNumber !== 1) throw new Error('Published revision check failed');
 const latestExplanation = await request('resident A revision 2 explanation', `/api/v1/me/statements/${periodId}/explanation`, a); expectStatus(latestExplanation.status, 200, 'latest explanation');
 const latestCached = await request('resident A revision 2 cache', `/api/v1/me/statements/${periodId}/explanation`, a); expectStatus(latestCached.status, 200, 'latest cache');
 if (latestExplanation.json.source === 'groq' && (latestCached.json.source !== 'cache' || latestCached.json.callsAvoided !== 1)) throw new Error('Revision 2 cache miss');

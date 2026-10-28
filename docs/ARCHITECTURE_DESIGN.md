@@ -1,7 +1,7 @@
 # Smart Water Metering Platform — Architecture Design
 
 **Updated:** 2026-10-28
-**Status:** Stage 4 locally verified, deployment pending
+**Status:** Stage 4 deployed Free demo smoke passed; cold-start timing/final gate review pending
 **Authoritative requirements:** WATER_METERING_BUILD_PLAN_v4.md
 
 This living document records why the system is shaped as it is. Update it when implementation changes a boundary, invariant, source mapping, or deployment decision. Record measured behavior in PROGRESS.md and raw result files, not as an unsupported design claim here.
@@ -46,7 +46,7 @@ flowchart LR
 - The archive and importer are a data-ingestion boundary. The importer validates metadata, mappings, units, timestamps, and row identity before the Stage 2 API persists source events.
 - Groq receives only the authorized statement facts needed to select explanation reason codes. It cannot write bills, calculate charges, or access another resident's data.
 - Render hosts the API and static UI. Supabase hosts PostgreSQL/Auth. Local Docker PostgreSQL and tooling support repeatable tests and benchmarks.
-- The [Stage 4 deployment plan](DEPLOYMENT_PLAN.md) makes the hosted connection, small-seed, environment, smoke-check, and fallback boundaries explicit. Supabase's session pooler, managed privileges, Auth/JWKS, and private-schema denial were verified on this account; Render deployment remains a release gate.
+- The [Stage 4 deployment plan](DEPLOYMENT_PLAN.md) makes the hosted connection, small-seed, environment, smoke-check, and fallback boundaries explicit. Supabase's session pooler, managed privileges, Auth/JWKS, and private-schema denial were verified on this account. Render's Free API and static site served the same green commit and passed deployed role, revision, cache/fallback, and React smoke checks.
 
 ## Data flow 1 — Source audit and import
 
@@ -78,7 +78,7 @@ The API builds a minimal fact set from a resident's authorized published stateme
 
 Stage 4 implements this with Groq's documented strict JSON schema mode on `openai/gpt-oss-20b`, a two-attempt/3.5-second bound, per-process and per-resident minute limits, and forward-only migration 009. Only validated selections enter the private cache. The backend renders the visible explanation from its deterministic reason template and stored paise values. A model call starts only after the resident's published statement and prior revision have been read outside a transaction. The React page requests explanations only on a resident click. The static source-audit snapshot is labeled as archive information when the API is unavailable.
 
-Hosted configuration now accepts project-qualified runtime and migration usernames, a small TLS-enabled runtime pool, and an optional Supabase CA certificate. `db:hosted-prepare` is an explicit managed bootstrap that creates only the private schema and limited roles; it does not change Supabase's public/auth schemas. The local `db:setup` remains local-only. This account ran the managed bootstrap, applied migrations 001–009, and passed the runtime grant check. The hosted importer accepted only the checksum-verified 1,000-row prefix; replay added zero rows. Both anonymous and resident Data API requests for an `app` table returned HTTP 406. Render deployment still gates release.
+Hosted configuration now accepts project-qualified runtime and migration usernames, a small TLS-enabled runtime pool, and an optional Supabase CA certificate. `db:hosted-prepare` is an explicit managed bootstrap that creates only the private schema and limited roles; it does not change Supabase's public/auth schemas. The local `db:setup` remains local-only. This account ran the managed bootstrap, applied migrations 001–009, and passed the runtime grant check. The hosted importer accepted only the checksum-verified 1,000-row prefix; replay added zero rows. Both anonymous and resident Data API requests for an `app` table returned HTTP 406. Render runs the API on explicit Free compute and React on a Free static site; browser sign-in and cross-flat behavior were tested against the deployed services.
 
 ## Security and operations
 

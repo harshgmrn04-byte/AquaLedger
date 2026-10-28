@@ -1,0 +1,28 @@
+{
+  "observedAt": "2026-10-28T02:23:25.088Z",
+  "url": "https://aqualedger-demo.onrender.com",
+  "checks": [
+    {
+      "role": "manager",
+      "siteStatus": 200,
+      "signInMs": 2336,
+      "expectedPanel": true
+    },
+    {
+      "role": "resident A",
+      "siteStatus": 200,
+      "signInMs": 902,
+      "expectedPanel": true,
+      "ownStatementOnly": true,
+      "explanationVisible": true
+    },
+    {
+      "role": "resident B",
+      "siteStatus": 200,
+      "signInMs": 886,
+      "expectedPanel": true,
+      "ownStatementOnly": true
+    }
+  ],
+  "scope": "fictional Auth accounts and deployed React UI"
+}

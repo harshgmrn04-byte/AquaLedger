@@ -1,7 +1,7 @@
 # Smart Water Metering Platform — Progress
 
 **Updated:** 2026-10-28
-**Status:** Stage 4 implementation and hosted Supabase/Groq checks passed; Render deployment and release gate remain open
+**Status:** Stage 4 deployed smoke and green GitHub Actions passed; cold-start timing/final release review remain open
 **Source of truth:** WATER_METERING_BUILD_PLAN_v4.md in the repository root
 
 This is the handoff record for implementation across separate coding chats. Update it at the end of every phase and whenever a gate fails. A status of “done” requires evidence, not only code changes.
@@ -14,11 +14,11 @@ This is the handoff record for implementation across separate coding chats. Upda
 | Stage 1 — Data audit and foundation | Done, local gate passed | `docs/data/HSB_AUDIT.md`, profile/manifest JSON, frozen install, migrations/grant tests, `docs/data/stage1-verify.txt` |
 | Stage 2 — Reliable ingestion | Done, modular local gate passed | `RESULTS.md`, modular HTTP baseline/final JSON with executed module paths and SHA-256, mode-selection check, 12 passing tests, `docs/data/stage2-modular-refactor-verify.txt`; earlier raw evidence preserved |
 | Stage 3 — Billing and minimal UI | Done, repaired local gate passed | Migration 008, preserved-history inventories, 23 Vitest tests, 2 Playwright flows, `docs/data/stage3-duplicate-repair-verify.txt` |
-| Stage 4 — Groq, operations, release | In progress, gate open | [32-case Groq evaluation](../tools/bench/results/stage4-explanations-v4.json), [fault drill](data/stage4-fault-drill.json), [hosted Supabase/local API smoke](data/stage4-hosted-local-api-smoke.json); Render and deployed smoke pending |
+| Stage 4 — Groq, operations, release | In progress, gate open pending cold-start timing/final review | [32-case Groq evaluation](../tools/bench/results/stage4-explanations-v4.json), [fault drill](data/stage4-fault-drill.json), [deployed API](data/stage4-deployed-api-smoke.json), [React](data/stage4-deployed-web-smoke.json), [model/cache](data/stage4-deployed-model-smoke.json), [green CI/Free resources](data/stage4-release-resources.json) |
 
 ## Current focus
 
-Stage 4 now has a resident-authorized explanation endpoint, frozen fictional-case evaluation, local fault drill, tested hosted Supabase roles/Auth, and 1,000-row historical HSB subset import. The Render Free deployment and deployed smoke are still required. The 10,000 Stage 2 HTTP benchmark rows remain replayed historical HSB source events and are not coverage-certified billing readings.
+Stage 4 now has a resident-authorized explanation endpoint, frozen fictional-case evaluation, local fault drill, tested hosted Supabase roles/Auth, and 1,000-row historical HSB subset import. The Render Free API and static site are deployed and passed API, browser, revision, Groq, cache, and fallback smoke. Separate idle cold-start timing and final release review remain. The 10,000 Stage 2 HTTP benchmark rows remain replayed historical HSB source events and are not coverage-certified billing readings.
 
 ## Decisions and limitations
 
@@ -38,7 +38,7 @@ Stage 4 now has a resident-authorized explanation endpoint, frozen fictional-cas
 | Billing reconciliation and access control | Unmeasured | PostgreSQL integration tests and statement audit output |
 | Counterfactual allocation | HSB measured-billing route ruled out by source semantics | Separate labeled Stage 3 test fixture and explicit illustrative invoice assumptions |
 | Groq reason agreement and call reduction | 32/32 accepted/agreeing Groq outputs on frozen fictional cases; two actual repeat model calls avoided in hosted Supabase/local API smoke | `tools/bench/results/stage4-explanations-v4.json`, `docs/data/stage4-hosted-local-api-smoke.json` |
-| CI/operational diagnosis | `CI=true npm run verify` passes locally with 29 tests and two Playwright flows; injected drill records bounded request IDs and health/fallback/replay/stale-preview outcomes; GitHub Actions and deployed checks pending | `docs/data/stage4-verify-final.txt`, `docs/data/stage4-fault-drill.json` |
+| CI/operational diagnosis | `CI=true npm run verify` passes locally with 29 tests and two Playwright flows; actual GitHub Actions run 40619499702 succeeded for deployed commit 596f88f; injected drill and 11 matched deployed request-ID logs recorded | `docs/data/stage4-verify-final.txt`, `docs/data/stage4-fault-drill.json`, `docs/data/stage4-release-resources.json`, `docs/data/stage4-render-log-evidence.json` |
 
 ## End-of-chat handoff checklist
 
@@ -222,3 +222,11 @@ All exited 0. The [saved verification transcript](data/stage2-modular-refactor-v
 **Commands and outcomes:** `npm run db:hosted-prepare`, `npm run db:migrate`, `npm run db:check`, two bounded `npm run hsb:import -- --archive HSB_Living_Lab_Data_Package.zip --csv tools/import-hsb/fixtures/hsb-sample-1000.csv --limit 1000 --out ...` runs, `node --import tsx tools/fault-fixtures/create-hosted-auth-users.ts`, `npm run billing:seed-hosted`, and `node --import tsx tools/fault-fixtures/hosted-smoke.ts` exited 0 with hosted credentials in ignored `.env`. `CI=true npm run verify` with preserved local database credentials exited 0; [transcript](data/stage4-verify-final.txt) shows lint, types, grants, 29/29 Vitest tests, benchmark guard, builds, and 2/2 Playwright flows. The first verify attempt failed only because the hosted smoke API still held port 3001; it was stopped before the passing rerun. A pre-commit scan of 158 candidate files found zero local credential values and excluded `.env`, its backup, the root ZIP, and `data/raw/`.
 
 **Next action:** Obtain Render Free API/static-site capability, push a reviewed commit, confirm its actual green GitHub Actions run, deploy the same commit, and save deployed smoke plus separate cold/warm timings. Q-04 tracks that remaining gate; Q-05 remains a non-blocking source-unit caveat. Do not call this a completed Stage 4 release until the deployed conditions pass.
+
+### Stage 4 deployed continuation — 2026-10-28
+
+**Release state:** Render Free deployment and deployed smoke passed; the final gate remains open until separate idle cold-start/warm timings are saved and the final commit's CI/deployment are reviewed. The API is `https://aqualedger-api.onrender.com`, and React is `https://aqualedger-demo.onrender.com`. Both initial services deployed `596f88f703e641754dc77ffe8483abc17cf72037`; [GitHub Actions run 40619499702](https://github.com/harshgmrn04-byte/AquaLedger/actions/runs/40619499702) completed successfully. [Resource evidence](data/stage4-release-resources.json) records the explicit Free API plan and static site's included Starter build pipeline. No payment method or paid tier was added by this work.
+
+**Deployed checks:** [API smoke](data/stage4-deployed-api-smoke.json) passed 18 bounded checks for 200 health/readiness, 401 unauthenticated, 403 cross-role, fictional statement revisions, cache responses, and 406 Data API denial for anonymous and resident. [Static asset/route smoke](data/stage4-deployed-site-smoke.json) passed root and direct `/manager`/`/resident` routes plus the built bundle; checked server secrets were absent from that bundle. The first deployed headless browser sign-in failed because Render had saved the exact `WEB_ORIGIN` but had not rolled it out. A deploy-only restart of the same green build corrected CORS; [browser smoke](data/stage4-deployed-web-smoke.json) then passed fictional manager, resident A, and resident B views and own-flat isolation. [Model smoke](data/stage4-deployed-model-smoke.json) created fictional revision 3, preserved revision 1, obtained two actual Groq selections, served two repeats from cache, and returned a deterministic 200 `request_limit` fallback for a third uncached request from the same resident. Across the API and model smoke, six repeat Groq calls were avoided by cache; no token or monetary saving is claimed. [Render logs](data/stage4-render-log-evidence.json) matched 11/11 model-smoke request IDs with only bounded route/status/duration/failure-category fields saved.
+
+**Next action:** Rerun `CI=true npm run verify` after the final code/docs edits, push a reviewed follow-up commit, obtain its actual green Actions run, deploy that commit, measure an idle cold request separately from a warm request, and update the release gate from saved results. Preserve all fictional statement revisions and the historical HSB subset.

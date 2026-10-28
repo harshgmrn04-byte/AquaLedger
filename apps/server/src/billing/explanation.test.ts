@@ -13,6 +13,7 @@ describe('fictional explanation boundaries', () => {
     const selection = deterministicSelection(first);
     expect(() => validateSelection({ ...selection, factRefs: ['previous_total_minor'] }, first)).toThrow();
     expect(() => validateSelection({ ...selection, summary: 'Your bill was 400' }, first)).toThrow('numeric_model_text');
+    expect(() => validateSelection({ ...selection, summary: 'Your charge is twelve rupees' }, first)).toThrow('numeric_model_text');
     expect(() => validateSelection({ ...selection, primaryReason: 'higher_fixed_charge' }, first)).toThrow('unsupported_reason');
   });
   it('uses strict structured output and accepts validated content', async () => {
