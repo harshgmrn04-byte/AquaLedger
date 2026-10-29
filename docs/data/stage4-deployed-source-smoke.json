@@ -1,0 +1,18 @@
+{
+  "observedAt": "2026-10-28T02:32:17.236Z",
+  "api": "https://aqualedger-api.onrender.com",
+  "sourceSummary": {
+    "status": 200,
+    "requestId": "63bcb3c2-c656-4aea-b88c-d1d789feaf17",
+    "provenance": "observed_source_event_analytics",
+    "datasetVersion": "1.1.0",
+    "licence": "CC BY 4.0",
+    "sourceUnitAssumption": "value interpreted as m3 from aggregate cross-check; dictionary says litres",
+    "eventCount": "1000",
+    "coverageCertified": false
+  },
+  "corsPreflight": {
+    "status": 204,
+    "allowOrigin": "https://aqualedger-demo.onrender.com"
+  }
+}

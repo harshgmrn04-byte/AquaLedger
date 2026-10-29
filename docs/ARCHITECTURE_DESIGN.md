@@ -1,7 +1,7 @@
 # Smart Water Metering Platform — Architecture Design
 
 **Updated:** 2026-10-28
-**Status:** Stage 4 deployed Free demo smoke passed; cold-start timing/final gate review pending
+**Status:** Stage 4 release gate passed for deployed Free demo commit `fbe71f3`
 **Authoritative requirements:** WATER_METERING_BUILD_PLAN_v4.md
 
 This living document records why the system is shaped as it is. Update it when implementation changes a boundary, invariant, source mapping, or deployment decision. Record measured behavior in PROGRESS.md and raw result files, not as an unsupported design claim here.
@@ -46,7 +46,7 @@ flowchart LR
 - The archive and importer are a data-ingestion boundary. The importer validates metadata, mappings, units, timestamps, and row identity before the Stage 2 API persists source events.
 - Groq receives only the authorized statement facts needed to select explanation reason codes. It cannot write bills, calculate charges, or access another resident's data.
 - Render hosts the API and static UI. Supabase hosts PostgreSQL/Auth. Local Docker PostgreSQL and tooling support repeatable tests and benchmarks.
-- The [Stage 4 deployment plan](DEPLOYMENT_PLAN.md) makes the hosted connection, small-seed, environment, smoke-check, and fallback boundaries explicit. Supabase's session pooler, managed privileges, Auth/JWKS, and private-schema denial were verified on this account. Render's Free API and static site served the same green commit and passed deployed role, revision, cache/fallback, and React smoke checks.
+- The [Stage 4 deployment plan](DEPLOYMENT_PLAN.md) makes the hosted connection, small-seed, environment, smoke-check, and fallback boundaries explicit. Supabase's session pooler, managed privileges, Auth/JWKS, and private-schema denial were verified on this account. Render's Free API and static site served the same green commit and passed deployed role, revision, cache/fallback, React, and cold/warm timing checks.
 
 ## Data flow 1 — Source audit and import
 

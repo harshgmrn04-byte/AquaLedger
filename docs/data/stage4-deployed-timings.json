@@ -1,0 +1,30 @@
+{
+  "observedAt": "2026-10-29T21:03:26.214Z",
+  "api": "https://aqualedger-api.onrender.com",
+  "targetCommit": "fbe71f324d9fc0edd319c014f452390b94b5cd6a",
+  "idleEvidence": {
+    "renderApiLogSearchStart": "2026-10-28T02:35:00Z",
+    "lastObservedApplicationRequestLog": "2026-10-28T03:27:34.961844313Z",
+    "source": "Render API application logs before cold request; most recent page of 100 logs",
+    "clockBasis": "UTC"
+  },
+  "cold": {
+    "status": 200,
+    "elapsedMs": 22443,
+    "startedAt": "2026-10-29T21:03:02.754Z",
+    "requestId": "15fd4a4c-35f4-4b63-a072-0926b015d33e",
+    "idleMinutes": 2495
+  },
+  "warm": {
+    "status": 200,
+    "elapsedMs": 73,
+    "startedAt": "2026-10-29T21:03:25.205Z",
+    "requestId": "7d5ea3ce-db8b-4c2a-a53f-2936711d6778"
+  },
+  "readiness": {
+    "status": 200,
+    "elapsedMs": 936,
+    "startedAt": "2026-10-29T21:03:25.277Z",
+    "requestId": "d8be0462-64f0-41fc-9a4e-af5503ad274a"
+  }
+}

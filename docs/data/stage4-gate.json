@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-29T21:09:50.609Z",
+  "status": "passed",
+  "checks": {
+    "frozenCasesAndEvaluation": true,
+    "backendOnlyFigures": true,
+    "faultDiagnosis": true,
+    "dataApiDenied": true,
+    "deployedApiAndSite": true,
+    "deployedAuthorizationAndModels": true,
+    "deployedHistoricalSubset": true,
+    "artifactBoundary": true,
+    "freeAndGreen": true,
+    "separateColdWarm": true
+  },
+  "evidence": [
+    "tools/fault-fixtures/explanation-cases-v1.json",
+    "tools/bench/results/stage4-explanations-v4.json",
+    "docs/data/stage4-fault-drill.json",
+    "docs/data/stage4-deployed-api-smoke.json",
+    "docs/data/stage4-deployed-site-smoke.json",
+    "docs/data/stage4-deployed-web-smoke.json",
+    "docs/data/stage4-deployed-model-smoke.json",
+    "docs/data/stage4-deployed-source-smoke.json",
+    "docs/data/stage4-render-log-evidence.json",
+    "docs/data/stage4-artifact-exclusion.json",
+    "docs/data/stage4-release-resources.json",
+    "docs/data/stage4-deployed-timings.json"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-10-28T02:37:01.980Z",
+  "commit": "fbe71f324d9fc0edd319c014f452390b94b5cd6a",
+  "trackedFileCount": 166,
+  "subset": {
+    "path": "tools/import-hsb/fixtures/hsb-sample-1000.csv",
+    "tracked": true,
+    "sha256": "14ee67cb19d5dea4004bc4cf873316db4db028d7cfb4621193741a6aeedf6e4d",
+    "manifestSha256": "14ee67cb19d5dea4004bc4cf873316db4db028d7cfb4621193741a6aeedf6e4d",
+    "matchesHostedImportManifest": true
+  },
+  "forbiddenTracked": {
+    "env": false,
+    "rootArchive": false,
+    "raw": false
+  },
+  "dockerExcludes": {
+    "env": true,
+    "rootArchive": true,
+    "raw": true
+  }
+}

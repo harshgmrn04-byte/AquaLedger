@@ -2,6 +2,8 @@
 
 **State on 2026-10-28:** the local fault drill and deployed API/React smoke passed on [Free API](https://aqualedger-api.onrender.com) and [static site](https://aqualedger-demo.onrender.com). Evidence: [`stage4-fault-drill.json`](data/stage4-fault-drill.json), [deployed API smoke](data/stage4-deployed-api-smoke.json), [browser smoke](data/stage4-deployed-web-smoke.json), [model/cache/fallback smoke](data/stage4-deployed-model-smoke.json), [bounded Render logs](data/stage4-render-log-evidence.json), [hosted HSB import](data/stage4-hosted-hsb-import.json), and [replay](data/stage4-hosted-hsb-replay.json). The database outage and Groq 429/timeout in the drill were injected locally. Its duplicate replay used a published HSB historical event from the verified 1,000-row subset; its billing preview used only the fictional fixture.
 
+**Release check on 2026-10-30:** [Stage 4 gate](data/stage4-gate.json) passed for deployed commit `fbe71f3`. [Timing evidence](data/stage4-deployed-timings.json) recorded a 22,443 ms first `/healthz` after a 2,495-minute gap from the latest observed application request log, then 73 ms on an immediate warm `/healthz` and 936 ms on `/readyz`. These are single observations; allow for the Free service wake-up before diagnosing a slow first request as an outage. If health remains unavailable, inspect the Render deployment and application logs. If health is 200 but readiness is 503, use the database recovery procedure below.
+
 ## First checks
 
 1. Copy the `X-Request-Id` response header and search the API's JSON logs for that exact request ID. The log contains route, status, duration, source batch ID, billing revision ID, and failure category. It must not contain tokens, database credentials, resident volume, or model prompts.
