@@ -1,6 +1,8 @@
-# Results — Stage 2 modular local HTTP source-event comparison
+# Results — Stage 2 historical modular local HTTP source-event comparison
 
 The [original baseline](tools/bench/results/stage2-http-baseline.json) and [original final](tools/bench/results/stage2-http-final.json) both executed the same final module, so their 6.02× comparison is withdrawn. The [corrected pre-refactor baseline](tools/bench/results/stage2-http-baseline-repair-2026-10-28.json) and [corrected pre-refactor final](tools/bench/results/stage2-http-final-repair-2026-10-28.json) remain historical evidence. This report uses the [selected baseline](tools/bench/results/stage2-http-baseline-modular-2026-10-28.json) and [selected final](tools/bench/results/stage2-http-final-modular-2026-10-28.json).
+
+These measurements were captured before the repository was renamed and before Stage 3/4 changed the server composer. The recorded absolute module and input paths are checked against the former repository root; pinned input hashes are checked against the corresponding files in this checkout. The exact measured final module is preserved as a source snapshot. The current `apps/server/src/ingest.ts` is not the measured source.
 
 | Metric, median (minimum–maximum across five measured runs) | Frozen single-insert baseline | Batched final |
 |---|---:|---:|
@@ -10,9 +12,9 @@ The [original baseline](tools/bench/results/stage2-http-baseline.json) and [orig
 
 Median throughput ratio: **5.57×** in this local matched scenario. Each mode used one warm-up and five measured runs of 10,000 published HSB rows, HTTP batches of 500, and concurrency 4. Each measured run accepted all 10,000. Separate replays classified 10,000 duplicates with zero new rows; each changed-key probe recorded one durable conflict. These are historical source-event imports, not live telemetry or coverage-certified billing volumes. Q-05's m³ unit inference remains open.
 
-**Executed modules:** baseline [frozen source](tools/bench/baseline-source/ingest.ts), SHA-256 `449dabf09ffc3363a1184e43f20ee4de33c1e9511a35ceb6a471e09405bdf715`; final [current modular source](apps/server/src/ingest.ts), SHA-256 `0c8841f72353b41b5a12fb7dd1f7dd99d8a6a7dd3882e3f7077e95fd3f0d3daa`. The raw JSON records each executed absolute module path, pinned adapter/profile/migration checksums, applied migrations, source DOI/version/archive and CSV checksums, scenario hash `4a6d7a5897fbe685b31f613c56a8f3d17fb4d5e5ee34cd191c4d1e61d2d99930`, hardware/software versions, per-request latencies, per-run results, and exact commands. [The report generator](tools/bench/report.ts) verifies source hashes, matched inputs, scenario, machine metadata, and replay/conflict results. The repository has no commit; neither run has a Git revision.
+**Executed modules:** baseline [frozen source](tools/bench/baseline-source/ingest.ts), SHA-256 `449dabf09ffc3363a1184e43f20ee4de33c1e9511a35ceb6a471e09405bdf715`; final [preserved Stage 2 modular source](tools/bench/final-source-stage2-modular/ingest.ts), SHA-256 `0c8841f72353b41b5a12fb7dd1f7dd99d8a6a7dd3882e3f7077e95fd3f0d3daa`. The raw JSON records each executed historical absolute module path, pinned adapter/profile/migration checksums, applied migrations, source DOI/version/archive and CSV checksums, scenario hash `4a6d7a5897fbe685b31f613c56a8f3d17fb4d5e5ee34cd191c4d1e61d2d99930`, hardware/software versions, per-request latencies, per-run results, and exact commands. [The report generator](tools/bench/report.ts) verifies historical paths, source hashes, matched inputs, scenario, machine metadata, and replay/conflict results. No Git commit existed when the measurements ran, so their raw files record a null Git revision; the source snapshots and hashes identify the executed implementations.
 
-The measurements support only this local HTTP ingestion comparison and replay/conflict behavior. They do not establish hosted throughput, measured billable consumption, savings, or resident charges. GitHub Actions status is tracked separately in `docs/PROGRESS.md`.
+The measurements support only this local HTTP ingestion comparison and replay/conflict behavior. They do not establish hosted throughput, measured billable consumption, savings, or resident charges. Stage 4 deployed evidence is reported separately below.
 
 ## Stage 3 local billing query probe
 
