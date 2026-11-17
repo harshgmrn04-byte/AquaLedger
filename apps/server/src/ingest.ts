@@ -7,6 +7,7 @@ import { sourceEventRoutes } from './routes/source-events.js';
 import { loadArchive, loadSensorMap } from './services/archive.js';
 import { billingRoutes } from './billing/api.js';
 import { sourceAnalyticsRoutes } from './routes/source-analytics.js';
+import { publicDemoRoutes } from './routes/public-demo.js';
 
 export { bodySchema } from './schemas/ingestion.js';
 export { loadArchive } from './services/archive.js';
@@ -21,6 +22,7 @@ export async function createIngestApp(config: IngestConfig) {
   app.use(requestContext(log));
   if (config.webOrigin) app.use((req, res, next) => { if (req.header('origin') === config.webOrigin) { res.setHeader('Access-Control-Allow-Origin', config.webOrigin!); res.setHeader('Vary', 'Origin'); res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type, Idempotency-Key'); res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS'); } if (req.method === 'OPTIONS') { res.status(204).end(); return; } next(); });
   app.use(healthRoutes(config.pool));
+  app.use('/api/v1/demo', publicDemoRoutes(config.billing?.fixturePath));
   if (config.demoReadOnly) app.use((req, res, next) => { if (req.path.startsWith('/api/') && !['GET', 'HEAD', 'OPTIONS'].includes(req.method)) { res.status(403).json({ error: 'demo_read_only' }); return; } next(); });
   app.use('/api/v1/source-events/batches', sourceEventRoutes({ pool: config.pool, credential: config.credential, archiveHashes, sensorMap, log }));
   app.use('/api/v1/source-events', sourceAnalyticsRoutes(config.pool));

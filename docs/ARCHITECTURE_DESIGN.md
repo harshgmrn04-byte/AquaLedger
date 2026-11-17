@@ -26,6 +26,8 @@ The server is a modular monolith. Stage 3 adds `billing/allocation.ts` for pure 
 
 ## Components and trust boundaries
 
+The public recruiter walkthrough is a separate, stateless boundary. The GET /api/v1/demo/preview route accepts bounded illustrative paise amounts and applies the existing server-side allocation to the versioned fictional fixture. It requires no sign-in, reads no resident or source-event tables, writes no rows, and makes no model call. The React page has a browser-side calculation of the same two-flat sample so visitors can still explore it when the API or hosted database is unavailable. Protected source ingestion, bill publication, resident statements, and Groq explanations retain their existing authorization. The page labels the public manager/resident views as a sample rather than presenting them as authenticated records.
+
 ```mermaid
 flowchart LR
   HSB[Versioned HSB archive] --> Import[Local audited event importer]

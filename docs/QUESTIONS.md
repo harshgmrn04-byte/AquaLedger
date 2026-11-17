@@ -1,6 +1,6 @@
 # Smart Water Metering Platform — Current Questions
 
-**Updated:** 2026-10-30
+**Updated:** 2026-11-18
 **Scope:** v4 only. Superseded v2 questions are preserved in docs/archive/QUESTIONS_v2_2026-10-27.md.
 
 Record a question only when evidence is missing or a phase gate is blocked. Each entry must name the next check and owner. Resolve findings in this file or a decision record; do not silently treat a guess as a fact.
@@ -17,6 +17,8 @@ Record a question only when evidence is missing or a phase gate is blocked. Each
 | Q-08 | How can one billable period per fictional society/window coexist with already-published duplicate rows? | Resolved by forward migration 008: retain every legacy row and child revision/audit record, mark later equal-window periods audit-only, enforce a unique active society/window index, and deny runtime writes to the audit-only marker. See the Stage 3 repair evidence in `PROGRESS.md`. | Coding agent / Stage 3 repair | Resolved locally |
 
 ## Stage 4 account capability check — 2026-10-28
+
+Q-09 (open, non-blocking for the public fictional walkthrough): On 2026-11-18, the deployed API process responded to health checks while database readiness reported database_unavailable and source analytics could not load. The owner should check the Supabase project status, Render database connection settings, and request-ID logs, then verify readiness and the source summary before the interview. The public fictional walkthrough works without database access.
 
 Official Supabase, Groq, and Render documentation was rechecked. This account successfully used the Supabase Free session pooler over TLS with project-qualified custom roles, applied migrations 001–009, imported only the checksum-verified HSB 1,000-row prefix, created three fictional Auth users, and served signed JWTs using an asymmetric JWKS key. The private `app` schema returned HTTP 406 to both unauthenticated and authenticated resident Data API probes. Groq's `openai/gpt-oss-20b` strict-output mode accepted 32/32 frozen fictional cases; case-level raw output is preserved. Render created an explicit Free API web service and a Free static site, both deployed commit `fbe71f324d9fc0edd319c014f452390b94b5cd6a` with a successful GitHub Actions run. Deployed React and API smoke passed after a deploy-only CORS repair. On 2026-10-30, an idle first API request took 22,443 ms and an immediate warm request took 73 ms; the separate readiness request returned 200 in 936 ms. The Stage 4 gate passed with all ten checks true. No payment method or paid tier has been used by this work.
 

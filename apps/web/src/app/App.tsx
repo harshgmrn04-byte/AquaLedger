@@ -1,79 +1,160 @@
 import { useEffect, useState } from 'react';
-import { createClient } from '@supabase/supabase-js';
 import { StatusPage } from '../pages/StatusPage';
 import '../style.css';
 
 const apiBase = import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:3001';
-const supabase = import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ? createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY) : null;
-type Identity = { role: 'manager' | 'resident'; societyId: string; flatId: string | null };
-type Invoice = { invoiceVolumeMl: string | null; variableMinor: string; fixedMinor: string; totalMinor: string };
-type Period = { id: string; status: string; invoice: Invoice };
-type Statement = { flatId: string; volumeMl: string; variableMinor: string; sharedMinor: string; fixedMinor: string; totalMinor: string };
-type Preview = { previewHash: string; statements: Statement[] };
-type ListedStatement = { periodId: string; revisionNumber: number; snapshot: Statement };
-type Explanation = { primaryReason: string; summary: string; currentTotalMinor: string; previousTotalMinor: string | null; source: 'groq' | 'fallback' | 'cache'; fallbackReason?: string | null };
-const example: Invoice = { invoiceVolumeMl: '5000', variableMinor: '500', fixedMinor: '200', totalMinor: '700' };
-export function App() {
-  const [token, setToken] = useState<string | null>(null);
-  const [identity, setIdentity] = useState<Identity | null>(null);
-  const [email, setEmail] = useState(''); const [password, setPassword] = useState('');
-  const [error, setError] = useState(''); const [period, setPeriod] = useState<Period | null>(null);
-  const [invoice, setInvoice] = useState<Invoice>(example); const [preview, setPreview] = useState<Preview | null>(null);
-  const [statements, setStatements] = useState<ListedStatement[]>([]);
-  const [explanations, setExplanations] = useState<Record<string, Explanation>>({});
-  async function request(path: string, method = 'GET', body?: unknown, key?: string, accessToken = token): Promise<unknown> {
-    const response = await fetch(`${apiBase}/api/v1${path}`, { method, headers: { authorization: `Bearer ${accessToken}`, ...(body === undefined ? {} : { 'content-type': 'application/json' }), ...(key ? { 'idempotency-key': key } : {}) }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
-    const result = await response.json() as Record<string, unknown>;
-    if (!response.ok) throw new Error(String(result.error ?? `HTTP ${response.status}`));
-    return result;
+const flats = [
+  { id: 'DEMO_A', name: 'Flat A', volumeMl: 3000n },
+  { id: 'DEMO_B', name: 'Flat B', volumeMl: 2000n }
+] as const;
+type Statement = { flatId: string; volumeMl: string; variableMinor: string; fixedMinor: string; sharedMinor: string; totalMinor: string };
+type Preview = {
+  provenance: 'fictional_billing_fixture';
+  persistence: 'none';
+  invoice: { invoiceVolumeMl: string; variableMinor: string; fixedMinor: string; totalMinor: string };
+  statements: Statement[];
+};
+
+function allocate(amount: bigint, weights: readonly { id: string; weight: bigint }[]) {
+  const total = weights.reduce((sum, item) => sum + item.weight, 0n);
+  const portions = new Map(weights.map(item => [item.id, amount * item.weight / total]));
+  const order = [...weights].sort((a, b) => {
+    const ar = amount * a.weight % total;
+    const br = amount * b.weight % total;
+    return ar === br ? a.id.localeCompare(b.id) : ar > br ? -1 : 1;
+  });
+  let remainder = amount - [...portions.values()].reduce((sum, item) => sum + item, 0n);
+  for (const item of order) {
+    if (remainder === 0n) break;
+    portions.set(item.id, portions.get(item.id)! + 1n);
+    remainder--;
   }
-  useEffect(() => {
-    if (!supabase) return;
-    void supabase.auth.getSession().then(({ data }) => setToken(data.session?.access_token ?? null));
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => setToken(session?.access_token ?? null));
-    return () => listener.subscription.unsubscribe();
-  }, []);
-  useEffect(() => {
-    if (!token) { setIdentity(null); setPeriod(null); setPreview(null); setStatements([]); setExplanations({}); return; }
-    void request('/me', 'GET', undefined, undefined, token).then(value => {
-      const p = value as Identity; setIdentity(p);
-      if (p.role === 'resident') void request('/me/statements', 'GET', undefined, undefined, token).then(v => setStatements((v as { statements: ListedStatement[] }).statements)).catch(e => setError(String(e)));
-      if (p.role === 'manager') void request('/billing-periods', 'GET', undefined, undefined, token).then(v => {
-        const periods = (v as { periods: Period[] }).periods;
-        const selected = periods.find(item => item.status === 'draft') ?? periods[0];
-        if (selected) { setPeriod(selected); setInvoice(selected.invoice); }
-      }).catch(e => setError(String(e)));
-    }).catch(e => setError(String(e)));
-  }, [token]);
-  async function act(action: () => Promise<void>) { try { setError(''); await action(); } catch (e) { setError(e instanceof Error ? e.message : 'request_failed'); } }
-  async function signIn() { if (!supabase) throw new Error('Supabase Auth is not configured'); const { error: authError } = await supabase.auth.signInWithPassword({ email, password }); if (authError) throw authError; }
-  const invoiceBody = () => ({ periodStartLocal: '2026-01-01T00:00:00+05:30', periodEndLocal: '2026-01-01T01:00:00+05:30', currency: 'INR', ...invoice });
-  return <main><h1>Smart Water Metering Platform</h1><StatusPage /><section className="billing"><h2>Fictional billing walkthrough</h2><p><strong>Fictional fixture and illustrative INR invoice.</strong> Six complete ten-minute intervals for two fictional flats on 1 January 2026 in Asia/Kolkata. The example assumes 100 paise per litre for 5 litres (500 paise variable) plus 200 paise fixed, totaling 700 paise. No HSB event is a billing reading.</p>
-    {!identity && <form onSubmit={event => { event.preventDefault(); void act(signIn); }}><label>Email <input aria-label="Email" type="email" value={email} onChange={e => setEmail(e.target.value)} /></label><label>Password <input aria-label="Password" type="password" value={password} onChange={e => setPassword(e.target.value)} /></label><button type="submit">Sign in</button></form>}
-    {identity && <p>Signed in as {identity.role} for {identity.societyId}{identity.flatId ? `, flat ${identity.flatId}` : ''}. <button onClick={() => void supabase?.auth.signOut()}>Sign out</button></p>}
-    {identity?.role === 'manager' && <div><h3>Manager draft</h3><p>Period: 1 January 2026, 00:00–01:00 Asia/Kolkata. Amounts are integer paise; volume is integer millilitres.</p>
-      {(['invoiceVolumeMl', 'variableMinor', 'fixedMinor', 'totalMinor'] as const).map(field => <label key={field}>{field}<input aria-label={field} value={invoice[field] ?? ''} onChange={e => { setInvoice({ ...invoice, [field]: e.target.value || (field === 'invoiceVolumeMl' ? null : '') }); setPreview(null); }} /></label>)}
-      <div className="actions">{!period && <button onClick={() => void act(async () => { try { const p = await request('/billing-periods', 'POST', invoiceBody()) as Period; setPeriod(p); setPreview(null); } catch (e) { if (!(e instanceof Error) || e.message !== 'billing_period_exists') throw e; const periods = (await request('/billing-periods') as { periods: Period[] }).periods; const existing = periods.find(item => item.status === 'draft') ?? periods[0]; if (!existing) throw e; setPeriod(existing); setInvoice(existing.invoice); } })}>Create draft</button>}
-        {period?.status === 'draft' && <p>Existing fictional draft loaded. You can edit or preview it.</p>}
-        {period?.status === 'draft' && <><button onClick={() => void act(async () => { const p = await request(`/billing-periods/${period.id}`, 'PUT', invoiceBody()) as Period; setPeriod(p); setPreview(null); })}>Save edit</button><button onClick={() => void act(async () => setPreview(await request(`/billing-periods/${period.id}/preview`, 'POST', {}) as Preview))}>Preview</button></>}
-        {period?.status === 'published' && <button onClick={() => void act(async () => { const p = await request(`/billing-periods/${period.id}/revisions`, 'POST', {}, crypto.randomUUID()) as Period; setPeriod(p); setPreview(null); })}>Create revision draft</button>}</div>
-      {preview && <div><h4>Read-only preview</h4><p>Hash: {preview.previewHash}</p>{preview.statements.map(s => <p key={s.flatId}>{s.flatId}: {s.volumeMl} mL; variable {s.variableMinor}, shared {s.sharedMinor}, fixed {s.fixedMinor}, total {s.totalMinor} paise — fictional fixture, illustrative invoice</p>)}<button onClick={() => void act(async () => { await request(`/billing-periods/${period!.id}/publish`, 'POST', { previewHash: preview.previewHash }, crypto.randomUUID()); setPeriod({ ...period!, status: 'published' }); setPreview(null); })}>Publish</button></div>}
-      {period?.status === 'published' && <p>Published fictional statements. Prior revisions remain available to residents.</p>}</div>}
-    {identity?.role === 'resident' && <div>
-      <h3>My statements</h3>
-      <button onClick={() => void act(async () => setStatements((await request('/me/statements') as { statements: ListedStatement[] }).statements))}>Refresh statements</button>
-      {statements.map(s => {
-        const explanation = explanations[s.periodId];
-        return <article key={s.periodId}>
-          <h4>Revision {s.revisionNumber}</h4>
-          <p>{s.snapshot.flatId}: {s.snapshot.volumeMl} mL; total {s.snapshot.totalMinor} paise — fictional fixture, illustrative invoice.</p>
-          <button onClick={() => void act(async () => { const detail = await request(`/me/statements/${s.periodId}`) as { snapshot: Statement }; setStatements(old => old.map(item => item.periodId === s.periodId ? { ...item, snapshot: detail.snapshot } : item)); })}>View latest</button>
-          <button onClick={() => void act(async () => { const result = await request(`/me/statements/${s.periodId}/explanation`) as Explanation; setExplanations(old => ({ ...old, [s.periodId]: result })); })}>Explain fictional bill</button>
-          {explanation && <p>{explanation.summary} Current total: {explanation.currentTotalMinor} paise{explanation.previousTotalMinor ? `; prior total: ${explanation.previousTotalMinor} paise` : ''}. Source: {explanation.source === 'fallback' ? 'deterministic explanation' : explanation.source === 'cache' ? 'validated cached explanation' : 'validated Groq selection'}.</p>}
-        </article>;
-      })}
-    </div>}
-    {error && <p role="alert">{error}</p>}
-  </section></main>;
+  return portions;
 }
 
+function browserPreview(variableMinor: string, fixedMinor: string): Preview {
+  const variable = BigInt(variableMinor);
+  const fixed = BigInt(fixedMinor);
+  const variableParts = allocate(variable, flats.map(flat => ({ id: flat.id, weight: flat.volumeMl })));
+  const fixedParts = allocate(fixed, flats.map(flat => ({ id: flat.id, weight: 1n })));
+  return {
+    provenance: 'fictional_billing_fixture',
+    persistence: 'none',
+    invoice: { invoiceVolumeMl: '5000', variableMinor, fixedMinor, totalMinor: (variable + fixed).toString() },
+    statements: flats.map(flat => {
+      const usage = variableParts.get(flat.id)!;
+      const base = fixedParts.get(flat.id)!;
+      return { flatId: flat.id, volumeMl: flat.volumeMl.toString(), variableMinor: usage.toString(), fixedMinor: base.toString(), sharedMinor: '0', totalMinor: (usage + base).toString() };
+    })
+  };
+}
+
+const money = (paise: string) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(Number(paise) / 100);
+const litres = (ml: string) => (Number(ml) / 1000).toFixed(1) + ' L';
+const flatName = (id: string) => flats.find(flat => flat.id === id)?.name ?? id;
+
+export function App() {
+  const [view, setView] = useState<'manager' | 'resident'>('manager');
+  const [selectedFlat, setSelectedFlat] = useState('DEMO_A');
+  const [variableMinor, setVariableMinor] = useState('500');
+  const [fixedMinor, setFixedMinor] = useState('200');
+  const [preview, setPreview] = useState<Preview>(() => browserPreview('500', '200'));
+  const [previewSource, setPreviewSource] = useState<'checking' | 'api' | 'browser'>('checking');
+  const [error, setError] = useState('');
+
+  async function fetchPreview(variable: string, fixed: string): Promise<Preview> {
+    const query = new URLSearchParams({ variableMinor: variable, fixedMinor: fixed });
+    const response = await fetch(apiBase + '/api/v1/demo/preview?' + query);
+    if (!response.ok) throw new Error('preview_unavailable');
+    return await response.json() as Preview;
+  }
+
+  useEffect(() => {
+    void fetchPreview('500', '200')
+      .then(result => { setPreview(result); setPreviewSource('api'); })
+      .catch(() => setPreviewSource('browser'));
+  }, []);
+
+  async function recalculate() {
+    if (!/^(0|[1-9][0-9]{0,8})$/.test(variableMinor) || !/^(0|[1-9][0-9]{0,8})$/.test(fixedMinor)) {
+      setError('Enter a whole, non-negative amount of up to nine digits in each field.');
+      return;
+    }
+    setError('');
+    setPreview(browserPreview(variableMinor, fixedMinor));
+    setPreviewSource('browser');
+    try {
+      setPreview(await fetchPreview(variableMinor, fixedMinor));
+      setPreviewSource('api');
+    } catch { /* Keep the browser sample usable if the API is unavailable. */ }
+  }
+
+  const statement = preview.statements.find(item => item.flatId === selectedFlat) ?? preview.statements[0]!;
+  const usageShare = Math.round(Number(statement.volumeMl) / Number(preview.invoice.invoiceVolumeMl) * 100);
+  const sumOfShares = preview.statements.reduce((sum, item) => sum + BigInt(item.totalMinor), 0n).toString();
+
+  return <div className="site-shell">
+    <header className="site-header">
+      <a className="brand" href="#top" aria-label="AquaLedger home"><span className="brand-mark">≈</span>AquaLedger</a>
+      <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#demo">Explore demo</a><a href="#data">Data & scope</a></nav>
+      <a className="header-link" href="#demo">Try the demo <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section className="hero section-wrap">
+        <div className="hero-copy">
+          <p className="eyebrow"><span className="live-dot" /> SOFTWARE ENGINEERING CASE STUDY</p>
+          <h1>Every reading has a history.<br /><em>Every bill has a reason.</em></h1>
+          <p className="hero-lede">AquaLedger turns water-meter events into auditable records and shows how a complete set of readings can become a clear resident statement.</p>
+          <div className="hero-actions"><a className="button button-primary" href="#demo">Explore the sample bill <span aria-hidden="true">→</span></a><a className="button button-ghost" href="#how-it-works">See how it works</a></div>
+          <p className="hero-note">No account needed. This public walkthrough uses a fictional invoice and saves nothing.</p>
+        </div>
+        <div className="hero-visual" aria-label="Water events progress through verification to a resident statement">
+          <div className="visual-top"><span>FROM EVENT TO STATEMENT</span><span className="visual-status">● Auditable flow</span></div>
+          <div className="visual-flow">
+            <div className="flow-node"><span className="node-icon">≋</span><div><small>01 / SOURCE</small><strong>Water events</strong><span>Versioned and checked</span></div></div>
+            <div className="flow-line" />
+            <div className="flow-node"><span className="node-icon">✓</span><div><small>02 / VERIFY</small><strong>Safe ingestion</strong><span>Replays and conflicts tracked</span></div></div>
+            <div className="flow-line" />
+            <div className="flow-node active"><span className="node-icon">₹</span><div><small>03 / EXPLAIN</small><strong>Resident statement</strong><span>Every charge reconciled</span></div></div>
+          </div>
+          <div className="visual-footer"><span>Historical observations</span><span>≠</span><span>Fictional billing sample</span></div>
+        </div>
+      </section>
+
+      <section className="proof-strip" aria-label="Project evidence">
+        <div><strong>5.57×</strong><span>faster local batch ingestion*</span></div>
+        <div><strong>0</strong><span>new rows on a 10,000-event replay*</span></div>
+        <div><strong>32/32</strong><span>reason agreement on fictional cases*</span></div>
+      </section>
+
+      <section className="section-wrap section-block" id="how-it-works">
+        <div className="section-heading"><p className="eyebrow">THE PROBLEM & THE SYSTEM</p><h2>Trust is built before a bill is published.</h2><p>A reading can arrive twice, change under the same source key, or leave a gap. AquaLedger keeps those cases visible and demonstrates billing only with a complete, separately labeled fixture.</p></div>
+        <div className="steps-grid">
+          <article className="step-card"><span className="step-number">01</span><div className="step-symbol">⌁</div><h3>Audit the input</h3><p>Check source identity, sensor mapping, timestamps, and row content before events enter the database.</p></article>
+          <article className="step-card"><span className="step-number">02</span><div className="step-symbol">◎</div><h3>Make replays safe</h3><p>Accept events in batches, identify exact duplicates, and record changed-key conflicts without overwriting history.</p></article>
+          <article className="step-card"><span className="step-number">03</span><div className="step-symbol">▤</div><h3>Show the bill clearly</h3><p>Allocate an illustrative invoice across two fictional flats and show how each resident's charge is formed.</p></article>
+        </div>
+      </section>
+
+      <section className="demo-section section-block" id="demo">
+        <div className="section-wrap">
+          <div className="section-heading demo-heading"><div><p className="eyebrow">INTERACTIVE WALKTHROUGH</p><h2>Explore a sample bill.</h2><p>One complete fictional hour. Two flats. An illustrative ₹7.00 invoice. Change the charges to see how the allocation responds.</p></div><span className="demo-badge">FICTIONAL DATA · NO SIGN IN</span></div>
+          <div className="demo-layout">
+            <div className="demo-panel">
+              <div className="panel-top"><div><small>BILLING PERIOD</small><strong>1 January 2026 · 00:00–01:00</strong><span>Six ten-minute intervals · Asia/Kolkata</span></div><span className="panel-icon">↗</span></div>
+              <div className="tab-list" role="tablist" aria-label="Sample views"><button type="button" role="tab" aria-selected={view === 'manager'} className={view === 'manager' ? 'selected' : ''} onClick={() => setView('manager')}>Manager view</button><button type="button" role="tab" aria-selected={view === 'resident'} className={view === 'resident' ? 'selected' : ''} onClick={() => setView('resident')}>Resident view</button></div>
+              {view === 'manager' ? <div className="panel-body"><h3>Allocate the illustrative invoice</h3><p className="muted">The complete sample contains 5 L of water use: 3 L for Flat A and 2 L for Flat B.</p><div className="field-grid"><label>Usage-based charge <span>in paise</span><input aria-label="Usage-based charge in paise" inputMode="numeric" value={variableMinor} onChange={event => setVariableMinor(event.target.value)} /></label><label>Fixed charge <span>in paise</span><input aria-label="Fixed charge in paise" inputMode="numeric" value={fixedMinor} onChange={event => setFixedMinor(event.target.value)} /></label></div><button type="button" className="button button-primary calculate-button" onClick={() => void recalculate()}>Recalculate bill <span aria-hidden="true">→</span></button>{error && <p className="form-error" role="alert">{error}</p>}<p className="helper-text">Read-only preview. No database statement is published or changed.</p></div> : <div className="panel-body"><h3>View a resident statement</h3><p className="muted">Switch flats to see the sample from each resident's perspective.</p><div className="flat-switch" aria-label="Select a fictional flat">{flats.map(flat => <button type="button" key={flat.id} className={selectedFlat === flat.id ? 'selected' : ''} aria-pressed={selectedFlat === flat.id} onClick={() => setSelectedFlat(flat.id)}>{flat.name}</button>)}</div><div className="resident-explanation"><span>WHY THIS AMOUNT?</span><p>{flatName(statement.flatId)} used {litres(statement.volumeMl)} of the complete {litres(preview.invoice.invoiceVolumeMl)} sample, so it receives {usageShare}% of the usage-based charge. The fixed charge is split equally.</p><small>Deterministic sample explanation. The protected product path also validates model-selected reasons.</small></div></div>}
+            </div>
+            <div className="bill-card"><div className="bill-header"><span>SAMPLE INVOICE</span><span className="invoice-chip">ILLUSTRATIVE</span></div><div className="bill-total"><small>Total to allocate</small><strong>{money(preview.invoice.totalMinor)}</strong><span>{litres(preview.invoice.invoiceVolumeMl)} across two fictional flats</span></div><div className="bill-lines"><div><span>Usage-based</span><strong>{money(preview.invoice.variableMinor)}</strong></div><div><span>Fixed charge</span><strong>{money(preview.invoice.fixedMinor)}</strong></div></div><div className="bill-divider" /><p className="bill-subhead">Resident shares</p>{preview.statements.map(item => { const percentage = Math.round(Number(item.volumeMl) / Number(preview.invoice.invoiceVolumeMl) * 100); return <div className={'share-row ' + (view === 'resident' && selectedFlat === item.flatId ? 'highlighted' : '')} key={item.flatId}><div><strong>{flatName(item.flatId)}</strong><span>{litres(item.volumeMl)} · {percentage}% of use</span></div><strong>{money(item.totalMinor)}</strong><div className="share-track"><span style={{ width: percentage + '%' }} /></div></div>; })}<div className="bill-footer"><span>Exact reconciliation</span><strong>{money(sumOfShares)} / {money(preview.invoice.totalMinor)}</strong></div><p className="preview-source">{previewSource === 'api' ? 'Calculated by the public, read-only API.' : previewSource === 'checking' ? 'Checking the public calculation…' : 'Calculated in your browser while the API is unavailable.'}</p></div>
+          </div>
+        </div>
+      </section>
+
+      <StatusPage />
+
+      <section className="section-wrap closing-section"><div><p className="eyebrow">ENGINEERING DETAILS</p><h2>Built for correctness under real failure modes.</h2><p>Authenticated ingestion, transactional replay handling, integer charge allocation, immutable revisions, validated explanation selections, and operational fallback paths sit behind this public sample.</p></div><a className="button button-ghost" href="https://github.com/harshgmrn04-byte/AquaLedger" target="_blank" rel="noreferrer">View the code <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer><span className="brand"><span className="brand-mark">≈</span>AquaLedger</span><span>* Local and frozen-fixture test results; no production or customer-performance claim.</span><a href="https://github.com/harshgmrn04-byte/AquaLedger" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  </div>;
+}

@@ -57,7 +57,7 @@ Run these checks against the deployed URLs, save bounded output in `docs/data/` 
 
 1. Confirm the GitHub Actions verification run passed for the deployed commit. Test the service on a cold request and a warm request; keep those timings separate.
 2. `GET /healthz` returns 200 when the process is up; `GET /readyz` returns 200 only when PostgreSQL is reachable. Verify the React site and direct navigation to manager/resident routes.
-3. Sign in as the fictional manager and resident. Check preview/publish, read-only resident statement access, cross-flat denial, and prior revision visibility. Confirm every billing figure comes from the fictional fixture and exact reconciliation.
+3. Open the public React walkthrough without signing in. Change the illustrative invoice, check exact reconciliation, switch to the resident sample, and confirm the page remains usable if the API is unavailable. Separately use the protected API smoke to check manager publish, resident access, cross-flat denial, and prior revision visibility. Confirm every billing figure comes from the fictional fixture.
 4. Check the HSB analytics view cites the dataset, version, licence, unit inference, and lack of billing coverage. Confirm the 1,000-row hosted manifest is the verified subset and that the full CSV is absent from the image.
 5. Check Groq's strict-output model on this account, fallback on `429`/timeout, cache hits, and that public traffic cannot trigger unbounded model calls. Save the frozen evaluation outputs separately from the deployment smoke results.
 6. Attempt a Data API read of `app` tables as an unauthenticated and authenticated test client; both must fail. Review logs for request IDs and failure categories without secrets or resident volume values.

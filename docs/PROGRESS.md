@@ -1,7 +1,7 @@
 # Smart Water Metering Platform — Progress
 
-**Updated:** 2026-10-30
-**Status:** Stage 4 release gate passed for deployed commit `fbe71f3`; Stage 2 resume evidence report repaired from preserved historical source
+**Updated:** 2026-11-18
+**Status:** Stage 4 historical release gate passed for deployed commit `fbe71f3`; public recruiter walkthrough update locally verified, deployment pending
 **Source of truth:** WATER_METERING_BUILD_PLAN_v4.md in the repository root
 
 This is the handoff record for implementation across separate coding chats. Update it at the end of every phase and whenever a gate fails. A status of “done” requires evidence, not only code changes.
@@ -17,6 +17,10 @@ This is the handoff record for implementation across separate coding chats. Upda
 | Stage 4 — Groq, operations, release | Done, release gate passed for deployed `fbe71f3` | [gate result](data/stage4-gate.json), [32-case Groq evaluation](../tools/bench/results/stage4-explanations-v4.json), [fault drill](data/stage4-fault-drill.json), [deployed API](data/stage4-deployed-api-smoke.json), [React](data/stage4-deployed-web-smoke.json), [model/cache](data/stage4-deployed-model-smoke.json), [cold/warm timing](data/stage4-deployed-timings.json), [green CI/Free resources](data/stage4-release-resources.json) |
 
 ## Current focus
+
+On 2026-11-18, the user requested a recruiter-ready public demo without a login barrier. The frontend now opens with a self-explaining hero, project flow, evidence labels, interactive fictional manager/resident sample, and data-provenance section. A stateless public GET preview route uses the existing billing allocation without database reads or writes; the browser has a matching fictional fallback when the API is unavailable. Protected ingestion, publication, resident statements, and model explanations retain their prior authentication. The public sample is not a published bill or a live resident account.
+
+Local checks so far: lint, workspace typecheck, and full build passed; the focused public-route tests passed (2/2); the new Playwright public walkthrough and API-failure fallback passed (2/2). Desktop and mobile layouts were visually inspected. The full verification reached the database check and stopped because the configured database connection timed out. The deployed API currently returns health 200 while readiness reports database_unavailable; the historical source summary is unavailable. Q-09 tracks that independent hosted-database issue. CI and deployment smoke for this change remain pending.
 
 Stage 4 has a resident-authorized explanation endpoint, frozen fictional-case evaluation, local fault drill, tested hosted Supabase roles/Auth, and 1,000-row historical HSB subset import. The Render Free API and static site are deployed and passed API, browser, revision, Groq, cache, fallback, and separate [cold/warm timing checks](data/stage4-deployed-timings.json). The explicit Stage 4 gate passed for deployed commit `fbe71f3`. The regenerated [Stage 2 report](../RESULTS.md) names its 5.57× pair as a historical **local** comparison and links the exact measured source snapshot; it does not measure the changed Stage 4 composer or deployment. Its 10,000 rows are replayed historical HSB source events, not coverage-certified billing readings.
 

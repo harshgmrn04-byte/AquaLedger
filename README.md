@@ -1,4 +1,6 @@
-# Smart Water Metering Platform
+# AquaLedger — Smart Water Metering Platform
+
+The public [recruiter walkthrough](https://aqualedger-demo.onrender.com) opens without a sign-in form. It explains the project, lets visitors change a **fictional** two-flat invoice, and shows a read-only resident sample. The public demo preview route runs the existing integer allocation on the server without a database read or write; the page can calculate the same sample in the browser when the API is unavailable. Protected ingestion, manager publication, and resident routes still require their original credentials and authorization. This public sample does not publish a bill, access a resident account, or call Groq.
 
 **Stage 4 release gate passed for deployed commit `fbe71f3`.** Stage 3 source-event analytics, separate fictional billing, and minimal manager/resident UI passed their local gate. Migration 008 enforces one active exact billing window per society and preserves historical duplicate revisions for audit. Stage 4 adds a resident-authorized explanation endpoint with strict Groq response validation, revision-aware cache, deterministic fallback, request limits, and a local fault drill. The [HSB source audit](docs/data/HSB_AUDIT.md) finds historical consumption events, not coverage-certified billing intervals. The [billing API](docs/API_BILLING.md) uses only a fictional complete fixture and illustrative invoice. See the [results](RESULTS.md), [runbook](docs/RUNBOOK.md), and [progress review](docs/PROGRESS.md).
 
@@ -25,7 +27,7 @@ npm run db:check
 npm run billing:seed
 ```
 
-Seed the fictional local billing profiles, then set `AUTH_ISSUER`, `AUTH_JWKS_URL`, and `AUTH_AUDIENCE` in `.env` to an asymmetric Supabase Auth project. The local seed uses fixed fictional UUIDs for tests; manual Supabase sign-in requires inserting the actual Auth user UUIDs into `app.profiles` with migration credentials. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` for the React sign-in form. Start the API and web app in separate terminals:
+Seed the fictional local billing profiles, then set `AUTH_ISSUER`, `AUTH_JWKS_URL`, and `AUTH_AUDIENCE` in `.env` to an asymmetric Supabase Auth project for the protected API routes. The public React walkthrough needs no Supabase browser configuration or account. Start the API and web app in separate terminals:
 
 ```sh
 npm run start:api
