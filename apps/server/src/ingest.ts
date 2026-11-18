@@ -20,9 +20,9 @@ export async function createIngestApp(config: IngestConfig) {
   const app = express();
   app.disable('x-powered-by');
   app.use(requestContext(log));
-  if (config.webOrigin) app.use((req, res, next) => { if (req.header('origin') === config.webOrigin) { res.setHeader('Access-Control-Allow-Origin', config.webOrigin!); res.setHeader('Vary', 'Origin'); res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type, Idempotency-Key'); res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS'); } if (req.method === 'OPTIONS') { res.status(204).end(); return; } next(); });
+  if (config.webOrigin) app.use((req, res, next) => { if (req.header('origin') === config.webOrigin) { res.setHeader('Access-Control-Allow-Origin', config.webOrigin!); res.setHeader('Access-Control-Expose-Headers', 'X-Request-Id'); res.setHeader('Vary', 'Origin'); res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type, Idempotency-Key'); res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS'); } if (req.method === 'OPTIONS') { res.status(204).end(); return; } next(); });
   app.use(healthRoutes(config.pool));
-  app.use('/api/v1/demo', publicDemoRoutes(config.billing?.fixturePath));
+  app.use('/api/v1/demo', publicDemoRoutes({ fixturePath: config.billing?.fixturePath, csvPath: config.csvPath, sensorMap, archiveHashes }));
   if (config.demoReadOnly) app.use((req, res, next) => { if (req.path.startsWith('/api/') && !['GET', 'HEAD', 'OPTIONS'].includes(req.method)) { res.status(403).json({ error: 'demo_read_only' }); return; } next(); });
   app.use('/api/v1/source-events/batches', sourceEventRoutes({ pool: config.pool, credential: config.credential, archiveHashes, sensorMap, log }));
   app.use('/api/v1/source-events', sourceAnalyticsRoutes(config.pool));

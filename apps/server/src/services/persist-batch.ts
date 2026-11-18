@@ -1,4 +1,5 @@
 import type pg from 'pg';
+import { classifyReplay } from '@water/shared/hsb';
 import type { Event, Outcome } from '../schemas/ingestion.js';
 
 export type ValidEvent = { index: number; event: Event };
@@ -59,8 +60,9 @@ export async function persistBatch(
         outcomes.push({ index, status: 'accepted', reasonCode: 'inserted' });
         continue;
       }
-      if (prior === event.rowSha256) outcomes.push({ index, status: 'duplicate', reasonCode: 'same_canonical_row' });
-      else if (prior) { outcomes.push({ index, status: 'conflict', reasonCode: 'changed_source_row_key' }); conflicts.push({ key: event.sourceRowKey, existing: prior, incoming: event.rowSha256 }); }
+      const classification = classifyReplay(prior, event.rowSha256);
+      if (classification === 'duplicate') outcomes.push({ index, status: 'duplicate', reasonCode: 'same_canonical_row' });
+      else if (classification === 'conflict' && prior) { outcomes.push({ index, status: 'conflict', reasonCode: 'changed_source_row_key' }); conflicts.push({ key: event.sourceRowKey, existing: prior, incoming: event.rowSha256 }); }
       else throw new Error('missing_conflict_row');
     }
     const count = (status: Outcome['status']) => outcomes.filter(x => x.status === status).length;

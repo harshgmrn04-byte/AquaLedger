@@ -1,18 +1,35 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import type { Server } from 'node:http';
 import express from 'express';
+import { loadArchive, loadSensorMap } from '../services/archive.js';
 import { publicDemoRoutes } from './public-demo.js';
 
 let server: Server;
 let base: string;
 beforeAll(async () => {
   const app = express();
-  app.use('/api/v1/demo', publicDemoRoutes());
+  const csvPath = 'tools/import-hsb/fixtures/hsb-sample-1000.csv';
+  app.use('/api/v1/demo', publicDemoRoutes({ fixturePath: undefined, csvPath, sensorMap: loadSensorMap('docs/data/hsb-profile.json'), archiveHashes: await loadArchive(csvPath) }));
   server = app.listen(0, '127.0.0.1');
   await new Promise<void>(resolve => server.once('listening', resolve));
   const address = server.address();
   if (!address || typeof address === 'string') throw new Error('No server address');
   base = 'http://127.0.0.1:' + address.port;
+});
+
+describe('public source-event inspection', () => {
+  it('runs the pinned adapter and distinguishes new, replay, and changed-key cases without writes', async () => {
+    for (const [scenario, outcome, archiveHash] of [
+      ['new', 'accepted', 'pass'], ['replay', 'duplicate', 'pass'], ['changed', 'conflict', 'fail']
+    ]) {
+      const response = await fetch(base + '/api/v1/demo/event-check?scenario=' + scenario);
+      const result = await response.json() as Record<string, unknown>;
+      expect(response.status).toBe(200);
+      expect(result).toMatchObject({ mode: 'stateless_dry_run', persistence: 'none', scenario, outcome, checks: { pinnedArchiveHash: archiveHash }, coverageCertified: false });
+      expect(response.headers.get('cache-control')).toBe('no-store');
+    }
+    expect((await fetch(base + '/api/v1/demo/event-check?scenario=other')).status).toBe(400);
+  });
 });
 afterAll(async () => { await new Promise<void>(resolve => server.close(() => resolve())); });
 

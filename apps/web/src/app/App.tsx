@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { StatusPage } from '../pages/StatusPage';
+import { PipelineDemo } from '../pages/PipelineDemo';
 import '../style.css';
 
 const apiBase = import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:3001';
@@ -96,8 +97,8 @@ export function App() {
   return <div className="site-shell">
     <header className="site-header">
       <a className="brand" href="#top" aria-label="AquaLedger home"><span className="brand-mark">≈</span>AquaLedger</a>
-      <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#demo">Explore demo</a><a href="#data">Data & scope</a></nav>
-      <a className="header-link" href="#demo">Try the demo <span aria-hidden="true">↗</span></a>
+      <nav aria-label="Main navigation"><a href="#pipeline">Event pipeline</a><a href="#demo">Billing sample</a><a href="#data">Data & scope</a></nav>
+      <a className="header-link" href="#pipeline">Run an event check <span aria-hidden="true">↗</span></a>
     </header>
 
     <main id="top">
@@ -105,18 +106,18 @@ export function App() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="live-dot" /> SOFTWARE ENGINEERING CASE STUDY</p>
           <h1>Every reading has a history.<br /><em>Every bill has a reason.</em></h1>
-          <p className="hero-lede">AquaLedger turns water-meter events into auditable records and shows how a complete set of readings can become a clear resident statement.</p>
-          <div className="hero-actions"><a className="button button-primary" href="#demo">Explore the sample bill <span aria-hidden="true">→</span></a><a className="button button-ghost" href="#how-it-works">See how it works</a></div>
-          <p className="hero-note">No account needed. This public walkthrough uses a fictional invoice and saves nothing.</p>
+          <p className="hero-lede">AquaLedger validates historical water events, makes retries safe, records conflicts, and keeps incomplete readings out of billing. Explore a real source-row check, then a separately labeled fictional invoice.</p>
+          <div className="hero-actions"><a className="button button-primary" href="#pipeline">Inspect the event pipeline <span aria-hidden="true">→</span></a><a className="button button-ghost" href="#demo">See the billing sample</a></div>
+          <p className="hero-note">No account needed. The public API checks a pinned historical row without saving it.</p>
         </div>
         <div className="hero-visual" aria-label="Water events progress through verification to a resident statement">
-          <div className="visual-top"><span>FROM EVENT TO STATEMENT</span><span className="visual-status">● Auditable flow</span></div>
+          <div className="visual-top"><span>FROM EVENT TO DECISION</span><span className="visual-status">● Auditable flow</span></div>
           <div className="visual-flow">
             <div className="flow-node"><span className="node-icon">≋</span><div><small>01 / SOURCE</small><strong>Water events</strong><span>Versioned and checked</span></div></div>
             <div className="flow-line" />
             <div className="flow-node"><span className="node-icon">✓</span><div><small>02 / VERIFY</small><strong>Safe ingestion</strong><span>Replays and conflicts tracked</span></div></div>
             <div className="flow-line" />
-            <div className="flow-node active"><span className="node-icon">₹</span><div><small>03 / EXPLAIN</small><strong>Resident statement</strong><span>Every charge reconciled</span></div></div>
+            <div className="flow-node active"><span className="node-icon">⊘</span><div><small>03 / GUARD</small><strong>Coverage decision</strong><span>Incomplete events cannot become a bill</span></div></div>
           </div>
           <div className="visual-footer"><span>Historical observations</span><span>≠</span><span>Fictional billing sample</span></div>
         </div>
@@ -133,13 +134,15 @@ export function App() {
         <div className="steps-grid">
           <article className="step-card"><span className="step-number">01</span><div className="step-symbol">⌁</div><h3>Audit the input</h3><p>Check source identity, sensor mapping, timestamps, and row content before events enter the database.</p></article>
           <article className="step-card"><span className="step-number">02</span><div className="step-symbol">◎</div><h3>Make replays safe</h3><p>Accept events in batches, identify exact duplicates, and record changed-key conflicts without overwriting history.</p></article>
-          <article className="step-card"><span className="step-number">03</span><div className="step-symbol">▤</div><h3>Show the bill clearly</h3><p>Allocate an illustrative invoice across two fictional flats and show how each resident's charge is formed.</p></article>
+          <article className="step-card"><span className="step-number">03</span><div className="step-symbol">⊘</div><h3>Keep billing honest</h3><p>Block incomplete historical events from billing. Demonstrate statements with a separate, complete fictional fixture.</p></article>
         </div>
       </section>
 
+      <PipelineDemo />
+
       <section className="demo-section section-block" id="demo">
         <div className="section-wrap">
-          <div className="section-heading demo-heading"><div><p className="eyebrow">INTERACTIVE WALKTHROUGH</p><h2>Explore a sample bill.</h2><p>One complete fictional hour. Two flats. An illustrative ₹7.00 invoice. Change the charges to see how the allocation responds.</p></div><span className="demo-badge">FICTIONAL DATA · NO SIGN IN</span></div>
+          <div className="section-heading demo-heading"><div><p className="eyebrow">SEPARATE BILLING WALKTHROUGH</p><h2>Explore a sample bill.</h2><p>Once the event pipeline is understood, explore how a complete, fictional hour becomes a resident statement. This invoice does not use HSB observations.</p></div><span className="demo-badge">FICTIONAL DATA · NO SIGN IN</span></div>
           <div className="demo-layout">
             <div className="demo-panel">
               <div className="panel-top"><div><small>BILLING PERIOD</small><strong>1 January 2026 · 00:00–01:00</strong><span>Six ten-minute intervals · Asia/Kolkata</span></div><span className="panel-icon">↗</span></div>

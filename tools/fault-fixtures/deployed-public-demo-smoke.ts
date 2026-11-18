@@ -11,7 +11,12 @@ try {
   await expect(page.getByRole('heading', { name: /Every reading has a history/ })).toBeVisible();
   await expect(page.getByLabel('Email')).toHaveCount(0);
   checks.push('self-explaining hero and no sign-in barrier');
-  await page.getByRole('link', { name: 'Explore the sample bill', exact: true }).click();
+  await page.getByRole('link', { name: 'Inspect the event pipeline', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Watch the backend verify a water event.' })).toBeVisible();
+  await page.getByRole('button', { name: /Changed source key/ }).click();
+  await expect(page.getByText('Changed-key conflict')).toBeVisible();
+  checks.push('live public source adapter dry run and changed-key classification');
+  await page.getByRole('link', { name: 'See the billing sample', exact: true }).click();
   await page.getByLabel('Usage-based charge in paise').fill('901');
   await page.getByLabel('Fixed charge in paise').fill('99');
   await page.getByRole('button', { name: /Recalculate bill/ }).click();

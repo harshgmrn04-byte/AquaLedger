@@ -46,7 +46,7 @@ Render documents Free web services, their idle spin-down and ephemeral filesyste
 ## React site on Render
 
 1. Create a separate Render **Static Site** from the same verified Git commit. Use repository root, build command `npm ci && npm run build --workspace=@water/shared && npm run build --workspace=@water/web`, and publish directory `apps/web/dist`.
-2. At build time, set only public frontend values: the Render API base URL, Supabase project URL, and Supabase **publishable** key under the Vite variable names implemented in Stage 3. The app obtains an Auth token, sends it to Express, and never queries application tables through the Supabase Data API.
+2. At build time, set only public frontend values, including `VITE_API_URL` for the Render API. The public recruiter walkthrough does not need a browser Auth key. Protected API routes still verify bearer tokens and never expose application tables through the Supabase Data API.
 3. If React Router uses client-side paths, configure Render's rewrite `/*` to `/index.html`. Add the static-site origin to the API's exact CORS allowlist. Provide a clearly labeled cached static snapshot for Render wake-up or Supabase pause, and ensure it cannot be mistaken for a live statement.
 
 Render's [static-site guide](https://render.com/docs/static-sites), [monorepo settings](https://render.com/docs/monorepo-support), and [rewrite rules](https://render.com/docs/redirects-rewrites) support these settings.
