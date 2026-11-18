@@ -9,7 +9,7 @@ let base: string;
 beforeAll(async () => {
   const app = express();
   const csvPath = 'tools/import-hsb/fixtures/hsb-sample-1000.csv';
-  app.use('/api/v1/demo', publicDemoRoutes({ fixturePath: undefined, csvPath, sensorMap: loadSensorMap('docs/data/hsb-profile.json'), archiveHashes: await loadArchive(csvPath) }));
+  app.use('/api/v1/demo', await publicDemoRoutes({ fixturePath: undefined, csvPath, sensorMap: loadSensorMap('docs/data/hsb-profile.json'), archiveHashes: await loadArchive(csvPath) }));
   server = app.listen(0, '127.0.0.1');
   await new Promise<void>(resolve => server.once('listening', resolve));
   const address = server.address();
@@ -28,7 +28,12 @@ describe('public source-event inspection', () => {
       expect(result).toMatchObject({ mode: 'stateless_dry_run', persistence: 'none', scenario, outcome, checks: { pinnedArchiveHash: archiveHash }, coverageCertified: false });
       expect(response.headers.get('cache-control')).toBe('no-store');
     }
+    const chosen = await fetch(base + '/api/v1/demo/event-check?scenario=changed&line=1001');
+    expect(chosen.status).toBe(200);
+    expect(await chosen.json()).toMatchObject({ source: { csvLine: 1001, sourceRowKey: 'csv:0001001' }, outcome: 'conflict', checks: { pinnedArchiveHash: 'fail' } });
     expect((await fetch(base + '/api/v1/demo/event-check?scenario=other')).status).toBe(400);
+    expect((await fetch(base + '/api/v1/demo/event-check?line=1002')).status).toBe(400);
+    expect((await fetch(base + '/api/v1/demo/event-check?line=0')).status).toBe(400);
   });
 });
 afterAll(async () => { await new Promise<void>(resolve => server.close(() => resolve())); });
